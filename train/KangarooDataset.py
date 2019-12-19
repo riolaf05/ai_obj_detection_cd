@@ -93,6 +93,10 @@ class KangarooDataset(Dataset):
 
 # define a configuration for the model
 class KangarooConfig(Config):
+	#This is a new class that extends the mrcnn.config.Config class and defines properties of
+	#  both the prediction problem (such as name and the number of classes) 
+	# and the algorithm for training the model (such as the learning rate).
+	
 	# define the name of the configuration
 	NAME = "kangaroo_cfg"
 	# number of classes (background + kangaroo)

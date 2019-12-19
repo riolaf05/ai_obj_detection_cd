@@ -9,6 +9,8 @@ RUN cd ..
 RUN apt-get purge git -y
 RUN rm -R Mask_RCNN
 
+RUN wget https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5 -P /home/scripts/models
+
 RUN mkdir /home/scripts/samples
 
  
