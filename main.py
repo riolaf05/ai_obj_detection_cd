@@ -1,7 +1,8 @@
-from KangarooDataset import extract_boxes, KangarooDataset
+from KangarooDataset import extract_boxes, KangarooDataset, KangarooConfig
 #from matplotlib import pyplot
 
 def main():
+    # 1) LOADING TRAIN AND TEST DATASET
     # train set
     train_set = KangarooDataset()
     train_set.load_dataset('kangaroo', is_train=True)
@@ -35,7 +36,16 @@ def main():
     pyplot.show()
     '''
 
-    
+    # 2) TRAINING THE MODEL 
+    # prepare config
+    config = KangarooConfig()
+    config.display()
+    # define the model
+    model = MaskRCNN(mode='training', model_dir='./', config=config)
+    # load weights (mscoco) and exclude the output layers
+    model.load_weights('mask_rcnn_coco.h5', by_name=True, exclude=["mrcnn_class_logits", "mrcnn_bbox_fc",  "mrcnn_bbox", "mrcnn_mask"])
+    # train weights (output layers or 'heads')
+    model.train(train_set, test_set, learning_rate=config.LEARNING_RATE, epochs=5, layers='heads')
 
 if __name__ == "__main__":
     main()
