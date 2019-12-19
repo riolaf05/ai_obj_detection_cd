@@ -1,4 +1,4 @@
-# ai_obj_detection_cd
+# AI - Object Detection - Continuous Delivery 
 Continuous delivery pipeline for object detection models and apps
 
 ### Instructions
