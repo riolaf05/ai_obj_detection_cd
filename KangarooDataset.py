@@ -5,6 +5,8 @@ from numpy import zeros
 from numpy import asarray
 from mrcnn.utils import Dataset
 
+TRAIN_DIM = 150
+
 # 1) load the annotation file
 # function to extract bounding boxes from an annotation file
 def extract_boxes(filename):
@@ -26,14 +28,6 @@ def extract_boxes(filename):
 	height = int(root.find('.//size/height').text)
 	return boxes, width, height
 
-filelist = [f for f in listdir('/home/scripts/kangaroo/annots') if isfile(join('/home/scripts/kangaroo/annots', f))]
-
-boxes={}
-
-for filename in filelist:
-    boxes[filename] = []
-    boxes[filename].append(extract_boxes(filename))
-
 # 2) 
 #The mask-rcnn library requires that train, validation, and test datasets be managed by a mrcnn.utils.Dataset object.
 #This means that a new class must be defined that extends the mrcnn.utils.Dataset class and defines a function to load the dataset
@@ -41,7 +35,7 @@ for filename in filelist:
 # class that defines and loads the kangaroo dataset
 class KangarooDataset(Dataset):
 	# load the dataset definitions
-	def load_dataset(self, dataset_dir, dim_train, is_train=True):
+	def load_dataset(self, dataset_dir, is_train=True):
 		# define one class
 		self.add_class("dataset", 1, "kangaroo")
 		# define data locations
@@ -55,10 +49,10 @@ class KangarooDataset(Dataset):
 			if image_id in ['00090']:
 				continue
 			# skip all images after 150 if we are building the train set
-			if is_train and int(image_id) >= dim_train:
+			if is_train and int(image_id) >= TRAIN_DIM:
 				continue
 			# skip all images before 150 if we are building the test/val set
-			if not is_train and int(image_id) < dim_train:
+			if not is_train and int(image_id) < TRAIN_DIM:
 				continue
 			img_path = images_dir + filename
 			ann_path = annotations_dir + image_id + '.xml'
@@ -97,16 +91,13 @@ class KangarooDataset(Dataset):
 
 # train set
 dataset_dir = '/home/scripts/samples'
-dim_train = 150
 train_set = KangarooDataset()
-train_set.load_dataset('kangaroo', dataset_dir, dim_train, is_train=True)
+train_set.load_dataset('kangaroo', is_train=True)
 train_set.prepare()
 print('Train: %d' % len(train_set.image_ids))
 
 # test/val set
 test_set = KangarooDataset()
-train_set.load_dataset('kangaroo', dataset_dir, dim_train, is_train=True)
+test_set.load_dataset('kangaroo', is_train=False)
 test_set.prepare()
 print('Test: %d' % len(test_set.image_ids))
-
-
