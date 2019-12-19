@@ -11,7 +11,7 @@ RUN rm -R Mask_RCNN
 
 COPY main.py /home/scripts/
 COPY KangarooDataset.py /home/scripts/
-COPY ../samples/ /home/scripts/
+COPY samples/ /home/scripts/
 
 RUN wget https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5 -P /home/scripts/models
 
