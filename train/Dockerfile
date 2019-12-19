@@ -1,9 +1,7 @@
 FROM rio05docker/tflite_rpi:rpi3_test_6
 
 RUN apt-get update && apt-get install -y git  
-RUN git clone https://github.com/matterport/Mask_RCNN.git
-RUN cd Mask_RCNN
-RUN python3 setup.py install
+RUN git clone https://github.com/matterport/Mask_RCNN.git && python3 Mask_RCNN/setup.py install
 RUN pip3 install scikit-image --user
 RUN cd ..
 RUN apt-get purge git -y
