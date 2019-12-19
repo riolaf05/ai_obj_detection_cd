@@ -39,12 +39,12 @@ for filename in filelist:
 # class that defines and loads the kangaroo dataset
 class KangarooDataset(Dataset):
 	# load the dataset definitions
-	def load_dataset(self, dataset_dir, is_train=True):
+	def load_dataset(self, dataset_dir, is_train=True, dim_train):
 		# define one class
 		self.add_class("dataset", 1, "kangaroo")
 		# define data locations
-		images_dir = dataset_dir + '/images/'
-		annotations_dir = dataset_dir + '/annots/'
+		images_dir = dataset_dir + '/kangaroo/images/'
+		annotations_dir = dataset_dir + '/kangaroo/annots/'
 		# find all images
 		for filename in listdir(images_dir):
 			# extract image id
@@ -53,10 +53,10 @@ class KangarooDataset(Dataset):
 			if image_id in ['00090']:
 				continue
 			# skip all images after 150 if we are building the train set
-			if is_train and int(image_id) >= 150:
+			if is_train and int(image_id) >= dim_train:
 				continue
 			# skip all images before 150 if we are building the test/val set
-			if not is_train and int(image_id) < 150:
+			if not is_train and int(image_id) < dim_train:
 				continue
 			img_path = images_dir + filename
 			ann_path = annotations_dir + image_id + '.xml'
@@ -65,7 +65,26 @@ class KangarooDataset(Dataset):
  
 	# load the masks for an image
 	def load_mask(self, image_id):
-		# ...
+		# define the load_mask() function for loading the mask for a given ‘image_id‘
+		#The function must return an array of one or more masks for the photo associated with the image_id, 
+		# and the classes for each mask.
+		# get details of image
+		info = self.image_info[image_id]
+		# define box file location
+		path = info['annotation']
+		# load XML
+		boxes, w, h = self.extract_boxes(path)
+		# create one array for all masks, each on a different channel
+		masks = zeros([h, w, len(boxes)], dtype='uint8')
+		# create masks
+		class_ids = list()
+		for i in range(len(boxes)):
+			box = boxes[i]
+			row_s, row_e = box[1], box[3]
+			col_s, col_e = box[0], box[2]
+			masks[row_s:row_e, col_s:col_e, i] = 1
+			class_ids.append(self.class_names.index('kangaroo'))
+		return masks, asarray(class_ids, dtype='int32')
  
 	# load an image reference
 	def image_reference(self, image_id):
@@ -77,3 +96,5 @@ train_set = KangarooDataset()
 train_set.load_dataset(...)
 train_set.prepare()
 
+dataset_dir = '/home/scripts/samples'
+dim_train = 150
