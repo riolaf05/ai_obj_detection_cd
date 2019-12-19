@@ -3,9 +3,14 @@ import keras
 import mlflow
 from keras.models import load_mode
 import mlfow.keras
+
 #your Keras built, trained, and tested model
-model_dir_path = None #this changes according to RCNN model saved
-model = load_model(model_dir_path)
+model = ...
+#local or remote S3 or Azure Blob path
+model_dir_path=...
+# save the mode to local or remote accessible path on the S3 or Azure Blob
+mlflow.keras.save_model(model, model_dir_path)
+
 with mlflow.start_run():
    # log metrics
    mlflow.log_metric("binary_loss", binary_loss)
