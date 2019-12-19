@@ -1,3 +1,4 @@
+#Thanks to https://machinelearningmastery.com/how-to-train-an-object-detection-model-with-keras/
 from KangarooDataset import extract_boxes, KangarooDataset, KangarooConfig
 from mrcnn.visualize import display_instances
 from mrcnn.utils import Dataset

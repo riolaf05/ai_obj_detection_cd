@@ -1,8 +1,10 @@
+#Thanks to: https://databricks.com/blog/2018/09/21/how-to-use-mlflow-to-reproduce-results-and-retrain-saved-keras-ml-models.html
 import keras
 import mlflow
 from keras.models import load_mode
 import mlfow.keras
 #your Keras built, trained, and tested model
+model_dir_path = 
 model = load_model(model_dir_path)
 with mlflow.start_run():
    # log metrics
