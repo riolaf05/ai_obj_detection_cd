@@ -4,7 +4,7 @@ RUN apt-get install -y git
 RUN git clone https://github.com/matterport/Mask_RCNN.git
 RUN cd Mask_RCNN
 RUN python3 setup.py install
-
+RUN apt-get purge git -y
 
 RUN mkdir /home/scripts/samples
 
