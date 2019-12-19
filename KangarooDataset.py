@@ -6,6 +6,7 @@ from numpy import asarray
 from mrcnn.utils import Dataset
 
 TRAIN_DIM = 150
+dataset_dir = '/home/scripts/samples' 
 
 # 1) load the annotation file
 # function to extract bounding boxes from an annotation file
