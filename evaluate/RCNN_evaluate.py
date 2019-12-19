@@ -4,7 +4,7 @@ import mlflow
 from keras.models import load_mode
 import mlfow.keras
 #your Keras built, trained, and tested model
-model_dir_path = 
+model_dir_path = None #this changes according to RCNN model saved
 model = load_model(model_dir_path)
 with mlflow.start_run():
    # log metrics
