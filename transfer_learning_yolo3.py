@@ -1,7 +1,9 @@
-
+# split into train and test set
 from os import listdir
-from os.path import isfile, join
-import xml.etree.ElementTree as ElementTree
+from xml.etree import ElementTree
+from numpy import zeros
+from numpy import asarray
+from mrcnn.utils import Dataset
 
 # 1) load the annotation file
 # function to extract bounding boxes from an annotation file
@@ -39,7 +41,7 @@ for filename in filelist:
 # class that defines and loads the kangaroo dataset
 class KangarooDataset(Dataset):
 	# load the dataset definitions
-	def load_dataset(self, dataset_dir, is_train=True, dim_train):
+	def load_dataset(self, dataset_dir, dim_train, is_train=True):
 		# define one class
 		self.add_class("dataset", 1, "kangaroo")
 		# define data locations
@@ -88,13 +90,23 @@ class KangarooDataset(Dataset):
  
 	# load an image reference
 	def image_reference(self, image_id):
-		# ...
+		# This function is responsible for returning the path or URL for a given ‘image_id‘, 
+		# which we know is just the ‘path‘ property on the ‘image info‘ dict.
+		info = self.image_info[image_id]
+		return info['path']
 
-
-# prepare the dataset
-train_set = KangarooDataset()
-train_set.load_dataset(...)
-train_set.prepare()
-
+# train set
 dataset_dir = '/home/scripts/samples'
 dim_train = 150
+train_set = KangarooDataset()
+train_set.load_dataset('kangaroo', dataset_dir, dim_train, is_train=True)
+train_set.prepare()
+print('Train: %d' % len(train_set.image_ids))
+
+# test/val set
+test_set = KangarooDataset()
+train_set.load_dataset('kangaroo', dataset_dir, dim_train, is_train=True)
+test_set.prepare()
+print('Test: %d' % len(test_set.image_ids))
+
+
