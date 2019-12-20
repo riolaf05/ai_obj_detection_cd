@@ -41,8 +41,8 @@ class KangarooDataset(Dataset):
 		# define one class
 		self.add_class("dataset", 1, "kangaroo")
 		# define data locations
-		images_dir = dataset_dir + '/kangaroo/images/'
-		annotations_dir = dataset_dir + '/kangaroo/annots/'
+		images_dir = dataset_dir + '/images/'
+		annotations_dir = dataset_dir + '/annots/'
 		# find all images
 		for filename in listdir(images_dir):
 			# extract image id
