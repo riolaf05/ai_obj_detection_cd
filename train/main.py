@@ -42,11 +42,12 @@ def main():
     '''
 
     # 2) TRAINING THE MODEL 
+    print("Training the model..")
     # prepare config
     config = KangarooConfig()
     config.display()
     # define the model
-    model = MaskRCNN(mode='training', model_dir='./', config=config)
+    model = MaskRCNN(mode='training', model_dir='./models', config=config)
     # load weights (mscoco) and exclude the output layers
     model.load_weights('/home/scripts/models/mask_rcnn_coco.h5', by_name=True, exclude=["mrcnn_class_logits", "mrcnn_bbox_fc",  "mrcnn_bbox", "mrcnn_mask"])
     # train weights (output layers or 'heads')
