@@ -4,6 +4,7 @@ from xml.etree import ElementTree
 from numpy import zeros
 from numpy import asarray
 from mrcnn.utils import Dataset
+from mrcnn.config import Config
 
 TRAIN_DIM = 150
 dataset_dir = '/home/scripts/samples' 
