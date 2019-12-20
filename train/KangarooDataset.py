@@ -4,32 +4,11 @@ from xml.etree import ElementTree
 from numpy import zeros
 from numpy import asarray
 from mrcnn.utils import Dataset
+from mrcnn.config import Config
 
 TRAIN_DIM = 150
 dataset_dir = '/home/scripts/samples' 
 
-# 1) load the annotation file
-# function to extract bounding boxes from an annotation file
-def extract_boxes(filename):
-	# load and parse the file
-	tree = ElementTree.parse(filename)
-	# get the root of the document
-	root = tree.getroot()
-	# extract each bounding box
-	boxes = list()
-	for box in root.findall('.//bndbox'):
-		xmin = int(box.find('xmin').text)
-		ymin = int(box.find('ymin').text)
-		xmax = int(box.find('xmax').text)
-		ymax = int(box.find('ymax').text)
-		coors = [xmin, ymin, xmax, ymax]
-		boxes.append(coors)
-	# extract image dimensions
-	width = int(root.find('.//size/width').text)
-	height = int(root.find('.//size/height').text)
-	return boxes, width, height
-
-# 2) 
 #The mask-rcnn library requires that train, validation, and test datasets be managed by a mrcnn.utils.Dataset object.
 #This means that a new class must be defined that extends the mrcnn.utils.Dataset class and defines a function to load the dataset
 
@@ -40,8 +19,8 @@ class KangarooDataset(Dataset):
 		# define one class
 		self.add_class("dataset", 1, "kangaroo")
 		# define data locations
-		images_dir = dataset_dir + '/kangaroo/images/'
-		annotations_dir = dataset_dir + '/kangaroo/annots/'
+		images_dir = '/home/scripts/samples/kangaroo/images/'
+		annotations_dir = '/home/scripts/samples/kangaroo/annots/'
 		# find all images
 		for filename in listdir(images_dir):
 			# extract image id
@@ -59,6 +38,28 @@ class KangarooDataset(Dataset):
 			ann_path = annotations_dir + image_id + '.xml'
 			# add to dataset
 			self.add_image('dataset', image_id=image_id, path=img_path, annotation=ann_path)
+
+
+	# function to extract bounding boxes from an annotation file
+	def extract_boxes(self, filename):
+		# load and parse the file
+		tree = ElementTree.parse(filename)
+		# get the root of the document
+		root = tree.getroot()
+		# extract each bounding box
+		boxes = list()
+		for box in root.findall('.//bndbox'):
+			xmin = int(box.find('xmin').text)
+			ymin = int(box.find('ymin').text)
+			xmax = int(box.find('xmax').text)
+			ymax = int(box.find('ymax').text)
+			coors = [xmin, ymin, xmax, ymax]
+			boxes.append(coors)
+		# extract image dimensions
+		width = int(root.find('.//size/width').text)
+		height = int(root.find('.//size/height').text)
+		return boxes, width, height
+
  
 	# load the masks for an image
 	def load_mask(self, image_id):
