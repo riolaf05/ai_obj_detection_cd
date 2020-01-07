@@ -9,7 +9,7 @@ It can be used to train a RCNN model with custom images then obtain a new model 
 
 ### Agenda
 
-* fix pipeline errors
+* ~~fix pipeline errors~~
 * add model evaluation using MLFlow into pipeline flow: use another docker for evaluation and find a way to offer MLFlow UI 
 * test object detection model
 
