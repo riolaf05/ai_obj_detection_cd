@@ -12,6 +12,7 @@ It can be used to train a RCNN model with custom images then obtain a new model 
 * ~~fix pipeline errors~~
 * add model evaluation using MLFlow into pipeline flow: use another docker for evaluation and find a way to offer MLFlow UI 
 * test object detection model
+* smooth object detection docker image to be used on demand
 
 ### References
 
