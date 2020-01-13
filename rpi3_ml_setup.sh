@@ -10,7 +10,6 @@ mkdir ~/Codice \
 && sudo apt-get install -y libblas-dev \
 && sudo apt-get install -y liblapack-dev \
 && sudo apt-get install -y python3-dev \
-&& sudo apt-get install -y libatlas-base-dev \
 && sudo apt-get install -y gfortran \
 && sudo apt-get install -y python3-setuptools \
 && sudo apt-get install -y python3-scipy \
