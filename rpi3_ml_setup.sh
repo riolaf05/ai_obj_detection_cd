@@ -17,7 +17,7 @@ mkdir ~/Codice \
 && sudo apt-get install -y python3-scipy \
 && sudo apt-get install -y python3-h5py \
 && pip3 install keras \
-#Jupyter & Pandas
+#Other dependencies
 && pip3 install jupyter \
 && pip3 install pandas \
 && sudo apt install -y python3-opencv \
