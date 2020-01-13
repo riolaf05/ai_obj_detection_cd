@@ -17,4 +17,11 @@ mkdir ~/Codice \
 && sudo apt-get install -y python3-h5py \
 && pip3 install keras \
 && pip3 install jupyter \
-&& sudo apt install -y python3-opencv
+&& sudo apt install -y python3-opencv \
+&& curl -sSL https://get.docker.com | sh \
+&& sudo usermod -aG docker pi \
+&& export PATH=~/.local/bin/jupyter-notebook:$PATH \
+&& sudo rm ~/Codice/Miniconda3-latest-Linux-armv7l.sh \
+&& mkdir ~/Codice/notebooks \
+&& sudo reboot -h now
+
