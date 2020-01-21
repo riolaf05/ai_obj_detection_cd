@@ -1,3 +1,5 @@
+#See: https://www.curiousily.com/posts/object-detection-on-custom-dataset-with-tensorflow-2-and-keras-using-python/
+
 import numpy as np
 import tensorflow as tf
 from tensorflow import keras
