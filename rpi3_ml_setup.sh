@@ -29,9 +29,7 @@ mkdir ~/Codice \
 # Tensorflow Lite
 && wget https://dl.google.com/coral/python/tflite_runtime-1.14.0-cp37-cp37m-linux_armv7l.whl \
 && pip3 install tflite_runtime-1.14.0-cp37-cp37m-linux_armv7l.whl \
-=======
 && echo "export PATH=~/.local/bin:$PATH" >> $HOME/.bashrc \
->>>>>>> 6f743a92343caf1ba9c08a474d05d65285fd8ea7
 #Clean
 && sudo rm ~/Codice/Miniconda3-latest-Linux-armv7l.sh \
 && mkdir ~/Codice/notebooks \
