@@ -49,6 +49,6 @@ jobs:
             --tag rio05docker/obj_detection_cd:rpi3_mrcnn_${GITHUB_SHA} \
             --platform linux/arm/v7 \
             --output "type=image,push=true" \
-            --file ./batch_masked_rcnn/train/Dockerfile \
-            ./batch_masked_rcnn/train
+            --file ./batch_masked_rcnn/Dockerfile \
+            ./batch_masked_rcnn/
       

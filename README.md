@@ -1,17 +1,18 @@
-# AI - Object Detection - Continuous Delivery 
+# ML - Continuous Integration and Continuous Delivery pipelines for RaspberryPi
 Continuous delivery pipeline for object detection models and apps
 
 ### Instructions
 
-This is a ML continuos delivery pipeline based on GitHub Actions. Please
+This is a ML continuos delivery pipeline based on GitHub Actions. 
 
-It can be used to train a RCNN model with custom images then obtain a new model that can be evaluated using **MLFlow**
+It can be used to train ML models then obtain that can be evaluated using **MLFlow**
 
 ### Agenda
 
 * ~~fix pipeline errors~~
-* add model evaluation using MLFlow into pipeline flow: use another docker for evaluation and find a way to offer MLFlow UI 
-* test object detection model
+* ~~add model evaluation using MLFlow into pipeline flow: use another docker for evaluation and find a way to offer MLFlow UI~~
+* ~~add CICD pipelines~~
+* test object detection and image recognition models
 * smooth object detection docker image to be used on demand
 
 ### References
