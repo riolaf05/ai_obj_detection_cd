@@ -9,4 +9,6 @@ COPY data/data.py $HOME/scripts/ml/data
 COPY model/model.py $HOME/scripts/ml/model
 COPY train.py $HOME/scripts/ml
 
-ENTRYPOINT [ "" ]
+RUN pip3 install mlflow
+
+ENTRYPOINT nohup mlflow ui & && python3 main.py
