@@ -10,25 +10,13 @@ from keras.layers.core import Dense
 
 def model(opt):
     model = Sequential()
-    model.add(Conv2D(filters=8, input_shape=(28,28,1), kernel_size=(2,2), padding='valid'))
-    model.add(Activation('relu'))
-    #Max Pooling
-    model.add(MaxPooling2D(pool_size=(2,2), padding='valid'))
-
-    #2nd Convolutional layer
-    model.add(Conv2D(filters=32, kernel_size=(2,2), padding='valid'))
-    model.add(Activation('relu'))
-
-    #Max Pooling
-    model.add(MaxPooling2D(pool_size=(2,2), padding='valid'))
-    model.add(Flatten())
-    model.add(Dense(32))
-    model.add(Dropout(0.5))
-    model.add(Dense(10))
-    model.add(Activation('softmax'))
+    model.add(Dense(512, activation='relu', input_dim=trainX.shape[1]))
+    model.add(Dense(256, activation='relu'))
+    model.add(Dense(128, activation='relu')) 
+    model.add(Dense(10, activation='softmax'))
     model.summary()
 
     #Compile
-    model.compile(loss=keras.losses.categorical_crossentropy, optimizer=opt, metric=['accuracy'])
+    model.compile(loss='categorical_crossentropy', optimizer=opt, metrics=['accuracy'])
 
     return model

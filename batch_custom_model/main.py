@@ -5,8 +5,8 @@ import mlflow
 import sys
 sys.path.append('model/')
 sys.path.append('data/')
-from train import train
-from data import get_data
+#from train import train
+#from data import get_data
 
 def main():
     with open('training_conf.json') as f:
@@ -14,10 +14,11 @@ def main():
         print(data)
     
     keras_model = model(data['opt'])
+    trainX, trainY, testX, testY = get_data()
     
-    with mlflow.start_run(run_name=data['name']):
-        trained_model=train(testX, testY, keras_model)
-        scores=model.evaluate(testX, testY,verbose=1)
+    with mlflow.start_run(run_name=data['name']):    
+        trained_model=train(trainX, trainY, keras_model)
+        scores=keras_model.evaluate(testX, testY,verbose=1)
         mlflow.log_param("alpha", 0.001)
         mlflow.log_param("epochs", data['epochs'])
         mlflow.log_param("optimizer", data['opt'])
