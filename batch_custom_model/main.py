@@ -3,6 +3,7 @@
 import json
 import mlflow
 import sys
+import numpy as np
 sys.path.append('model/')
 sys.path.append('data/')
 from train import train
