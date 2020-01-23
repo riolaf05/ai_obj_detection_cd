@@ -14,4 +14,3 @@ def get_data():
     testX = np_utils.to_categorical(testY, 10)
     return trainX, trainY, testX, testY
 
-trainX, trainY, testX, testY = get_data()
