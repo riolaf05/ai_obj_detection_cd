@@ -31,14 +31,14 @@ jobs:
         run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
       
       #Build&Push - moisture client container
-      #-
-      #  name: Build and push model train container #see: https://github.com/marketplace/actions/docker-buildx
-      #  run: |
-      #    docker buildx build \
-      #      --tag rio05docker/obj_detection_cd:rpi3_develop_${GITHUB_SHA} \
-      #      --platform linux/arm/v7 \
-      #      --output "type=image,push=true" \
-      #      --file ./train/Dockerfile \
+      -
+        name: Build and push model train container #see: https://github.com/marketplace/actions/docker-buildx
+        run: |
+          docker buildx build \
+            --tag rio05docker/obj_detection_cd:rpi3_develop_${GITHUB_SHA} \
+            --platform linux/arm/v7 \
+            --output "type=image,push=true" \
+            --file ./train/Dockerfile \
             .
       
       
