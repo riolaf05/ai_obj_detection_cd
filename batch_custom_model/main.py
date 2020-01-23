@@ -25,8 +25,8 @@ def main():
         mlflow.log_param("batch_size", data['batch_size'])
         mlflow.log_param("eval_loss", scores[0])
         mlflow.log_param("val_acc", scores[1])
-        mlflow.log_param("eval_precision", scores[2])
-        mlflow.log_param("eval_recall", scores[3])
+        #mlflow.log_param("eval_precision", scores[2])
+        #mlflow.log_param("eval_recall", scores[3])
         mlflow.log_param(key="accuracy", value=scores[4], step=dataset_count)
 
 if __name__ == "__main__":
