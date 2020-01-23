@@ -5,8 +5,8 @@ import mlflow
 import sys
 sys.path.append('model/')
 sys.path.append('data/')
-#from train import train
-#from data import get_data
+from train import train
+from data import get_data
 
 def main():
     with open('training_conf.json') as f:
@@ -27,7 +27,7 @@ def main():
         mlflow.log_param("val_acc", scores[1])
         #mlflow.log_param("eval_precision", scores[2])
         #mlflow.log_param("eval_recall", scores[3])
-        mlflow.log_param(key="accuracy", value=scores[4], step=dataset_count)
+        #mlflow.log_param(key="accuracy", value=scores[4], step=dataset_count)
 
 if __name__ == "__main__":
     main()        
