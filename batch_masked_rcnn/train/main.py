@@ -1,5 +1,5 @@
 #Thanks to https://machinelearningmastery.com/how-to-train-an-object-detection-model-with-keras/
-from KangarooDataset import extract_boxes, KangarooDataset, KangarooConfig
+from KangarooDataset import KangarooDataset, KangarooConfig
 from mrcnn.visualize import display_instances
 from mrcnn.utils import Dataset
 from mrcnn.config import Config
@@ -42,14 +42,18 @@ def main():
     '''
 
     # 2) TRAINING THE MODEL 
+    print("Training the model..")
     # prepare config
     config = KangarooConfig()
     config.display()
     # define the model
-    model = MaskRCNN(mode='training', model_dir='./', config=config)
+    print("Defining the model..")
+    model = MaskRCNN(mode='training', model_dir='./models', config=config)
     # load weights (mscoco) and exclude the output layers
+    print("Loding weights..")
     model.load_weights('/home/scripts/models/mask_rcnn_coco.h5', by_name=True, exclude=["mrcnn_class_logits", "mrcnn_bbox_fc",  "mrcnn_bbox", "mrcnn_mask"])
     # train weights (output layers or 'heads')
+    print("Training..")
     model.train(train_set, test_set, learning_rate=config.LEARNING_RATE, epochs=5, layers='heads')
 
 if __name__ == "__main__":
