@@ -8,5 +8,8 @@
 4. Pull the docker image:
 
 ```console
-docker run -it --rm rio05docker/
+docker run -it --rm rio05docker/obj_detection_cd:rpi3_custom_${GITHUB_SHA}
 ```
+
+5. connect to localhost:5000 to see the ML workflow metadata
+
