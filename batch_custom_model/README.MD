@@ -1,3 +1,12 @@
 ## Custom ML model monitoring and deploy with MLFlow
 
-See: https://medium.com/analytics-vidhya/tracking-deep-learning-experiments-using-keras-mlflow-and-mongodb-732fc771266c
+### Installation
+
+1. Clone this repo n your local
+2. Put your data into data/ folder and upgrade model definition in model/ folder
+3. Push the code and wait for CI/CD pipeline to finish
+4. Pull the docker image:
+
+```console
+docker run -it --rm rio05docker/
+```
