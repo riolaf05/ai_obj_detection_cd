@@ -10,7 +10,7 @@ from keras.layers.core import Dense
 
 def model(opt):
     model = Sequential()
-    model.add(Dense(512, activation='relu', input_dim=trainX.shape[1]))
+    model.add(Dense(512, activation='relu', input_dim=784))
     model.add(Dense(256, activation='relu'))
     model.add(Dense(128, activation='relu')) 
     model.add(Dense(10, activation='softmax'))
