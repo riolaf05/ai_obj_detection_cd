@@ -19,6 +19,6 @@ It can be used to train ML models then obtain that can be evaluated using **MLFl
 
 ### References
 
-* Object detection transfer learning: https://machinelearningmastery.com/how-to-train-an-object-detection-model-with-keras/
-* Manage ML with MLFlow: https://thenewstack.io/tutorial-manage-machine-learning-lifecycle-with-databricks-mlflow/
-* CD4ML: https://martinfowler.com/articles/cd4ml.html
+* [Object detection transfer learning](https://machinelearningmastery.com/how-to-train-an-object-detection-model-with-keras/)
+* [Manage ML with MLFlow](https://thenewstack.io/tutorial-manage-machine-learning-lifecycle-with-databricks-mlflow/)
+* [CD4ML](https://martinfowler.com/articles/cd4ml.html)
