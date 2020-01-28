@@ -23,3 +23,5 @@ docker run -it --rm --privileged -v /dev/bus/usb:/dev/bus/usb --device=/dev/vchi
 ### TODO: 
 * Test real time predictions
 * Add CI/CD for batch edge TPU
+* Add transfer learning with Edge TPU API
+* (maybe?) Add MLFlow logging and packaging
