@@ -70,8 +70,8 @@ TODO
 
 Consigure the `pipeline.config` config file (into the docker) 
 
-
-
+### TODO
+* Add CI/CD pipeline
 
 ### References
 * [Coral Edge TPU docs](https://coral.ai/docs/edgetpu/retrain-detection/#start-training)
