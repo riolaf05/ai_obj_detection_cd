@@ -13,6 +13,7 @@ It can be used to train ML models then obtain that can be evaluated using **MLFl
 * ~~add model evaluation using MLFlow into pipeline flow: use another docker for evaluation and find a way to offer MLFlow UI~~
 * ~~add CICD pipelines~~
 * test object detection and image recognition models
+* test re-train with edge TPU real time object detection
 * add real time object detection models
 * smooth object detection docker image to be used on-demand
 
