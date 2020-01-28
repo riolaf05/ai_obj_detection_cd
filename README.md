@@ -9,7 +9,7 @@ It can be used to train ML models then evaluate them using **MLFlow** or **Tenso
 
 This is the general pipeline which is followed by most of the covered use cases:
 
-###TODO: review this steps!
+### TODO: review this steps!
 
 1. Clone the repo into your local machine
 2. Put your data in the specified folders
