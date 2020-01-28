@@ -74,8 +74,8 @@ Consigure the `pipeline.config` config file (into the docker)
 
 
 ### References
-* https://coral.ai/docs/edgetpu/retrain-detection/#start-training
-* https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/using_your_own_dataset.md
-* https://aaronjencks.blogspot.com/2019/03/using-custom-datasets-with-tensorflows.html#TFR
-* https://www.tensorflow.org/tutorials/load_data/tfrecord
-* https://towardsdatascience.com/working-with-tfrecords-and-tf-train-example-36d111b3ff4d
+* [Coral Edge TPU docs](https://coral.ai/docs/edgetpu/retrain-detection/#start-training)
+* [Tensorflow: using your own dataset](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/using_your_own_dataset.md)
+* [Using custom dataset with Tensorflow](https://aaronjencks.blogspot.com/2019/03/using-custom-datasets-with-tensorflows.html#TFR)
+* [Tensorflow: TFRecords](https://www.tensorflow.org/tutorials/load_data/tfrecord)
+* [Working with TFRecords](https://towardsdatascience.com/working-with-tfrecords-and-tf-train-example-36d111b3ff4d)
