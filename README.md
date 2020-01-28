@@ -7,6 +7,15 @@ This is a multi-purpose ML continuos delivery pipeline based on GitHub Actions, 
 
 It can be used to train ML models then evaluate them using **MLFlow** or **TensorBoard**
 
+This is the general pipeline which is followed by most of the covered use cases:
+
+###TODO: review this steps!
+
+1. Clone the repo into your local machine
+2. Put your data in the specified folders
+3. Push and start the continuous integration pipeline
+4. Run the given docker container, watch the results with **MLFlow** or **TensorBoard** and get your model or results from output folders.
+
 ### Agenda
 
 * ~~fix pipeline errors~~
