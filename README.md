@@ -3,9 +3,9 @@ Continuous delivery pipeline for object detection models and apps
 
 ### Instructions
 
-This is a ML continuos delivery pipeline based on GitHub Actions. 
+This is a multi-purpose ML continuos delivery pipeline based on GitHub Actions, Tensorflow, MLFlow. 
 
-It can be used to train ML models then obtain that can be evaluated using **MLFlow**
+It can be used to train ML models then evaluate them using **MLFlow** or **TensorBoard**
 
 ### Agenda
 
