@@ -185,7 +185,7 @@ if __name__ == '__main__':
         camera.rotation = ROTATION
 
         try:
-            address = ('', 8080)
+            address = ('', 8000)
             server = StreamingServer(address, StreamingHandler)
             server.serve_forever()
         except:

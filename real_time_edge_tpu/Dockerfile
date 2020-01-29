@@ -46,8 +46,6 @@ RUN wget https://dl.google.com/coral/python/tflite_runtime-1.14.0-cp35-cp35m-lin
 && pip3 install tflite_runtime-1.14.0-cp35-cp35m-linux_armv7l.whl \
 && rm tflite_runtime-1.14.0-cp35-cp35m-linux_armv7l.whl
 
-COPY demo_batch_image_classification.sh /home/scripts/object_detections
-
 #ENTRYPOINT ["/bin/sh", "-c", "/home/scripts/object_detections/download.sh"]
 ENTRYPOINT /bin/sh -c /home/scripts/object_detections/download.sh && /bin/bash
 
