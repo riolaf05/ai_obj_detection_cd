@@ -1,4 +1,7 @@
 ### rpi3_rt_tflite_tpu
+
+Object detection inference with Edge TPU
+
 Based on Raspbian Stretch, it contains:
 
 * Python 3.5.3
