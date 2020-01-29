@@ -1,4 +1,4 @@
-### rpi3_rt_tflite_tpu_test
+### rpi3_rt_tflite_tpu
 Based on Raspbian Stretch, it contains:
 
 * Python 3.5.3
@@ -6,6 +6,7 @@ Based on Raspbian Stretch, it contains:
 * Picamera module
 * Edge TPU runtime
 
+It must run on RaspberryPi with Edge TPU Coral device
 
 To build: 
 
