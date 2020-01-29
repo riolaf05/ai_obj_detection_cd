@@ -22,7 +22,7 @@ docker run -it --rm --privileged -p 8000:8000 -v /dev/bus/usb:/dev/bus/usb --dev
 
 Then exec the container and run: 
 
-```python
+```console
 python3 demo_real_time_obj_detection_server.py --model /tmp/mobilenet_ssd_v2_coco_quant_postprocess_edgetpu.tflite --label /tmp/coco_labels.txt
 ```
 
