@@ -23,7 +23,7 @@ This is the general pipeline which is followed by most of the covered use cases:
 * ~~add CICD pipelines~~
 * test object detection and image recognition models [here](https://github.com/riolaf05/ai_obj_detection_cd/tree/adding-edge-tpu-/batch_masked_rcnn)
 * test re-train with edge TPU real time object detection [here](https://github.com/riolaf05/ai_obj_detection_cd/tree/adding-edge-tpu-/real_time_edge_tpu/real_time_transfer_learning_tpu)
-* test real time object detection models [here](https://github.com/riolaf05/ai_obj_detection_cd/tree/adding-edge-tpu-/real_time_edge_tpu)
+* ~~test real time object detection models [here](https://github.com/riolaf05/ai_obj_detection_cd/tree/adding-edge-tpu-/real_time_edge_tpu)~~
 * smooth object detection docker image to be used on-demand
 
 ### References
