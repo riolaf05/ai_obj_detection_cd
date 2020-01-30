@@ -1,20 +1,15 @@
-# ML - Continuous Integration and Continuous Delivery pipelines for RaspberryPi
+# ML - DevOps CI/CD pipelines for Machine Learning on RaspberryPi
 Continuous delivery pipeline for object detection models and apps
 
 ### Instructions
 
-This is a multi-purpose ML continuos delivery pipeline based on GitHub Actions, Tensorflow, MLFlow. 
+This repo contains continuos integration pipelines based on GitHub Actions which are used to build Tensorflow, Keras and MLFlow based docker containers. 
 
-It can be used to train ML models then evaluate them using **MLFlow** or **TensorBoard**
-
-This is the general pipeline which is followed by most of the covered use cases:
-
-### TODO: review this steps!
-
-1. Clone the repo into your local machine
-2. Put your data in the specified folders
-3. Push and start the continuous integration pipeline
-4. Run the given docker container, watch the results with **MLFlow** or **TensorBoard** and get your model or results from output folders.
+This is the general workflow which is followed by most of the covered use cases:
+ 
+1. Put your data in the specified folders
+2. Run the given docker container, watch the results with **MLFlow** or **TensorBoard** 
+3. Get your model or result data from output folders.
 
 ### Agenda
 
