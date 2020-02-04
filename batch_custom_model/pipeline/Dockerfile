@@ -3,7 +3,7 @@ FROM ubuntu:18.04
 LABEL "architcture" : x86_64_linux
 
 RUN apt-get update
-RUN apt-get install python3.6
+RUN apt-get install -y python3.6
 RUN pip3 install keras
 RUN apt-get install -y git curl
 
