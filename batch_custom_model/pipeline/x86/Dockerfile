@@ -8,7 +8,7 @@ RUN pip3 install keras
 RUN pip3 install tensorflow
 RUN apt-get install -y git curl
 
-#Install GoCD
+#Install GoCD server
 RUN echo "deb https://download.gocd.org /" | tee /etc/apt/sources.list.d/gocd.list
 RUN curl https://download.gocd.org/GOCD-GPG-KEY.asc | apt-key add -
 RUN apt-get update
@@ -29,5 +29,9 @@ RUN mkdir /home/scripts/ml
 RUN mkdir /home/scripts/ml/models
 RUN mkdir /home/scripts/ml/data
 
-
+#Install GoCD agent
+RUN  echo "deb https://download.gocd.org /" | tee /etc/apt/sources.list.d/gocd.list
+RUN curl https://download.gocd.org/GOCD-GPG-KEY.asc | apt-key add -
+RUN apt-get update
+RUN apt-get install -y go-agent
 
