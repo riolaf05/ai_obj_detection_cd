@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-LABEL "architcture" : x86_64_linux
+LABEL "architecture" : x86_64_linux
 
 RUN apt-get update
 RUN apt-get install -y python3-pip
