@@ -39,7 +39,7 @@ jobs:
             --platform linux/arm/v7 \
             --output "type=image,push=true" \
             --file ./batch_custom_model/Dockerfile \
-            ./batch_custom_model
+            ./batch_custom_model/
       
       #Build&Push - batch masked rcnn model trainer
       -

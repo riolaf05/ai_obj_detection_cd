@@ -5,8 +5,8 @@ import keras
 import tensorflow as tf
 import numpy as np
 import sys
-sys.path.append(os.getenv('DATA_DIR'))
-sys.path.append(os.getenv('MODEL_DIR'))
+sys.path.append('model/')
+sys.path.append('data/')
 from model import model
 import json
 import mlflow
