@@ -60,15 +60,16 @@ Use A typical conversion script to define label maps is `conversion_script.py` t
 5. Configure the training pipeline.
 
 See [here](https://coral.ai/docs/edgetpu/retrain-detection/#configure-your-training-pipeline)
+
 TODO
 
 6. Choose the model to train
-TODO
+
+For a list of object detection model that's compatible with the Edge TPU see [here](https://coral.ai/docs/edgetpu/models-intro/).
 
 7. Start re-training
-TODO
 
-Consigure the `pipeline.config` config file (into the docker) 
+TODO
 
 ### TODO
 * Add CI/CD pipeline
