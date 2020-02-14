@@ -3,7 +3,7 @@ FROM rio05docker/tflite_rpi:rpi3_test_6
 LABEL "architecture" : x86_64_linux
 
 #Install git
-RUN apt-get install -y git curl
+RUN apt-get update && apt-get install -y git curl
 
 RUN mkdir /home/scripts/ml
 RUN mkdir /home/scripts/ml/models
