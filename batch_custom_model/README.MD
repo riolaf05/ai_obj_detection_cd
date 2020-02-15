@@ -1,4 +1,4 @@
-## Custom ML model monitoring and deploy with MLFlow
+## Custom ML model train and deploy with MLFlow and GoCD pipeline
 
 ### Installation
 
@@ -22,4 +22,9 @@ Note: it is possible to get models and data from S3 or other repositories since 
 docker run -it --rm rio05docker/obj_detection_cd:rpi3_custom_${GITHUB_SHA}
 ```
 
+## Agenda
 
+* ~~pipeline definition~~
+* import pipeline definition on docker container
+* test pipeline
+* add deploy on REST API
