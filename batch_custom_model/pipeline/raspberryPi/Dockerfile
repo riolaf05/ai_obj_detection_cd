@@ -1,11 +1,6 @@
-FROM ubuntu:18.04
+FROM rio05docker/tflite_rpi:rpi3_test_6
 
-LABEL "architecture" : x86_linux
-RUN apt-get update
-RUN apt-get install -y python3-pip
-RUN pip3 install keras
-RUN pip3 install tensorflow
-RUN apt-get install -y git curl
+LABEL "architecture" : armv7_linux
 
 #Install git
 RUN apt-get update && apt-get install -y git curl
@@ -45,6 +40,3 @@ RUN apt-get update
 RUN apt-get install -y go-agent
 
 ENTRYPOINT nohup mlflow ui & && service go-server start && service go-agent start
-
-
-
