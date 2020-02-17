@@ -81,7 +81,11 @@ For a list of object detection model that's compatible with the Edge TPU see [he
 The script also configures the `pipeline.condifg` scripts which configures the pipeline variuables (See [here](https://coral.ai/docs/edgetpu/retrain-detection/#configure-your-training-pipeline)
 ). 
 
-6. Start re-training
+6. Update the pipeline.config file
+
+See: [here](https://coral.ai/docs/edgetpu/retrain-detection/#configure-your-training-pipeline)
+
+7. Start re-training
 TODO
 
 ### TODO
