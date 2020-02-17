@@ -1,6 +1,6 @@
 FROM rio05docker/tflite_rpi:rpi3_test_6
 
-LABEL "architecture" : x86_64_linux
+LABEL "architecture" : armv7_linux
 
 #Install git
 RUN apt-get update && apt-get install -y git curl
