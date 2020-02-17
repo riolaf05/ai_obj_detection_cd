@@ -69,25 +69,25 @@ call it `label_map.pbtxt`
 Use conversion script to define label maps is `conversion_script.py` to create the `tf.Example` protocol buffer message (see example [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/using_your_own_dataset.md)) for each image/annotation/label map in the dataset.
 
 ```python
-python3 conversion_script.py --output_path=<path>
+python3 conversion_script.py --output_path=<path> --label_map_path=<label_map>
 ```
 
-5. Configure the training pipeline.
+5. Choose the model to train and configure the training pipeline.
 
-See [here](https://coral.ai/docs/edgetpu/retrain-detection/#configure-your-training-pipeline)
-
-TODO
-
-6. Choose the model to train
+Use the `download_checkpoint.sh` script.
 
 For a list of object detection model that's compatible with the Edge TPU see [here](https://coral.ai/docs/edgetpu/models-intro/).
 
-7. Start re-training
+The script also configures the `pipeline.condifg` scripts which configures the pipeline variuables (See [here](https://coral.ai/docs/edgetpu/retrain-detection/#configure-your-training-pipeline)
+). 
 
+6. Start re-training
 TODO
 
 ### TODO
+* Define automatic retrieval of boxes data from xml or csv
 * Add CI/CD pipeline
+* Test on GoCD pipeline
 
 ### References
 * [Coral Edge TPU docs](https://coral.ai/docs/edgetpu/retrain-detection/#start-training)
