@@ -10,9 +10,11 @@ RUN apt-get install -y git curl
 #Install git
 RUN apt-get update && apt-get install -y git curl
 
+RUN mkdir /home/scripts
 RUN mkdir /home/scripts/ml
+RUN mkdir /home/scripts/code
 RUN mkdir /home/scripts/ml/models
-RUN mkdir /home/scripts/ml/data
+RUN mkdir /home/scripts/ml/output
 RUN mkdir /home/scripts/ml/input
 
 RUN pip3 install mlflow
@@ -33,16 +35,13 @@ RUN apt-get install -y dvc
 #Install MLFlow
 RUN pip3 install mlflow
 
-RUN mkdir /home/scripts
-RUN mkdir /home/scripts/ml
-RUN mkdir /home/scripts/ml/models
-RUN mkdir /home/scripts/ml/data
-
 #Install GoCD agent
 RUN  echo "deb https://download.gocd.org /" | tee /etc/apt/sources.list.d/gocd.list
 RUN curl https://download.gocd.org/GOCD-GPG-KEY.asc | apt-key add -
 RUN apt-get update
 RUN apt-get install -y go-agent
+
+WORKDIR /home/scripts/code
 
 ENTRYPOINT nohup mlflow ui & && service go-server start && service go-agent start
 
