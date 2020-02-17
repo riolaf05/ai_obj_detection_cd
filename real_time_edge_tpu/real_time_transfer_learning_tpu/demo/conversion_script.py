@@ -13,14 +13,18 @@ def create_tf_example(example):
   
   height = 1032
   width = 1200
-  filename = 'example_cat.jpg'
+  filename = 'example_cat.jpg'.encode('utf-8').strip()
+
+  with tf.gfile.GFile(filename, 'rb') as fid:
+        encoded_image_data = fid.read()
+
   image_format = b'jpg'
 
   xmins = [322 / 1200]
   xmaxs = [1062 / 1200]
   ymins = [174 / 1032.0]
   ymaxs = [761 / 1032]
-  classes_text = ['Cat']
+  classes_text = ['Cat'.encode('utf-8').strip()]
   classes = [1]
 
   tf_example = tf.train.Example(features=tf.train.Features(feature={
@@ -42,6 +46,7 @@ def create_tf_example(example):
 
 def main(_):
   #writer = tf.python_io.TFRecordWriter(FLAGS.output_path)
+  writer = tf.python_io.TFRecordWriter('./output.tfrecords')
 
   # TODO(user): Write code to read in your dataset to examples variable
 
@@ -49,9 +54,10 @@ def main(_):
     #tf_example = create_tf_example(example)
     #writer.write(tf_example.SerializeToString())
 
-  tf_example = create_tf_example('example_cat')
+  tf_example = create_tf_example('example_cat.jpg')
+  writer.write(tf_example.SerializeToString())
 
-  #writer.close()
+  writer.close()
 
 
 if __name__ == '__main__':
