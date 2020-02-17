@@ -33,11 +33,6 @@ RUN apt-get install -y dvc
 #Install MLFlow
 RUN pip3 install mlflow
 
-RUN mkdir /home/scripts
-RUN mkdir /home/scripts/ml
-RUN mkdir /home/scripts/ml/models
-RUN mkdir /home/scripts/ml/data
-
 #Install GoCD agent
 RUN  echo "deb https://download.gocd.org /" | tee /etc/apt/sources.list.d/gocd.list
 RUN curl https://download.gocd.org/GOCD-GPG-KEY.asc | apt-key add -
