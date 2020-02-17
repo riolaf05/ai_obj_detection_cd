@@ -79,7 +79,13 @@ Use the `download_checkpoint.sh` script.
 For a list of object detection model that's compatible with the Edge TPU see [here](https://coral.ai/docs/edgetpu/models-intro/).
 
 The script also configures the `pipeline.condifg` scripts which configures the pipeline variuables (See [here](https://coral.ai/docs/edgetpu/retrain-detection/#configure-your-training-pipeline)
-). 
+):
+
+```console
+download_checkpoint.sh --network_type mobilenet_v1_ssd --train_whole_model false
+```
+
+The network_type can be either `mobilenet_v1_ssd`, or `mobilenet_v2_ssd`.l
 
 6. Update the pipeline.config file
 

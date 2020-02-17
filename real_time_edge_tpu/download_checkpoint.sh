@@ -39,7 +39,7 @@ done
 
 source "$PWD/constants.sh"
 
-echo "1 - PREPARING checkpoint..."
+echo "PREPARING checkpoint..."
 mkdir -p "${LEARN_DIR}"
 
 ckpt_link="${ckpt_link_map[${network_type}]}"
@@ -49,13 +49,12 @@ wget -O "${ckpt_name}.tar.gz" "$ckpt_link"
 tar zxvf "${ckpt_name}.tar.gz"
 mv "${ckpt_name}" "${CKPT_DIR}"
 
-echo "2 - CHOSING config file..."
+echo "CHOSING config file..."
 config_filename="${config_filename_map[${network_type}-${train_whole_model}]}"
 cd "${OBJ_DET_DIR}"
 cp "configs/${config_filename}" "${CKPT_DIR}/pipeline.config"
 
-echo "3 - REPLACING variables in config file..."
+echo "REPLACING variables in config file..."
 sed -i "s%CKPT_DIR_TO_CONFIGURE%${CKPT_DIR}%g" "${CKPT_DIR}/pipeline.config"
 sed -i "s%DATASET_DIR_TO_CONFIGURE%${DATASET_DIR}%g" "${CKPT_DIR}/pipeline.config"
 
-echo "DONE"
