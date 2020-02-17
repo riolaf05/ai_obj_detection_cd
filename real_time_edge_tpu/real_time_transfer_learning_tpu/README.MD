@@ -47,15 +47,30 @@ e.g.:
 
 ```json
 item {
-  name: "face"
   id: 1
-  display_name: "face"
+  name: 'Abyssinian'
+}
+
+item {
+  id: 2
+  name: 'american_bulldog'
+}
+
+item {
+  id: 3
+  name: 'american_pit_bull_terrier'
 }
 ```
 
+call it `label_map.pbtxt`
+
 4. Convert into TFRecords
 
-Use A typical conversion script to define label maps is `conversion_script.py` to create the `tf.Example` protocol buffer message (see example [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/using_your_own_dataset.md)) for each image/annotation/label map in the dataset.
+Use conversion script to define label maps is `conversion_script.py` to create the `tf.Example` protocol buffer message (see example [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/using_your_own_dataset.md)) for each image/annotation/label map in the dataset.
+
+```python
+python3 conversion_script.py --output_path=<path>
+```
 
 5. Configure the training pipeline.
 

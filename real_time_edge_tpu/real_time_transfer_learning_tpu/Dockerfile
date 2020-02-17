@@ -1,0 +1,1 @@
+RUN pip3 install tensorflow-object-detection-api
