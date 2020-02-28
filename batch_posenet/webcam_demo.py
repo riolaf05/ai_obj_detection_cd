@@ -49,6 +49,8 @@ def main():
 
             keypoint_coords *= output_scale
 
+            print(keypoint_coords[0])
+
             # TODO this isn't particularly fast, use GL for drawing and display someday...
             overlay_image = posenet.draw_skel_and_kp(
                 display_image, pose_scores, keypoint_scores, keypoint_coords,
