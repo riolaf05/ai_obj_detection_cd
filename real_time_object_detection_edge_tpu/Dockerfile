@@ -13,6 +13,8 @@ RUN apt-get install -y curl zip
 
 RUN pip3 install opencv-python
 RUN pip3 install picamera
+RUN pip3 install numpy
+RUN pip3 install Pillow
 
 RUN apt-get install -y libqtgui4
 #RUN modprobe bcm2835-v4l2
