@@ -9,7 +9,7 @@ RUN apt-get install -y libgtk2.0-dev libgtk-3-dev
 RUN apt-get install -y libatlas-base-dev gfortran 
 RUN apt-get install -y python3-dev 
 RUN apt-get install -y python3-pip
-RUN apt-get install -y apt-get install python3-rpi.gpio
+RUN apt-get install -y python3-rpi.gpio
 
 RUN pip3 install opencv-python
 RUN pip3 install picamera
