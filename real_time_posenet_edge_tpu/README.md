@@ -21,7 +21,7 @@ docker push rio05docker/obj_detection_cd:rpi3_posenet_browser_test
 To run demo with Raspberry Camera and Edge TPU usb device:
 
 ```console
-docker run -it --privileged -p 8000:8000 -v /Codice/ai_obj_detection_cd/real_time_posenet_edge_tpu/project-posenet/models/:/home/scripts/models -v /dev/bus/usb:/dev/bus/usb --device=/dev/vchiq -p 8080:8080 rio05docker/obj_detection_cd:rpi3_posenet_browser_test python3 pose_detection/simple_pose.py
+docker run -it --privileged -p 8000:8000 -v /Codice/ai_obj_detection_cd/real_time_posenet_edge_tpu/models/:/home/scripts/pose_detection/browser/models -v /dev/bus/usb:/dev/bus/usb --device=/dev/vchiq -p 8080:8080 rio05docker/obj_detection_cd:rpi3_posenet_browser_test python3 pose_detection/simple_pose.py
 ```
 
 Then log in on: `http://<<rpi3_ip>>:8080`
