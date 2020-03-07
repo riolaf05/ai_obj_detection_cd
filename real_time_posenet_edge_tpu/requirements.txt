@@ -1,3 +1,4 @@
 Flask
 opencv-python
-opencv-contrib-python
+#opencv-contrib-python
+Pillow

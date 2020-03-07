@@ -18,19 +18,13 @@ docker build -t rio05docker/obj_detection_cd:rpi3_rt_posenet_tflite_tpu .
 docker push rio05docker/obj_detection_cd:rpi3_rt_posenet_tflite_tpu
 ```
 
-To run with Raspberry Camera and Edge TPU usb device:
+To run demo with Raspberry Camera and Edge TPU usb device:
 
 ```console
-docker run -it --rm --privileged -p 8000:8000 -v /dev/bus/usb:/dev/bus/usb --device=/dev/vchiq --rm rio05docker/obj_detection_cd:rpi3_rt_posenet_tflite_tpu
+docker run -it --privileged -p 8000:8000 -v /Codice/ai_obj_detection_cd/real_time_posenet_edge_tpu/project-posenet/models/:/home/scripts/models -v /dev/bus/usb:/dev/bus/usb --device=/dev/vchiq -p 8080:8080 rio05docker/obj_detection_cd:rpi3_rt_tflite_posenet_tpu_test python3 pose_detection/simple_pose.py
 ```
 
-Then exec the container and run: 
-
-```console
-python3 demo_real_time_obj_detection_server.py --model /tmp/mobilenet_ssd_v2_coco_quant_postprocess_edgetpu.tflite --label /tmp/coco_labels.txt
-```
-
-Then log in on: `http://<<rpi3_ip>>:8000`
+Then log in on: `http://<<rpi3_ip>>:8080`
 
 ### TODO: 
 * ~~Test real time predictions~~
