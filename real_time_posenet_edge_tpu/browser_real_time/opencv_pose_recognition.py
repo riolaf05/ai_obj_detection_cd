@@ -41,7 +41,7 @@ def pose_detect():
             frame = cv2.cvtColor(cv2_im,cv2.COLOR_BGR2RGB)
             pil_image = Image.fromarray(frame)
             pil_image.resize((641, 481), Image.NEAREST)
-            engine = PoseEngine('models/posenet_mobilenet_v1_075_481_641_quant_decoder_edgetpu.tflite')
+            engine = PoseEngine('/home/scripts/pose_detection/models/posenet_mobilenet_v1_075_481_641_quant_decoder_edgetpu.tflite')
             poses, inference_time = engine.DetectPosesInImage(np.uint8(pil_image))
             print('Inference time: %.fms' % inference_time)
 
