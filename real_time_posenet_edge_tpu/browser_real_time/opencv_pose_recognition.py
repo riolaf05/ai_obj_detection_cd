@@ -145,8 +145,17 @@ class StreamingHandler(server.BaseHTTPRequestHandler):
                     pil_im.resize((641, 481), Image.NEAREST)
                     engine = PoseEngine('/home/scripts/pose_detection/browser/models/posenet_mobilenet_v1_075_481_641_quant_decoder_edgetpu.tflite')
                     poses, inference_time = engine.DetectPosesInImage(np.uint8(pil_im))
-                    print(poses)                    
 
+                    #print point on shell
+                    '''
+                    for pose in poses:
+                        if pose.score < 0.4: continue
+                        print('\nPose Score: ', pose.score)
+                        for label, keypoint in pose.keypoints.items():
+                            print(' %-20s x=%-4d y=%-4d score=%.1f' %
+                                (label, keypoint.yx[1], keypoint.yx[0], keypoint.score))                    
+                    '''
+                    
                     r, buf = cv2.imencode(".jpg", cv2_im)
 
                     self.wfile.write(b'--FRAME\r\n')
