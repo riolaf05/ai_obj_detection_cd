@@ -64,11 +64,7 @@ def pose_detect():
 @app.route('/pose_detection')
 def pose_detection():
     """Video streaming route. Put this in the src attribute of an img tag."""
-    return Response(
-        pose_detect(),
-        mimetype='multipart/x-mixed-replace; boundary=frame'
-    )
-
+    return Response(pose_detect(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=True, threaded=True)
+    app.run(host='0.0.0.0', port='8080', debug=True, threaded=True)
