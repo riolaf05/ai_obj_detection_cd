@@ -142,7 +142,7 @@ class StreamingHandler(server.BaseHTTPRequestHandler):
                     '''
 
                     #pose detection
-                    pil_image.resize((641, 481), Image.NEAREST)
+                    pil_im.resize((641, 481), Image.NEAREST)
                     engine = PoseEngine('/home/scripts/pose_detection/browser/models/posenet_mobilenet_v1_075_481_641_quant_decoder_edgetpu.tflite')
                     poses, inference_time = engine.DetectPosesInImage(np.uint8(pil_im))
                     print(poses)                    
