@@ -166,8 +166,9 @@ class StreamingHandler(server.BaseHTTPRequestHandler):
                     if a != []:
                         for coord in a: 
                             cv2.line(cv2_im, a[0], a[1], [0, 255, 0], 2)
-                    r, buf = cv2.imencode(".jpg", cv2_im)
 
+                    r, buf = cv2.imencode(".jpg", cv2_im)
+                    #Show on browser
                     self.wfile.write(b'--FRAME\r\n')
                     self.send_header('Content-type','image/jpeg')
                     self.send_header('Content-length',str(len(buf)))
