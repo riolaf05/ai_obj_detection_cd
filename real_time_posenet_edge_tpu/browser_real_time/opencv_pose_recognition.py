@@ -161,7 +161,6 @@ class StreamingHandler(server.BaseHTTPRequestHandler):
                         if pose.score < 0.4:
                             print("Connectiong nose to right wrist")
                             for part in pose.keypoints.keys():
-                                print(label, keypoint)
                                 print(part)
                                 print(pose.keypoints[part].yx[0], pose.keypoints[part].yx[1]])
                             #print('nose: ', pose.keypoints.items()['nose'].yx[0], pose.keypoints.items()['nose'].yx[1])
