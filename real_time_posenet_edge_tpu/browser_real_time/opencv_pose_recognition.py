@@ -147,14 +147,13 @@ class StreamingHandler(server.BaseHTTPRequestHandler):
                     poses, inference_time = engine.DetectPosesInImage(np.uint8(pil_im))
 
                     #print points on shell
-                    '''
                     for pose in poses:
                         if pose.score < 0.4: continue
                         print('\nPose Score: ', pose.score)
                         for label, keypoint in pose.keypoints.items():
                             print(' %-20s x=%-4d y=%-4d score=%.1f' %
                                 (label, keypoint.yx[1], keypoint.yx[0], keypoint.score))
-                    '''
+                    
 
                     #Draw lines between points
                     for pose in poses:
@@ -162,6 +161,7 @@ class StreamingHandler(server.BaseHTTPRequestHandler):
                             for part in pose.keypoints.keys():
                                 lineThickness=2
                                 cv2.line(cv2_im, (pose.keypoints['nose'].yx[1], pose.keypoints['nose'].yx[0]), (pose.keypoints['right wrist'].yx[1], pose.keypoints['right wrist'].yx[0]), [0, 255, 0], lineThickness)
+                                #TODO: must connect other parts
 
                     r, buf = cv2.imencode(".jpg", cv2_im)
                     #Show on browser
