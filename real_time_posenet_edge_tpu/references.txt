@@ -1,0 +1,4 @@
+https://www.learnopencv.com/multi-person-pose-estimation-in-opencv-using-openpose/
+https://github.com/desertfury/flask-opencv-streaming
+https://github.com/google-coral/project-posenet/blob/master/pose_camera.py
+https://www.pyimagesearch.com/2019/09/02/opencv-stream-video-to-web-browser-html-page/
