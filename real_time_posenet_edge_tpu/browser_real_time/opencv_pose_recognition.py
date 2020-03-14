@@ -162,7 +162,9 @@ class StreamingHandler(server.BaseHTTPRequestHandler):
                             print("Connectiong nose to right wrist")
                             for part in pose.keypoints.keys():
                                 print(part)
-                                print(pose.keypoints[part].yx[0], pose.keypoints[part].yx[1])
+                                print(pose.keypoints['nose'].yx[0], pose.keypoints['right wrist'].yx[1])
+                                lineThickness=2
+                                cv2.line(cv2_im, (pose.keypoints['nose'].yx[0], pose.keypoints['nose'].yx[1]), (pose.keypoints['right wrist'].yx[0], pose.keypoints['right wrist'].yx[1]), [0, 255, 0], lineThickness)
                             #print('nose: ', pose.keypoints.items()['nose'].yx[0], pose.keypoints.items()['nose'].yx[1])
                             #print('right wrist: ', pose.keypoints.items()['right wrist'].yx[0], pose.keypoints.items()['right wrist'].yx[0])
                             #for part in pose.keypoints.keys():
