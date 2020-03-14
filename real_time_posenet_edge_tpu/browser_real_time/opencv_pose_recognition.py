@@ -159,9 +159,9 @@ class StreamingHandler(server.BaseHTTPRequestHandler):
                     #Draw lines between points
                     for pose in poses:
                         if pose.score < 0.4:
-                        for part in pose.keypoints.keys():
-                            lineThickness=2
-                            cv2.line(cv2_im, (pose.keypoints['nose'].yx[1], pose.keypoints['nose'].yx[0]), (pose.keypoints['right wrist'].yx[1], pose.keypoints['right wrist'].yx[0]), [0, 255, 0], lineThickness)
+                            for part in pose.keypoints.keys():
+                                lineThickness=2
+                                cv2.line(cv2_im, (pose.keypoints['nose'].yx[1], pose.keypoints['nose'].yx[0]), (pose.keypoints['right wrist'].yx[1], pose.keypoints['right wrist'].yx[0]), [0, 255, 0], lineThickness)
 
                     r, buf = cv2.imencode(".jpg", cv2_im)
                     #Show on browser
