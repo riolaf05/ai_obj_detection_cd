@@ -59,6 +59,18 @@ Otherwise launch the Docker with `bash retrain.sh` command
 
 The network_type can be either `mobilenet_v1_ssd`, or `mobilenet_v2_ssd`.l
 
+### Notes about saving Tensorflow Models:
+From [Tensorflow Checkpoints](https://www.tensorflow.org/guide/checkpoint)
+
+The phrase "Saving a TensorFlow model" typically means one of two things:
+
+1. Checkpoints
+2. SavedModel.
+
+Checkpoints capture the exact value of all parameters (`tf.Variable objects`) used by a model. Checkpoints do not contain any description of the computation defined by the model and thus are typically only useful when source code that will use the saved parameter values is available.
+
+The SavedModel format on the other hand includes a serialized description of the computation defined by the model in addition to the parameter values (checkpoint). Models in this format are independent of the source code that created the model. They are thus suitable for deployment via **TensorFlow Serving**, **TensorFlow Lite**, **TensorFlow.js**, or programs in other programming languages (the C, C++, Java, Go, Rust, C# etc. TensorFlow APIs).
+
 ### TODO
 * ~~Define automatic retrieval of boxes data from xml or csv~~
 * Convert SavedModel to Tensorflow Lite
@@ -67,6 +79,7 @@ The network_type can be either `mobilenet_v1_ssd`, or `mobilenet_v2_ssd`.l
 
 ### References
 * [Coral Edge TPU docs](https://coral.ai/docs/edgetpu/retrain-detection/#start-training)
+* [Retrain Object Detection Models](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html)
 * [Tensorflow: using your own dataset](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/using_your_own_dataset.md)
 * [Using custom dataset with Tensorflow](https://aaronjencks.blogspot.com/2019/03/using-custom-datasets-with-tensorflows.html#TFR)
 * [Tensorflow: TFRecords](https://www.tensorflow.org/tutorials/load_data/tfrecord)
