@@ -47,45 +47,21 @@ Use conversion script to define label maps and create the `tf.Example` protocol 
 
 To both create label map and TFRecords from labeled images (with train and test dataset):
 
-```console
-# Convert train folder annotation xml files to a single csv file,
-# generate the `label_map.pbtxt` file to `data/annotations` directory as well.
-python3 xml_to_csv.py -i label/train -o annotations/train_labels.csv -l annotations
+* use the `-v <host_folder>/label/train:data/label/train` and -v `<host_folder>/label/test:data/label/test` to bind labeled XML if you're using the retrain Docker.
 
-# Convert test folder annotation xml files to a single csv.
-python3 xml_to_csv.py -i test/test -o annotations/test_labels.csv
-
-# Generate `train.record`
-python3 generate_tfrecord.py --csv_input=annotations/train_labels.csv --output_path=annotations/train.record --img_path=resized_images/train --label_map annotations/label_map.pbtxt
-
-# Generate `test.record`
-python3 generate_tfrecord.py --csv_input=annotations/test_labels.csv --output_path=annotations/test.record --img_path=resized_images/test --label_map annotations/label_map.pbtxt
-```
+* launch the `data/build_dataset.sh` otherwise.
 
 5. Choose the model to train and configure the training pipeline.
 
-Use the `download_checkpoint.sh` script.
+Use the `object_detection_retrain.ipynb` notebook (from Colab).
 
-For a list of object detection model that's compatible with the Edge TPU see [here](https://coral.ai/docs/edgetpu/models-intro/).
-
-The script also configures the `pipeline.condifg` scripts which configures the pipeline variuables (See [here](https://coral.ai/docs/edgetpu/retrain-detection/#configure-your-training-pipeline)
-):
-
-```console
-download_checkpoint.sh --network_type mobilenet_v1_ssd --train_whole_model false
-```
+Otherwise launch the Docker with `bash retrain.sh` command
 
 The network_type can be either `mobilenet_v1_ssd`, or `mobilenet_v2_ssd`.l
 
-6. Update the pipeline.config file
-
-See: [here](https://coral.ai/docs/edgetpu/retrain-detection/#configure-your-training-pipeline)
-
-7. Start re-training
-TODO
-
 ### TODO
-* Define automatic retrieval of boxes data from xml or csv
+* ~~Define automatic retrieval of boxes data from xml or csv~~
+* Convert SavedModel to Tensorflow Lite
 * Add CI/CD pipeline
 * Test on GoCD pipeline
 
