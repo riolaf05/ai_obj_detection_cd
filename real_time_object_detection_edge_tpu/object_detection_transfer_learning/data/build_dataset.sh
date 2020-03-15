@@ -5,7 +5,7 @@
 python3 xml_to_csv.py -i label/train -o annotations/train_labels.csv -l annotations
 
 # Convert test folder annotation xml files to a single csv.
-python3 xml_to_csv.py -i test/test -o annotations/test_labels.csv 
+python3 xml_to_csv.py -i label/test -o annotations/test_labels.csv 
 
 # Generate `train.record`
 python3 generate_tfrecord.py --csv_input=annotations/train_labels.csv --output_path=annotations/train.record --img_path=resized_images/train --label_map annotations/label_map.pbtxt
