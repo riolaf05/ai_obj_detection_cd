@@ -6,37 +6,16 @@ Is is possible to use [image_downloader](https://github.com/Swaini/object_detect
 
 This steps produces a list of **bounding boxes** for the image. You can use [Labelimg](https://github.com/tzutalin/labelImg) for annotations. Labelimg is a great tool for drawing bounding boxes on images, the bounding boxes get automatically converted into xml documents which you can then use for tensorflow.
 
-e.g.:
+To install **Labelimg**:
 
-```xml
-<annotation>
-    <folder>OXIIIT</folder>
-    <filename>Abyssinian_1.jpg</filename>
-    <source>
-        <database>OXFORD-IIIT Pet Dataset</database>
-        <annotation>OXIIIT</annotation>
-        <image>flickr</image>
-    </source>
-    <size>
-        <width>600</width>
-        <height>400</height>
-        <depth>3</depth>
-    </size>
-    <segmented>0</segmented>
-    <object>
-        <name>cat</name>
-        <pose>Frontal</pose>
-        <truncated>0</truncated>
-        <occluded>0</occluded>
-        <bndbox>
-            <xmin>333</xmin>
-            <ymin>72</ymin>
-            <xmax>425</xmax>
-            <ymax>158</ymax>
-        </bndbox>
-        <difficult>0</difficult>
-    </object>
-</annotation>
+```console
+pip3 install PyQt5 \
+git clone https://github.com/tzutalin/labelImg \
+&& cd labelimg \
+&& sudo apt-get install -y pyqt5-dev-tools \
+&& sudo pip3 install -r requirements/requirements-linux-python3.txt \
+&& make qt5py3 \
+#python3 labelImg.py
 ```
 
 3. Label Map
@@ -62,14 +41,25 @@ item {
 }
 ```
 
-call it `label_map.pbtxt`
-
 4. Convert into TFRecords
 
-Use conversion script to define label maps is `conversion_script.py` to create the `tf.Example` protocol buffer message (see example [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/using_your_own_dataset.md)) for each image/annotation/label map in the dataset.
+Use conversion script to define label maps and create the `tf.Example` protocol buffer message (see example [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/using_your_own_dataset.md)) for each image/annotation/label map in the dataset.
 
-```python
-python3 conversion_script.py --output_path=<path> --label_map_path=<label_map>
+To both create label map and TFRecords from labeled images (with train and test dataset):
+
+```console
+# Convert train folder annotation xml files to a single csv file,
+# generate the `label_map.pbtxt` file to `data/annotations` directory as well.
+python3 xml_to_csv.py -i label/train -o annotations/train_labels.csv -l annotations
+
+# Convert test folder annotation xml files to a single csv.
+python3 xml_to_csv.py -i test/test -o annotations/test_labels.csv
+
+# Generate `train.record`
+python3 generate_tfrecord.py --csv_input=annotations/train_labels.csv --output_path=annotations/train.record --img_path=resized_images/train --label_map annotations/label_map.pbtxt
+
+# Generate `test.record`
+python3 generate_tfrecord.py --csv_input=annotations/test_labels.csv --output_path=annotations/test.record --img_path=resized_images/test --label_map annotations/label_map.pbtxt
 ```
 
 5. Choose the model to train and configure the training pipeline.
