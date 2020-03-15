@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>2.jpg</filename>
+	<path>/home/rosario/Codice/object_detection_retrain/resized_images/train/2.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>ps4 joystick</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>32</xmin>
+			<ymin>36</ymin>
+			<xmax>662</xmax>
+			<ymax>407</ymax>
+		</bndbox>
+	</object>
+</annotation>
