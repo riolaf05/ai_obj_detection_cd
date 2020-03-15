@@ -1,4 +1,9 @@
 numpy
 tensorflow
-matplotlib
 opencv-python
+Cython 
+contextlib2 
+pillow 
+lxml 
+matplotlib
+pycocotools
