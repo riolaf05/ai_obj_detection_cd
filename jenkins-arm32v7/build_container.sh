@@ -1,3 +1,4 @@
+chmod +x qemu-arm-static
 docker build -t rio05docker/obj_detection_cd:jenkins_armv7 .
 docker push rio05docker/obj_detection_cd:jenkins_armv7
 
