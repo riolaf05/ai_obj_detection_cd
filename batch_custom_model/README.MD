@@ -8,7 +8,7 @@
 
 The Docker contains MLFlow tracking APIs to log training metrics. See [MLFlow docs](https://www.mlflow.org/docs/latest/tracking.html).
 
-TODO: add 
+TODO: add [MLFlow packaging](https://www.mlflow.org/docs/latest/quickstart.html#running-mlflow-projects) and [serving](https://www.mlflow.org/docs/latest/quickstart.html#saving-and-serving-models). 
 
 ```console
 docker run -it -v <data_folder>:/opt/ml/input -v <model_folder>:/opt/ml/model -p -p 8153:8153 -p 5000:5000 --rm rio05docker/obj_detection_cd:rpi3_pipeline_${GITHUB_SHA}
