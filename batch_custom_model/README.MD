@@ -1,4 +1,4 @@
-## Custom ML model train and deploy with MLFlow and GoCD pipeline
+## Custom ML model train and deploy with MLFlow
 
 ### Installation
 
