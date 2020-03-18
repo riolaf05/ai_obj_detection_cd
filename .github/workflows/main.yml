@@ -35,20 +35,20 @@ jobs:
         name: Build and push custom model trainer #see: https://github.com/marketplace/actions/docker-buildx
         run: |
           docker buildx build \
-            --tag rio05docker/obj_detection_cd:rpi3_gocd_${GITHUB_SHA} \
+            --tag rio05docker/obj_detection_cd:rpi3_mlflow_${GITHUB_SHA} \
             --platform linux/arm/v7 \
             --output "type=image,push=true" \
             --file ./batch_custom_model/Dockerfile \
             ./batch_custom_model/
       
       #Build&Push - batch masked rcnn model trainer
-      -
-        name: Build and push batch masked rcnn model trainer #see: https://github.com/marketplace/actions/docker-buildx
-        run: |
-          docker buildx build \
-            --tag rio05docker/obj_detection_cd:rpi3_mrcnn_${GITHUB_SHA} \
-            --platform linux/arm/v7 \
-            --output "type=image,push=true" \
-            --file ./batch_masked_rcnn/Dockerfile \
-            ./batch_masked_rcnn/
+      #-
+      #  name: Build and push batch masked rcnn model trainer #see: https://github.com/marketplace/actions/docker-buildx
+      #  run: |
+      #    docker buildx build \
+      #      --tag rio05docker/obj_detection_cd:rpi3_mrcnn_${GITHUB_SHA} \
+      #      --platform linux/arm/v7 \
+      #      --output "type=image,push=true" \
+      #      --file ./batch_masked_rcnn/Dockerfile \
+      #      ./batch_masked_rcnn/
       
