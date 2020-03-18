@@ -1,0 +1,47 @@
+#Pod’s configuration file specifies a PersistentVolumeClaim,
+#but it does not specify a PersistentVolume.
+#From the Pod’s point of view, the claim is a volume.
+
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: jenkins
+  labels:
+    rioiotplatform: jenkins
+spec:
+  replicas: 1
+  revisionHistoryLimit: 5
+  selector:
+    matchLabels:
+      app: jenkins
+  template:
+    metadata:
+      labels:
+        app: jenkins
+    spec:
+      #nodeName: raspberrypi
+      containers:
+      - image: rio05docker/obj_detection_cd:jenkins_armv7
+        imagePullPolicy: Always
+        name: jenkins
+        resources:
+            limits:
+                memory: "1Gi"
+                cpu: "1"
+            requests:
+                cpu: "100m"
+                memory: "30Mi"
+        #env:
+        #- name: MYSQL_ROOT_PASSWORD
+        #  value: ""
+        ports:
+        - containerPort: 8080
+        - containerPort: 50000
+        #volumeMounts:
+        #- mountPath: /var/lib/mysql
+        #  name: mysql-volume
+      restartPolicy: Always
+      #volumes:
+      #- name: mysql-volume
+      #  persistentVolumeClaim:
+      #    claimName: mysql-claim
