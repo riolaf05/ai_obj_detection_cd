@@ -38,8 +38,8 @@ jobs:
             --tag rio05docker/obj_detection_cd:rpi3_mlflow_${GITHUB_SHA} \
             --platform linux/arm/v7 \
             --output "type=image,push=true" \
-            --file ./batch_custom_model/pipeline/x86/Dockerfile \
-            ./batch_custom_model/pipeline/x86/
+            --file ./batch_custom_model/Dockerfile \
+            ./batch_custom_model/
       
       #Build&Push - batch masked rcnn model trainer
       #-
