@@ -32,14 +32,14 @@ jobs:
       
       #Build&Push -custom model trainer
       -
-        name: Build and push custom model trainer #see: https://github.com/marketplace/actions/docker-buildx
+        name: Build and push GoCD ontainer pipeline for custom model training #see: https://github.com/marketplace/actions/docker-buildx
         run: |
           docker buildx build \
             --tag rio05docker/obj_detection_cd:rpi3_mlflow_${GITHUB_SHA} \
             --platform linux/arm/v7 \
             --output "type=image,push=true" \
-            --file ./batch_custom_model/Dockerfile \
-            ./batch_custom_model/
+            --file ./batch_custom_model/pipeline/x86/Dockerfile \
+            ./batch_custom_model/pipeline/x86/
       
       #Build&Push - batch masked rcnn model trainer
       #-
