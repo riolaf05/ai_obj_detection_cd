@@ -3,28 +3,31 @@
 ### Installation
 
 1. Put your train code on `train.py` script
-2. Push the code and wait for CI/CD pipeline to finish
+2. Put your train and test data into `<data_folder>`
 3. Run the Docker container to start training your model:
+
+The Docker contains MLFlow tracking APIs to log training metrics. See [MLFlow docs](https://www.mlflow.org/docs/latest/tracking.html).
+
+TODO: add 
 
 ```console
 docker run -it -v <data_folder>:/opt/ml/input -v <model_folder>:/opt/ml/model -p -p 8153:8153 -p 5000:5000 --rm rio05docker/obj_detection_cd:rpi3_pipeline_${GITHUB_SHA}
 ```
 
-4. Open GoCD UI from `localhost:8153`
+4. ~~Open GoCD UI from `localhost:8153`~~
 
-Note: it is possible to get models and data from S3 or other repositories since the pipeline uses DVC
+~~Note: it is possible to get models and data from S3 or other repositories since the pipeline uses DVC~~
 
 5. During train it is possible to monitor training through MLFlow from `localhost:5000`
 
-### Local installation
 
-```console
-docker run -it --rm rio05docker/obj_detection_cd:rpi3_custom_${GITHUB_SHA}
-```
+### Agenda
 
-## Agenda
+* ~~create train Docker~~
+* add other MLFlow features
+* link with other ML pipeline components
 
-* ~~pipeline definition~~
-* import pipeline definition on docker container
-* test pipeline
-* add deploy on REST API
+### References
+
+* [MLFlow quickstart](https://www.mlflow.org/docs/latest/quickstart.html#downloading-the-quickstart)
+* [MLFlow Keras API](https://www.mlflow.org/docs/latest/python_api/mlflow.keras.html)
