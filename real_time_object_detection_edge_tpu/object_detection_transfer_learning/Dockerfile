@@ -50,7 +50,7 @@ RUN mkdir /object_detection/
 RUN apt install -y python3-pip
 RUN pip3 install --upgrade pip
 COPY requirements.txt /object_detection
-RUN pip3 install -r /object_detection/requirements.txt
+RUN pip3 install --user -r /object_detection/requirements.txt
 
 WORKDIR /object_detection/
 
