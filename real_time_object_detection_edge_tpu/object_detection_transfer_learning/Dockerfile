@@ -11,13 +11,13 @@ RUN git clone https://github.com/tensorflow/models.git && \
 
 # Install object detection api dependencies
 RUN apt-get update && \
-    apt-get install -y python python-tk
-RUN pip install Cython && \
-    pip install contextlib2 && \
-    pip install pillow && \
-    pip install lxml && \
-    pip install jupyter && \
-    pip install matplotlib
+    apt-get install -y python3-pip 
+RUN pip3 install Cython && \
+    pip3 install contextlib2 && \
+    pip3 install pillow && \
+    pip3 install lxml && \
+    pip3 install jupyter && \
+    pip3 install matplotlib
 
 # Get protoc 3.0.0, rather than the old version already in the container
 RUN curl -OL "https://github.com/google/protobuf/releases/download/v3.0.0/protoc-3.0.0-linux-x86_64.zip" && \
@@ -47,10 +47,10 @@ RUN apt-get update && \
     apt-get install -y wget vim emacs nano
 
 RUN mkdir /object_detection/
-RUN apt install -y python3-pip
-RUN pip3 install --upgrade pip
-COPY requirements.txt /object_detection
-RUN pip3 install --user -r /object_detection/requirements.txt
+#RUN apt install -y python3-pip
+#RUN pip3 install --upgrade pip
+#COPY requirements.txt /object_detection
+#RUN pip3 install --user -r /object_detection/requirements.txt
 
 WORKDIR /object_detection/
 
