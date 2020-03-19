@@ -119,6 +119,7 @@ def main():
 
     model_dir = BASE_DIR+'training/'
     os.makedirs(model_dir, exist_ok=True)
+    print(pipeline_fname)
 
 if __name__ == "__main__":
     main()
