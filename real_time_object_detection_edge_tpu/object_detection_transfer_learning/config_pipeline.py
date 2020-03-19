@@ -5,7 +5,7 @@ import urllib.request
 import tarfile
 import argparse
 import re
-from object_detection.models.research.object_detection.utils import label_map_util
+from models.research.object_detection.utils import label_map_util
 
 BASE_DIR='/object_detection/'
 
@@ -74,6 +74,9 @@ def main():
     #Get config file
     pipeline_fname = os.path.join('/object_detection/models/research/object_detection/samples/configs/', pipeline_file)
     assert os.path.isfile(pipeline_fname), '`{}` not exist'.format(pipeline_fname)
+    print(pipeline_fname)
+    
+    #Select checkpoint file
     fine_tune_checkpoint = os.path.join(DEST_DIR, "model.ckpt")
 
     #Select new training data

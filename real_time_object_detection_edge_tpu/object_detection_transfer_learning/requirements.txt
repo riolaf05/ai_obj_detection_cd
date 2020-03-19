@@ -1,9 +1,2 @@
-numpy
-tensorflow==1.15
-opencv-python
-Cython 
-contextlib2 
-pillow 
-lxml 
-matplotlib
-pycocotools
+six
+tensorflow==1.5
