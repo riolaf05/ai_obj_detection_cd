@@ -31,6 +31,14 @@ MODELS_CONFIG = {
     }
 }
 
+def get_num_classes(pbtxt_fname):
+    from models.research.object_detection.utils import label_map_util
+    label_map = label_map_util.load_labelmap(pbtxt_fname)
+    categories = label_map_util.convert_label_map_to_categories(
+        label_map, max_num_classes=90, use_display_name=True)
+    category_index = label_map_util.create_category_index(categories)
+    return len(category_index.keys())
+
 # Pick the model you want to use
 # Select a model in `MODELS_CONFIG`.
 selected_model = 'ssd_mobilenet_v2'
@@ -60,21 +68,14 @@ if (os.path.exists(DEST_DIR)):
     shutil.rmtree(DEST_DIR)
 os.rename(MODEL, DEST_DIR)
 
-pipeline_fname = os.path.join('/content/models/research/object_detection/samples/configs/', pipeline_file)
+pipeline_fname = os.path.join('/object_detection/models/research/object_detection/samples/configs/', pipeline_file)
 assert os.path.isfile(pipeline_fname), '`{}` not exist'.format(pipeline_fname)
+
+fine_tune_checkpoint = os.path.join(DEST_DIR, "model.ckpt")
 
 test_record_fname = BASE_DIR+'data/annotations/test.record'
 train_record_fname = BASE_DIR+'data/annotations/train.record'
 label_map_pbtxt_fname = BASE_DIR+'data/annotations/label_map.pbtxt'
-
-def get_num_classes(pbtxt_fname):
-    from models.research.object_detection.utils import label_map_util
-    label_map = label_map_util.load_labelmap(pbtxt_fname)
-    categories = label_map_util.convert_label_map_to_categories(
-        label_map, max_num_classes=90, use_display_name=True)
-    category_index = label_map_util.create_category_index(categories)
-    return len(category_index.keys())
-
 
 num_classes = get_num_classes(label_map_pbtxt_fname)
 with open(pipeline_fname) as f:
