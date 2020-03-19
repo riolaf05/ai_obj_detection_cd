@@ -10,7 +10,7 @@ RUN mkdir /home/scripts/ml
 RUN mkdir /home/scripts/ml/models
 RUN mkdir /home/scripts/ml/data
 RUN mkdir /home/scripts/ml/input
-RUN mkdir /home/scripts/ml/data
+RUN mkdir /home/scripts/ml/output
 
 #Install GoCD server
 #RUN echo "deb https://download.gocd.org /" | tee /etc/apt/sources.list.d/gocd.list
@@ -35,3 +35,4 @@ RUN pip3 install mlflow
 #RUN apt-get install -y go-agent
 
 #ENTRYPOINT nohup mlflow ui & && service go-server start && service go-agent start
+
