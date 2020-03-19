@@ -1,5 +1,5 @@
 six
 tensorflow==1.5
 matplotlib
-Cython
+cython
 pycocotools
