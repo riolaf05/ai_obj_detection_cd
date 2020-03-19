@@ -50,6 +50,4 @@ RUN mkdir /object_detection/
 
 WORKDIR /object_detection/
 
-RUN git clone --quiet https://github.com/tensorflow/models.git
-
 
