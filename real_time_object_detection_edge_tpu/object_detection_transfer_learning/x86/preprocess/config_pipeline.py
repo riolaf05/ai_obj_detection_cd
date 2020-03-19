@@ -119,7 +119,7 @@ def main():
 
     model_dir = BASE_DIR+'training/'
     os.makedirs(model_dir, exist_ok=True)
-    print(pipeline_fname)
+    shutil.copy(pipeline_fname, '/object_detection/output/'+MODELS_CONFIG[selected_model]['pipeline_file'])
 
 if __name__ == "__main__":
     main()
