@@ -5,8 +5,7 @@ import urllib.request
 import tarfile
 import argparse
 import re
-sys.path.insert(1, '/tensorflow')
-from models.research.object_detection.utils import label_map_util
+from object_detection.utils import label_map_util
 
 BASE_DIR='/tensorflow'
 
@@ -61,7 +60,7 @@ def main():
     #Download base model file
     MODEL_FILE = MODEL + '.tar.gz'
     DOWNLOAD_BASE = 'http://download.tensorflow.org/models/object_detection/'
-    DEST_DIR = os.path.join(BASE_DIR, '/models/research/pretrained_model')
+    DEST_DIR = os.path.join(BASE_DIR, 'models/research/pretrained_model')
     if not (os.path.exists(MODEL_FILE)):
         urllib.request.urlretrieve(DOWNLOAD_BASE + MODEL_FILE, MODEL_FILE)
     tar = tarfile.open(MODEL_FILE)
