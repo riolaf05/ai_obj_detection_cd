@@ -12,6 +12,7 @@ RUN git clone https://github.com/tensorflow/models.git && \
 # Install object detection api dependencies
 RUN apt-get update && \
     apt-get install -y python3-pip 
+RUN pip3 install --upgrade pip
 RUN pip3 install Cython && \
     pip3 install contextlib2 && \
     pip3 install pillow && \
