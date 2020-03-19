@@ -5,6 +5,7 @@ import urllib.request
 import tarfile
 import argparse
 import re
+sys.path.insert(1, '/tensorflow')
 from models.research.object_detection.utils import label_map_util
 
 BASE_DIR='/tensorflow'
