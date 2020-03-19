@@ -1,6 +1,7 @@
-FROM 
+FROM tensorflow/tensorflow:1.12.0-rc2-devel
 
-LABEL
+LABEL "architecture" : "x86"
+LABEL "mainteiner" : "riolaf05"
 
 RUN apt-get install -y -qq protobuf-compiler python-pil python-lxml python-tk git
 
