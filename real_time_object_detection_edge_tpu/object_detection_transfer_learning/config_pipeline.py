@@ -48,7 +48,7 @@ def main():
 
     # Pick the model you want to use
     # Select a model in `MODELS_CONFIG`.
-    selected_model = args.base_model #e.g. 
+    selected_model = args.base_model 
 
     # Name of the object detection model to use.
     MODEL = MODELS_CONFIG[selected_model]['model_name']
@@ -74,7 +74,7 @@ def main():
     #Get config file
     pipeline_fname = os.path.join('/object_detection/models/research/object_detection/samples/configs/', pipeline_file)
     assert os.path.isfile(pipeline_fname), '`{}` not exist'.format(pipeline_fname)
-    print(pipeline_fname)
+    os.environ['PIPELINE_FNAME'] = pipeline_fname
     
     #Select checkpoint file
     fine_tune_checkpoint = os.path.join(DEST_DIR, "model.ckpt")
