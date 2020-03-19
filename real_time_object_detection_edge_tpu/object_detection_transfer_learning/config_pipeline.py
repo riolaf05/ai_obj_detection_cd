@@ -79,9 +79,9 @@ def main():
     fine_tune_checkpoint = os.path.join(DEST_DIR, "model.ckpt")
 
     #Select new training data
-    test_record_fname = os.path.join(BASE_DIR, 'data/annotations/test.record')
-    train_record_fname = os.path.join(BASE_DIR, 'data/annotalstions/train.record')
-    label_map_pbtxt_fname = os.path.join(BASE_DIR, 'data/annotations/label_map.pbtxt')
+    test_record_fname = '/object_detection/data/annotations/test.record'
+    train_record_fname = '/object_detection/data/annotalstions/train.record'
+    label_map_pbtxt_fname = '/object_detection/data/annotations/label_map.pbtxt'
 
     num_classes = get_num_classes(label_map_pbtxt_fname)
 
