@@ -46,10 +46,10 @@ ENV PYTHONPATH $PYTHONPATH:/tensorflow/models/research:/tensorflow/models/resear
 RUN apt-get update && \
     apt-get install -y wget vim emacs nano
 
-RUN apt install -y python3-pip
-RUN pip3 install -r requirements.txt
-
 RUN mkdir /object_detection/
+RUN apt install -y python3-pip
+COPY requirements.txt /object_detection
+RUN pip3 install -r requirements.txt
 
 WORKDIR /object_detection/
 
