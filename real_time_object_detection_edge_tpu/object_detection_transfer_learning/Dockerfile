@@ -39,7 +39,7 @@ RUN cd /tensorflow/models/research && \
     protoc object_detection/protos/*.proto --python_out=.
 
 # Set the PYTHONPATH to finish installing the API
-ENV PYTHONPATH $PYTHONPATH:/tensorflow/models/research:/tensorflow/models/research/slim
+#ENV PYTHONPATH $PYTHONPATH:/tensorflow/models/research:/tensorflow/models/research/slim
 
 # Install wget (to make life easier below) and editors (to allow people to edit
 # the files inside the container)
