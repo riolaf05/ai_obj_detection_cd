@@ -28,9 +28,9 @@ RUN git clone --depth 1 https://github.com/cocodataset/cocoapi.git && \
     cd ../../ && \
     rm -rf cocoapi
 
-RUN apt-get install -y -qq protobuf-compiler python-pil python-lxml python-tk git
+#RUN apt-get install -y -qq protobuf-compiler python-pil python-lxml python-tk git
 
-RUN pip3 -r requirements.txt
+#RUN pip3 -r requirements.txt
 
 RUN mkdir /object_detection/
 
