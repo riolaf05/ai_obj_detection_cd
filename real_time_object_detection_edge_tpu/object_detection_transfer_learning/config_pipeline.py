@@ -74,7 +74,6 @@ def main():
     #Get config file
     pipeline_fname = os.path.join('/object_detection/models/research/object_detection/samples/configs/', pipeline_file)
     assert os.path.isfile(pipeline_fname), '`{}` not exist'.format(pipeline_fname)
-    os.environ['PIPELINE_FNAME'] = pipeline_fname
     
     #Select checkpoint file
     fine_tune_checkpoint = os.path.join(DEST_DIR, "model.ckpt")
