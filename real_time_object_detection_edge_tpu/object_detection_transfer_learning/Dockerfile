@@ -3,14 +3,20 @@ FROM tensorflow/tensorflow:1.12.0-rc2-devel
 LABEL "architecture" : "x86"
 LABEL "mainteiner" : "riolaf05"
 
+RUN git clone https://github.com/tensorflow/models.git && \
+    mv models /tensorflow/models
+
+# Install the Tensorflow Object Detection API from here
+# https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md
+
 # Install object detection api dependencies
 RUN apt-get update && \
-    apt-get install -y python python-tk wget emacs nano
+    apt-get install -y python python-tk
 RUN pip install Cython && \
     pip install contextlib2 && \
     pip install pillow && \
     pip install lxml && \
-    #pip install jupyter && \
+    pip install jupyter && \
     pip install matplotlib
 
 # Get protoc 3.0.0, rather than the old version already in the container
@@ -28,9 +34,17 @@ RUN git clone --depth 1 https://github.com/cocodataset/cocoapi.git && \
     cd ../../ && \
     rm -rf cocoapi
 
-#RUN apt-get install -y -qq protobuf-compiler python-pil python-lxml python-tk git
+# Run protoc on the object detection repo
+RUN cd /tensorflow/models/research && \
+    protoc object_detection/protos/*.proto --python_out=.
 
-#RUN pip3 -r requirements.txt
+# Set the PYTHONPATH to finish installing the API
+ENV PYTHONPATH $PYTHONPATH:/tensorflow/models/research:/tensorflow/models/research/slim
+
+# Install wget (to make life easier below) and editors (to allow people to edit
+# the files inside the container)
+RUN apt-get update && \
+    apt-get install -y wget vim emacs nano
 
 RUN mkdir /object_detection/
 
