@@ -47,6 +47,7 @@ RUN apt-get update && \
     apt-get install -y wget vim emacs nano
 
 RUN mkdir /object_detection/
+RUN mkdir /object_detection/data
 RUN apt install -y python3-pip
 RUN pip3 install --upgrade pip
 COPY requirements.txt /object_detection
