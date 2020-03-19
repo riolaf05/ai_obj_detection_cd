@@ -7,7 +7,7 @@ import argparse
 import re
 from models.research.object_detection.utils import label_map_util
 
-BASE_DIR='/object_detection/'
+BASE_DIR='/tensorflow'
 
 # Number of training steps.
 num_steps = 1000  # 200000
@@ -60,7 +60,7 @@ def main():
     #Download base model file
     MODEL_FILE = MODEL + '.tar.gz'
     DOWNLOAD_BASE = 'http://download.tensorflow.org/models/object_detection/'
-    DEST_DIR = '/object_detection/models/research/pretrained_model'
+    DEST_DIR = os.path.join(BASE_DIR, '/models/research/pretrained_model')
     if not (os.path.exists(MODEL_FILE)):
         urllib.request.urlretrieve(DOWNLOAD_BASE + MODEL_FILE, MODEL_FILE)
     tar = tarfile.open(MODEL_FILE)
@@ -72,16 +72,16 @@ def main():
     os.rename(MODEL, DEST_DIR)
 
     #Get config file
-    pipeline_fname = os.path.join('/object_detection/models/research/object_detection/samples/configs/', pipeline_file)
+    pipeline_fname = os.path.join(BASE_DIR, 'models/research/object_detection/samples/configs/', pipeline_file)
     assert os.path.isfile(pipeline_fname), '`{}` not exist'.format(pipeline_fname)
     
     #Select checkpoint file
     fine_tune_checkpoint = os.path.join(DEST_DIR, "model.ckpt")
 
     #Select new training data
-    test_record_fname = BASE_DIR+'data/annotations/test.record'
-    train_record_fname = BASE_DIR+'data/annotations/train.record'
-    label_map_pbtxt_fname = BASE_DIR+'data/annotations/label_map.pbtxt'
+    test_record_fname = os.path.join(BASE_DIR, 'data/annotations/test.record')
+    train_record_fname = os.path.join(BASE_DIR, 'data/annotalstions/train.record')
+    label_map_pbtxt_fname = os.path.join(BASE_DIR, 'data/annotations/label_map.pbtxt')
 
     num_classes = get_num_classes(label_map_pbtxt_fname)
 

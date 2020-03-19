@@ -9,16 +9,6 @@ RUN git clone https://github.com/tensorflow/models.git && \
 # Install the Tensorflow Object Detection API from here
 # https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md
 
-# Install object detection api dependencies
-RUN apt-get update && \
-    apt-get install -y python python-tk
-RUN pip install Cython && \
-    pip install contextlib2 && \
-    pip install pillow && \
-    pip install lxml && \
-    pip install jupyter && \
-    pip install matplotlib
-
 # Get protoc 3.0.0, rather than the old version already in the container
 RUN curl -OL "https://github.com/google/protobuf/releases/download/v3.0.0/protoc-3.0.0-linux-x86_64.zip" && \
     unzip protoc-3.0.0-linux-x86_64.zip -d proto3 && \
@@ -55,6 +45,6 @@ RUN pip3 install -r /object_detection/requirements.txt
 WORKDIR /object_detection/
 
 COPY config_pipeline.py /object_detection
-RUN git clone https://github.com/tensorflow/models.git
+
 
 
