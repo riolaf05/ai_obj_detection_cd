@@ -80,7 +80,7 @@ def main():
 
     #Select new training data
     test_record_fname = '/object_detection/data/annotations/test.record'
-    train_record_fname = '/object_detection/data/annotalstions/train.record'
+    train_record_fname = '/object_detection/data/annotations/train.record'
     label_map_pbtxt_fname = '/object_detection/data/annotations/label_map.pbtxt'
 
     num_classes = get_num_classes(label_map_pbtxt_fname)
@@ -119,7 +119,7 @@ def main():
 
     model_dir = BASE_DIR+'training/'
     os.makedirs(model_dir, exist_ok=True)
-    shutil.copy(pipeline_fname, '/object_detection/output/'+MODELS_CONFIG[selected_model]['pipeline_file'])
+    shutil.copy(pipeline_fname, '/object_detection/training/'+MODELS_CONFIG[selected_model]['pipeline_file'])
 
 if __name__ == "__main__":
     main()
