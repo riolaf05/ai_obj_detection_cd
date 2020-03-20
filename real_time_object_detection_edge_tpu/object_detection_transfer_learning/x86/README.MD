@@ -1,3 +1,21 @@
+### Training workflow:
+
+The workflow (executed manually or with MLFlow):
+
+0. Clone this repository
+
+1. Get new images to retrain base model 
+
+2. Label new images (e.g. with `LabelImg`)
+
+3. Launch preprocess component. Object Detection retrain config file is stored in:`ai_obj_detection_cd\real_time_object_detection_edge_tpu\object_detection_transfer_learning\x86\training`
+
+4. Launch re-train component. Checkpoint files are stored in: `ai_obj_detection_cd\real_time_object_detection_edge_tpu\object_detection_transfer_learning\x86\training\checkpoints`
+
+5. Lauch convert script which convert checkpoint files into Tensorflow Lite model: TODO
+
+### How to run:
+
 1. Download your own image datasets
 
 Is is possible to use [image_downloader](https://github.com/Swaini/object_detection_retraining/blob/master/image_downloader.py) to find all related images from Google. 
