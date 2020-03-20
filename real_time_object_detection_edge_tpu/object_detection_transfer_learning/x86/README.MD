@@ -55,9 +55,14 @@ To both create label map and TFRecords from labeled images (with train and test 
 
 Use the `object_detection_retrain.ipynb` notebook (from Colab).
 
-Otherwise launch the Docker with `bash retrain.sh` command
+Otherwise:
 
-The network_type can be either `mobilenet_v1_ssd`, or `mobilenet_v2_ssd`.l
+1. `CODE_DIR=~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86`
+2. `docker run -it --rm -e NUM_TRAINING_STEPS=500 -e NUM_EVAL_STEPS=100 -v $CODE_DIR/data:/object_detection/data -v $CODE_DIR/training:/object_detection/training rio05docker/obj_detection_cd:x86_retrain_tflite bash`
+3. `python3 config_pipeline.py`
+4. `python /tensorflow/models/research/object_detection/model_main.py --pipeline_config_path="/object_detection/training/ssd_mobilenet_v2_coco.config" --model_dir="/object_detection/training" --num_train_steps="${NUM_TRAINING_STEPS}" --num_eval_steps="${NUM_EVAL_STEPS}"`
+
+The network_type can be either `mobilenet_v1_ssd`, or `mobilenet_v2_ssd`.
 
 ### Notes about saving Tensorflow Models:
 From [Tensorflow Checkpoints](https://www.tensorflow.org/guide/checkpoint)
@@ -65,11 +70,14 @@ From [Tensorflow Checkpoints](https://www.tensorflow.org/guide/checkpoint)
 The phrase "Saving a TensorFlow model" typically means one of two things:
 
 1. Checkpoints
-2. SavedModel.
+2. SavedModel
 
 Checkpoints capture the exact value of all parameters (`tf.Variable objects`) used by a model. Checkpoints do not contain any description of the computation defined by the model and thus are typically only useful when source code that will use the saved parameter values is available.
 
 The SavedModel format on the other hand includes a serialized description of the computation defined by the model in addition to the parameter values (checkpoint). Models in this format are independent of the source code that created the model. They are thus suitable for deployment via **TensorFlow Serving**, **TensorFlow Lite**, **TensorFlow.js**, or programs in other programming languages (the C, C++, Java, Go, Rust, C# etc. TensorFlow APIs).
+
+### Object Detection Retrain:
+Object Detection Retrain API uses config files to build retrain pipeline. See [docs](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/configuring_jobs.md).
 
 ### TODO
 * ~~Define automatic retrieval of boxes data from xml or csv~~
