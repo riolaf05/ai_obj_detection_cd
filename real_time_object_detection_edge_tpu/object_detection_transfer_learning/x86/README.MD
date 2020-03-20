@@ -62,6 +62,14 @@ Otherwise:
 3. `python3 config_pipeline.py`
 4. `python /tensorflow/models/research/object_detection/model_main.py --pipeline_config_path="/object_detection/training/ssd_mobilenet_v2_coco.config" --model_dir="/object_detection/training" --num_train_steps="${NUM_TRAINING_STEPS}" --num_eval_steps="${NUM_EVAL_STEPS}"`
 
+or launch with MLFlow Projects (see [docs](https://www.mlflow.org/docs/latest/projects.html)):
+
+```console
+pip3 install mlflow
+mlflow run $CODE_DIR/training/ -b local --no-conda -e preprocess
+mlflow run $CODE_DIR/training/ -b local --no-conda -e train
+```
+
 The network_type can be either `mobilenet_v1_ssd`, or `mobilenet_v2_ssd`.
 
 ### Notes about saving Tensorflow Models:
