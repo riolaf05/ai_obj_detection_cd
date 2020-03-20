@@ -26,4 +26,5 @@ python /tensorflow/models/research/object_detection/model_main.py \
   --num_train_steps="${NUM_TRAINING_STEPS}" \
   --num_eval_steps="${NUM_EVAL_STEPS}"
   ```
- 
+ ### CONVERT TO TENSORFLOW LITE
+ TODO
