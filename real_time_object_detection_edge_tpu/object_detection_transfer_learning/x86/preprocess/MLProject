@@ -1,0 +1,16 @@
+name: Preprocess
+
+
+docker_env:
+    image:  mlflow-docker-example
+    volumes: ["~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/data:/object_detection/data", "~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/training:/object_detection/training"]
+    
+
+entry_points:
+  preprocess:
+    command: "python3 config_pipeline.py"
+
+  #validate:
+  #  parameters:
+  #    data_file: path
+  #  command: "python validate.py {data_file}"
