@@ -1,7 +1,7 @@
 name: Preprocess
 
 docker_env:
-    image: rio05docker/obj_detection_cd:x86_retrain_tflite
+    image: ubuntu:18.04
     volumes: ["~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/data:/object_detection/data", "~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/training:/object_detection/training"]
     #environment: [["NEW_ENV_VAR", "new_var_value"], "VAR_TO_COPY_FROM_HOST_ENVIRONMENT"]
 
