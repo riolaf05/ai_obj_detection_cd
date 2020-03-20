@@ -53,6 +53,8 @@ RUN pip3 install --upgrade pip
 COPY requirements.txt /object_detection
 RUN pip3 install -r /object_detection/requirements.txt
 
+RUN cd /tensorflow/models && git checkout f788046ca876a8820e05b0b48c1fc2e16b0955bc
+
 WORKDIR /object_detection/
 
 COPY config_pipeline.py /object_detection
