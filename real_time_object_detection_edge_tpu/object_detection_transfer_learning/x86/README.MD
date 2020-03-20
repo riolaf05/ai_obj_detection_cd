@@ -84,8 +84,11 @@ Checkpoints capture the exact value of all parameters (`tf.Variable objects`) us
 
 The SavedModel format on the other hand includes a serialized description of the computation defined by the model in addition to the parameter values (checkpoint). Models in this format are independent of the source code that created the model. They are thus suitable for deployment via **TensorFlow Serving**, **TensorFlow Lite**, **TensorFlow.js**, or programs in other programming languages (the C, C++, Java, Go, Rust, C# etc. TensorFlow APIs).
 
-### Object Detection Retrain:
+### Notes about Object Detection Retrain:
 Object Detection Retrain API uses config files to build retrain pipeline. See [docs](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/configuring_jobs.md).
+
+### Notes about MLFlow:
+When you run an MLflow project that specifies a Docker image, MLflow adds a new Docker layer that copies the project’s contents into the /mlflow/projects/code directory. This step produces a new image. MLflow then runs the new image and invokes the project entrypoint in the resulting container.
 
 ### TODO
 * ~~Define automatic retrieval of boxes data from xml or csv~~
