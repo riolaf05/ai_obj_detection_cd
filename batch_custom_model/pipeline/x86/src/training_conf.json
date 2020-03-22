@@ -1,9 +1,0 @@
-{ 
-    "name": "fashion_mnist", 
-    "batch_size": 512, 
-    "epochs": 10,
-    "verbose": "True",
-    "shuffle": "True",
-    "opt": "sgd"
-    
-    }
