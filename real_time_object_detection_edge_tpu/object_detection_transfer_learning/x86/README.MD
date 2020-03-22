@@ -1,3 +1,21 @@
+### Training workflow:
+
+The workflow (executed manually or with MLFlow):
+
+0. Clone this repository
+
+1. Get new images to retrain base model 
+
+2. Label new images (e.g. with `LabelImg`)
+
+3. Launch preprocess component. Object Detection retrain config file is stored in:`ai_obj_detection_cd\real_time_object_detection_edge_tpu\object_detection_transfer_learning\x86\training`
+
+4. Launch re-train component. Checkpoint files are stored in: `ai_obj_detection_cd\real_time_object_detection_edge_tpu\object_detection_transfer_learning\x86\training\checkpoints`
+
+5. Lauch convert script which convert checkpoint files into Tensorflow Lite model: TODO
+
+### How to run:
+
 1. Download your own image datasets
 
 Is is possible to use [image_downloader](https://github.com/Swaini/object_detection_retraining/blob/master/image_downloader.py) to find all related images from Google. 
@@ -62,6 +80,14 @@ Otherwise:
 3. `python3 config_pipeline.py`
 4. `python /tensorflow/models/research/object_detection/model_main.py --pipeline_config_path="/object_detection/training/ssd_mobilenet_v2_coco.config" --model_dir="/object_detection/training" --num_train_steps="${NUM_TRAINING_STEPS}" --num_eval_steps="${NUM_EVAL_STEPS}"`
 
+or launch with MLFlow Projects (see [docs](https://www.mlflow.org/docs/latest/projects.html)):
+
+```console
+pip3 install mlflow
+mlflow run $CODE_DIR/training/ -b local --no-conda -e preprocess
+mlflow run $CODE_DIR/training/ -b local --no-conda -e train
+```
+
 The network_type can be either `mobilenet_v1_ssd`, or `mobilenet_v2_ssd`.
 
 ### Notes about saving Tensorflow Models:
@@ -76,8 +102,11 @@ Checkpoints capture the exact value of all parameters (`tf.Variable objects`) us
 
 The SavedModel format on the other hand includes a serialized description of the computation defined by the model in addition to the parameter values (checkpoint). Models in this format are independent of the source code that created the model. They are thus suitable for deployment via **TensorFlow Serving**, **TensorFlow Lite**, **TensorFlow.js**, or programs in other programming languages (the C, C++, Java, Go, Rust, C# etc. TensorFlow APIs).
 
-### Object Detection Retrain:
+### Notes about Object Detection Retrain:
 Object Detection Retrain API uses config files to build retrain pipeline. See [docs](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/configuring_jobs.md).
+
+### Notes about MLFlow:
+When you run an MLflow project that specifies a Docker image, MLflow adds a new Docker layer that copies the project’s contents into the /mlflow/projects/code directory. This step produces a new image. MLflow then runs the new image and invokes the project entrypoint in the resulting container.
 
 ### TODO
 * ~~Define automatic retrieval of boxes data from xml or csv~~
