@@ -84,6 +84,8 @@ or launch with MLFlow Projects (see [docs](https://www.mlflow.org/docs/latest/pr
 
 ```console
 pip3 install mlflow
+docker build -t rio05docker/obj_detection_cd:x86_retrain_tflite ./preprocess/
+docker push rio05docker/obj_detection_cd:x86_retrain_tflite
 ./pipeline.sh
 ```
 
