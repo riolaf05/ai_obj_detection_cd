@@ -1,6 +1,6 @@
-## Custom ML model train and deploy with MLFlow
+## Custom ML model train and deploy with MLFlow (for ARM architecture)
 
-### Installation
+### Installation (on Raspberry Pi)
 
 1. Put your train code on `train.py` script
 2. Put your train and test data into `<data>` folder
