@@ -3,7 +3,7 @@
 ### Installation
 
 1. Put your train code on `train.py` script
-2. Put your train and test data into `<data_folder>`
+2. Put your train and test data into `<data>` folder
 3. Run the MLFlow package to start training your model:
 
 ```console
