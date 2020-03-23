@@ -84,8 +84,7 @@ or launch with MLFlow Projects (see [docs](https://www.mlflow.org/docs/latest/pr
 
 ```console
 pip3 install mlflow
-mlflow run $CODE_DIR/preprocess/ -b local --no-conda -e preprocess
-mlflow run $CODE_DIR/training/ -b local --no-conda -e train
+./pipeline.sh
 ```
 
 The network_type can be either `mobilenet_v1_ssd`, or `mobilenet_v2_ssd`.
