@@ -2,7 +2,7 @@
 name: train
 
 docker_env:
-    image: rio05docker/obj_detection_cd:rpi3_pipeline
+    image: rio05docker/obj_detection_cd:rpi3_mlflow_custom
     volumes: ["~/Codice/ai_obj_detection_cd/batch_custom_model/data:/opt/ml/input", "~/Codice/ai_obj_detection_cd/batch_custom_model/model:/opt/ml/model"]
 
 entry_points:
