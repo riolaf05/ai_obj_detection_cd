@@ -1,5 +1,5 @@
 #See: https://www.mlflow.org/docs/latest/projects.html
-name: preprocess
+name: train
 
 docker_env:
     image: rio05docker/obj_detection_cd:x86_retrain_tflite
