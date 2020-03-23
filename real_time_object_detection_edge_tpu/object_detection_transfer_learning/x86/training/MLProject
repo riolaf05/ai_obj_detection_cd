@@ -3,7 +3,7 @@ name: preprocess
 
 docker_env:
     image: rio05docker/obj_detection_cd:x86_retrain_tflite
-    volumes: ["~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/data:/object_detection/data", "~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/preprocess/output:/object_detection/preprocess/output/", "~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/training:/object_detection/training/output"]
+    volumes: ["~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/data:/object_detection/data", "~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/preprocess/output:/object_detection/preprocess/", "~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/training/output:/object_detection/training/"]
     #environment: [["NEW_ENV_VAR", "new_var_value"], "VAR_TO_COPY_FROM_HOST_ENVIRONMENT"]
 
 entry_points:
@@ -12,4 +12,4 @@ entry_points:
       config_file: {type: string, default: ssd_mobilenet_v2_coco.config}
       num_train_steps: {type: number, default: 500}
       num_eval_steps: {type: number, default: 100}
-    command: "python /tensorflow/models/research/object_detection/model_main.py --pipeline_config_path="/object_detection/preprocess/output/{config_file}" --model_dir="/object_detection/training/output" --alsologtostderr --num_train_steps={num_train_steps} --num_eval_steps={num_eval_steps}"
+    command: "python /tensorflow/models/research/object_detection/model_main.py --pipeline_config_path='/object_detection/preprocess/{config_file}' --model_dir='/object_detection/training/output' --alsologtostderr --num_train_steps={num_train_steps} --num_eval_steps={num_eval_steps}"

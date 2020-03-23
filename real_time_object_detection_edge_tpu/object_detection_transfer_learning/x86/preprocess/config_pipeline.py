@@ -71,12 +71,20 @@ def main():
         shutil.rmtree(DEST_DIR)
     os.rename(MODEL, DEST_DIR)
 
-    #Get config file
+    #Copy config file
     pipeline_fname = os.path.join(BASE_DIR, 'models/research/object_detection/samples/configs/', pipeline_file)
     assert os.path.isfile(pipeline_fname), '`{}` not exist'.format(pipeline_fname)
+    shutil.copy(pipeline_fname, '/object_detection/preprocess/'+MODELS_CONFIG[selected_model]['pipeline_file'])
+    pipeline_fname = '/object_detection/preprocess/' + MODELS_CONFIG[selected_model]['pipeline_file']
     
-    #Select checkpoint file
+    #Copy checkpoint file
     fine_tune_checkpoint = os.path.join(DEST_DIR, "model.ckpt")
+    for item in os.listdir(DEST_DIR):
+        if os.path.isdir(os.path.join(DEST_DIR, item)):
+            shutil.copytree(os.path.join(DEST_DIR, item), '/object_detection/preprocess/'+item)
+        else:
+            shutil.copy(os.path.join(DEST_DIR, item), '/object_detection/preprocess/'+item)
+    fine_tune_checkpoint = '/object_detection/preprocess/model.ckpt'
 
     #Select new training data
     test_record_fname = '/object_detection/data/annotations/test.record'
@@ -119,7 +127,6 @@ def main():
 
     model_dir = BASE_DIR+'training/'
     os.makedirs(model_dir, exist_ok=True)
-    shutil.copy(pipeline_fname, '/object_detection/training/'+MODELS_CONFIG[selected_model]['pipeline_file'])
 
 if __name__ == "__main__":
     main()
