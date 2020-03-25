@@ -1,16 +1,16 @@
-## Custom ML model train and deploy with MLFlow
+## Custom ML model train and deploy with MLFlow (for ARM architecture)
 
-### Installation
+### Installation (on Raspberry Pi)
 
 1. Put your train code on `train.py` script
-2. Put your train and test data into `<data_folder>`
+2. Put your train and test data into `<data>` folder
 3. Run the MLFlow package to start training your model:
 
 ```console
  mlflow run . -b local --no-conda -e train
 ```
 
-The Docker contains MLFlow tracking APIs to log training metrics. See [MLFlow docs](https://www.mlflow.org/docs/latest/tracking.html).
+The Docker also contains MLFlow tracking APIs to log training metrics. See [MLFlow docs](https://www.mlflow.org/docs/latest/tracking.html).
 
 TODO: ~~add [MLFlow packaging](https://www.mlflow.org/docs/latest/quickstart.html#running-mlflow-projects)~~ and [serving](https://www.mlflow.org/docs/latest/quickstart.html#saving-and-serving-models). 
 
