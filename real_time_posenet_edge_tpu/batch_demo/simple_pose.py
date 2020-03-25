@@ -9,7 +9,7 @@ images = os.listdir(os.path.join(BASE_DIR, 'images'))
 for image in images:
     pil_image = Image.open(os.path.join(BASE_DIR, 'images', image))
     pil_image.resize((641, 481), Image.NEAREST)
-    engine = PoseEngine('models/posenet_mobilenet_v1_075_481_641_quant_decoder_edgetpu.tflite')
+    engine = PoseEngine(os.path.join(BASE_DIR,'models/posenet_mobilenet_v1_075_481_641_quant_decoder_edgetpu.tflite'))
     poses, inference_time = engine.DetectPosesInImage(np.uint8(pil_image))
     print('Inference time: %.fms' % inference_time)
 
