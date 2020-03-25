@@ -40,8 +40,9 @@ RUN apt-get install -y libedgetpu1-std \
 #RUN pip3 install Flask
 
 RUN mkdir /home/scripts/pose_detection
+RUN mkdir /home/scripts/pose_detection/models
 COPY simple_pose.py /home/scripts/pose_detection
 COPY pose_engine.py /home/scripts/pose_detection
-COPY models/ /home/scripts/pose_detection
+COPY models/ /home/scripts/pose_detection/models
 
 

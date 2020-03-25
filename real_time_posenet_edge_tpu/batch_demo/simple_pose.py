@@ -3,9 +3,11 @@ import numpy as np
 from PIL import Image
 from pose_engine import PoseEngine
 
-images = os.listdir('/home/scripts/pose_detection/images')
+BASE_DIR='/home/scripts/pose_detection/'
+
+images = os.listdir(BASE_DIR+'images')
 for image in images:
-    pil_image = Image.open(image)
+    pil_image = Image.open(BASE_DIR+image)
     pil_image.resize((641, 481), Image.NEAREST)
     engine = PoseEngine('models/posenet_mobilenet_v1_075_481_641_quant_decoder_edgetpu.tflite')
     poses, inference_time = engine.DetectPosesInImage(np.uint8(pil_image))
