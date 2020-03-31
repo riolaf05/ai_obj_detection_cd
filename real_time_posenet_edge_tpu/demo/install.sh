@@ -1,3 +1,0 @@
-git clone https://github.com/google-coral/project-posenet
-docker build -t rio05docker/tflite_rpi:pose_detection_tpu_test .
-docker run -it --privileged -p 8000:8000 -v ~/Codice/ai_obj_detection_cd/real_time_posenet_edge_tpu/project-posenet/models/:/home/scripts/pose_detection/models -v /dev/bus/usb:/dev/bus/usb --device=/dev/vchiq -p 8080:8080 rio05docker/tflite_rpi:pose_detection_tpu_test python3 pose_detection/simple_pose.py
