@@ -1,0 +1,48 @@
+cd ~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86
+git pull && docker build -t rio05docker/obj_detection_cd:x86_retrain_tflite .
+docker push rio05docker/obj_detection_cd:x86_retrain_tflite
+
+### PRETRAIN
+CODE_DIR=~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86
+docker run -it --rm -v $CODE_DIR/data:/object_detection/data -v $CODE_DIR/preprocess/output:/object_detection/preprocess rio05docker/obj_detection_cd:x86_retrain_tflite bash
+
+python3 config_pipeline.py
+
+NUM_TRAINING_STEPS=500
+NUM_EVAL_STEPS=100
+
+### TRAIN
+python /tensorflow/models/research/object_detection/model_main.py \
+  --pipeline_config_path="/object_detection/training/ssd_mobilenet_v2_coco.config" \
+  --model_dir="/object_detection/training" \
+  --alsologtostderr \
+  --num_train_steps="${NUM_TRAINING_STEPS}" \
+  --num_eval_steps="${NUM_EVAL_STEPS}"
+  
+### CONVERT TO TENSORFLOW LITE
+
+docker run -it --rm -v $CODE_DIR/data:/object_detection/data -v $CODE_DIR/training:/object_detection/training rio05docker/obj_detection_cd:x86_retrain_tflite bash 
+
+CKPT_DIR=/object_detection/training/ssd_mobilenet_v2_coco.config
+TRAIN_DIR=/object_detection/training/checkpoints
+OUTPUT_DIR=/object_detection/training/checkpoints/outputs
+
+
+python /tensorflow/models/research/object_detection/export_tflite_ssd_graph.py \
+  --pipeline_config_path="${CKPT_DIR}" \
+  --trained_checkpoint_prefix="${TRAIN_DIR}/model.ckpt-267" \
+  --output_directory="${OUTPUT_DIR}" \
+  --add_postprocessing_op=true
+  
+tflite_convert \
+--input_arrays="normalized_input_image_tensor" \
+--output_file="${OUTPUT_DIR}/output_tflite_graph.tflite" \
+--graph_def_file="${OUTPUT_DIR}/tflite_graph.pb" \
+--inference_type=QUANTIZED_UINT8 \
+--output_arrays="${OUTPUT_TENSORS}" \
+--mean_values=128 \
+--std_dev_values=128 \
+--input_shapes=1,300,300,3 \
+--change_concat_input_ranges=false \
+--allow_nudging_weights_to_use_fast_gemm_kernel=true \
+--allow_custom_ops
