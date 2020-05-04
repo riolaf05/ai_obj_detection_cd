@@ -1,0 +1,1 @@
+docker run -it --privileged -v /dev/bus/usb:/dev/bus/usb --device=/dev/vchiq -v $(pwd)/images:/home/scripts/pose_detection/images rio05docker/pose_detection_tpu:batch python3 /home/scripts/pose_detection/simple_pose.py
