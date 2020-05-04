@@ -4,7 +4,7 @@ Activity recognition inference with Edge TPU and model train on GCP
 
 Workflow:
 
-![image](https://github.com/riolaf05/\ai_obj_detection_cd/blob/develop/real_time_posenet_edge_tpu/edge_cloud_integration/activity_recognition_edge_cloud.jpg)
+![image](https://github.com/riolaf05/ai_obj_detection_cd/blob/develop/real_time_posenet_edge_tpu/edge_cloud_integration/activity_recognition_edge_cloud.jpg)
 
 To run edge device pipeline (RaspberryPi3 with Coral Edge TPU):
 
