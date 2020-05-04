@@ -4,26 +4,18 @@ Activity recognition inference with Edge TPU and model train on GCP
 
 Workflow:
 
-![image](https://github.com/riolaf05/\ai_obj_detection_cd/blob/develop/activity_recognition_edge_cloud.jpg)
+![image](https://github.com/riolaf05/\ai_obj_detection_cd/blob/develop/real_time_posenet_edge_tpu/edge_cloud_integration/activity_recognition_edge_cloud.jpg)
 
-```console
-docker build -t rio05docker/obj_detection_cd:rpi3_posenet_browser_test .
-docker push rio05docker/obj_detection_cd:rpi3_posenet_browser_test
-```
+To run edge device pipeline (RaspberryPi3 with Coral Edge TPU):
 
-To run demo with Raspberry Camera and Edge TPU usb device:
+1. Put video on `edge/video`
 
-```console
-git clone https://github.com/riolaf05/ai_obj_detection_cd
-cd pose-detection/real_time_posenet_edge_tpu
-docker run -it --privileged -p 8080:8080 -v models/:/home/scripts/pose_detection/browser/models -v /dev/bus/usb:/dev/bus/usb --device=/dev/vchiq -p 8080:8080 rio05docker/obj_detection_cd:rpi3_posenet_browser_test python3 opencv_pose_recognition.py
-```
+2. `edge/run.sh`
 
-Then log in on: `http://<<rpi3_ip>>:8080`
+To run Kubeflow pipeline, run `cloud/src/activity_classification.ipynb`
+
 
 ### TODO: 
-* ~~Test real time predictions~~
-* ~~Add transfer learning with Edge TPU API~~
-* Draw lines between body parts
-* Add CI/CD for batch edge TPU
-* (maybe?) Add MLFlow logging and packaging
+* ~~Orchestrate edge and cloud pipelines~~
+* Manage multiple pose recogniton
+* Improve classification performance
