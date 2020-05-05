@@ -1,6 +1,6 @@
 FROM raspbian/stretch
 
-LABEL 'maintainer' : 'riolaf05'
+LABEL 'maintainer' : 'rio05docker'
 
 RUN apt-get update 
 RUN apt-get install -y python3-dev 
