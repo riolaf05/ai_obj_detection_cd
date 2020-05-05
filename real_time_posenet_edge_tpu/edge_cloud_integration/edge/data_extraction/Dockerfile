@@ -47,3 +47,4 @@ COPY models/ /home/scripts/pose_detection/models
 RUN pip3 install --upgrade google-cloud-storage
 
 COPY pose_engine.py /home/scripts/pose_detection
+RUN mkdir /home/scripts/pose_detection/outputs

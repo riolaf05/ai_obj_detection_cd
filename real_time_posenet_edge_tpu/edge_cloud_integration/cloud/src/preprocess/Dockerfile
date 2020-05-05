@@ -20,6 +20,7 @@ COPY auth/ai-vqc-fb43ef70f5ec.json /ai-vqc-fb43ef70f5ec.json
 ENV GOOGLE_APPLICATION_CREDENTIALS=/ai-vqc-fb43ef70f5ec.json
 
 RUN mkdir /src
+RUN mkdir /src/jsons
 COPY preprocess.py /src
 WORKDIR /src
 
