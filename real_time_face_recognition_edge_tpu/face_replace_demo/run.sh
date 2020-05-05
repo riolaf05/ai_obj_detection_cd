@@ -1,1 +1,1 @@
-docker run -it --rm --privileged -p 8080:8080 -v /dev/bus/usb:/dev/bus/usb --device=/dev/vchiq -v mobilenet_ssd_v2:/mobilenet_ssd_v2 -v images:/images rio05docker/face_recognition:tagname python3 /face_replace/browser_demo.py 
+docker run -it --rm --privileged -p 8080:8080 -v /dev/bus/usb:/dev/bus/usb --device=/dev/vchiq -v mobilenet_ssd_v2:/mobilenet_ssd_v2 -v images:/images rio05docker/face_recognition:demo python3 /face_replace/browser_demo.py 
