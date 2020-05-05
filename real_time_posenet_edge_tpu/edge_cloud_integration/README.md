@@ -17,6 +17,7 @@ To run Kubeflow pipeline, run `cloud/src/activity_classification.ipynb`
 
 ### TODO: 
 * ~~Orchestrate edge and cloud pipelines~~
+* Add connection between body points
 * Manage multiple pose recogniton
 * Improve classification performance
 * Fix visualizations on Kubeflow pipeline
