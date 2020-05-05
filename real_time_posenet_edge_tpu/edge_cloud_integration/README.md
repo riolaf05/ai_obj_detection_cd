@@ -1,6 +1,6 @@
 ### Activity Recognition on Edge TPU 
 
-Activity recognition inference with Edge TPU and model train on GCP
+This project aims to perform activity recognition inference from pose estimation on edge devices with TPU, using ML pipeline for training steps on GCP.
 
 Workflow:
 
@@ -17,7 +17,7 @@ To run Kubeflow pipeline, run `cloud/src/activity_classification.ipynb`
 
 ### TODO: 
 * ~~Orchestrate edge and cloud pipelines~~
-* Add connection between body points
-* Manage multiple pose recogniton
+* Add connection between body points during pose recognition step
+* Manage presence of people during pose recognition step
 * Improve classification performance
 * Fix visualizations on Kubeflow pipeline
