@@ -1,2 +1,2 @@
-docker build -t riolaf05/face_recognition:demo \
-&& docker push riolaf05/face_recognition:demo
+docker build -t rio05docker/face_recognition:demo \
+&& docker push rio05docker/face_recognition:demo
