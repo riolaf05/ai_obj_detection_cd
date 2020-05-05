@@ -20,8 +20,8 @@ def write_to_gcs(filename, path, bucket_name):
 
 def main():
     parser = argparse.ArgumentParser(description='Train arguments')
-    parser.add_argument('--bucket', type=bool, help='Bucket to save on Google Datastore', default=False)
-    parser.add_argument('--pose', type=bool, help='Pose in the video', default=False)
+    parser.add_argument('--bucket', type=str, help='Bucket to save on Google Datastore', default=False)
+    parser.add_argument('--pose', type=str, help='Pose in the video', default=False)
     args = parser.parse_args()
 
     engine = PoseEngine(os.path.join(BASE_DIR,'models/posenet_mobilenet_v1_075_481_641_quant_decoder_edgetpu.tflite'))
@@ -51,14 +51,14 @@ def main():
                         #
             data['sample'].append({
                 'score': pose.score,
-                'poses': poses_list
+                'poses': poses_list,
                 'pose' : args.pose
             })
         print(data)
-        with open('final_df.txt', 'w') as f:
+        with open('outputs/{}.txt'.format(image[:-4]), 'w') as f:
             json.dump(data, f)
-        if args.bucket != None:
-            write_to_gcs('{}.txt'.format(args.pose), '/home/scripts/pose_detection', args.bucket)
+        if args.bucket:
+            write_to_gcs('outputs/{}.txt'.format(image[:-4]), '/home/scripts/pose_detection/images', args.bucket)
 
 if __name__ == "__main__":
     main()
