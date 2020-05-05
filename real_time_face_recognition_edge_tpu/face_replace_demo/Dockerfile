@@ -1,10 +1,14 @@
-#!/bin/bash
+FROM raspbian/stretch
 
-FROM 
+LABEL 'maintainer' : 'riolaf05'
 
-LABEL 
+RUN apt-get update 
+RUN apt-get install -y python3-dev 
+RUN apt-get install -y python3-pip
+RUN apt-get install -y curl zip wget 
 
-RUN 
+COPY mobilenet_ssd_v2 /mobilenet_ssd_v2
+COPY face_replace /face_replace
 
 RUN echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | tee /etc/apt/sources.list.d/coral-edgetpu.list
 RUN curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
@@ -22,6 +26,9 @@ RUN apt-get install libatlas-base-dev -y
 RUN apt-get install libjasper-dev -y
 RUN apt-get install libqtgui4 -y 
 RUN apt-get install libqt4-test -y
+RUN apt-get install libilmbase-dev -y
+RUN apt-get install libopenexr-dev -y
+RUN apt-get install libgstreamer1.0-dev -y
 
 RUN echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | RUN tee /etc/apt/sources.list.d/coral-edgetpu.list
 RUN curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | RUN apt-key add -
@@ -31,3 +38,6 @@ RUN apt-get install python3-edgetpu -y
 RUN pip3 install imutils
 RUN pip3 install opencv-python
 RUN pip3 install scipy
+RUN pip3 install picamera
+RUN pip3 install numpy
+RUN pip3 install Pillow

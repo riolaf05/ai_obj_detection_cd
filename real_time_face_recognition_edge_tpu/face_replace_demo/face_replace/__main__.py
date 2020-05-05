@@ -16,11 +16,10 @@ from face_replace.cache import Cache
 FACE_DETECTION_MODEL_PATH = os.path.normpath(
     os.path.join(
         os.getcwd(),
-        "mobilenet_ssd_v2/mobilenet_ssd_v2_face_quant_postprocess_edgetpu.tflite",
+        "/mobilenet_ssd_v2/mobilenet_ssd_v2_face_quant_postprocess_edgetpu.tflite",
     )
 )
 FACE_FILTER_PATHS = glob.glob("images/smileys/*.png")
-
 WINDOW_NAME = "Face replace Demo"
 MAX_FACES = 6
 
