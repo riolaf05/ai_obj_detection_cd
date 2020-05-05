@@ -1,3 +1,4 @@
+#Thanks to: https://blog.codecentric.de/en/2019/11/realtime-face-detection-and-filtering-with-the-coral-usb-accelerator/
 import os
 import io
 import time
