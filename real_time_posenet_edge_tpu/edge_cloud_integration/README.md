@@ -19,5 +19,6 @@ To run Kubeflow pipeline, run `cloud/src/activity_classification.ipynb`
 * ~~Orchestrate edge and cloud pipelines~~
 * Add connection between body points during pose recognition step
 * Manage presence of people during pose recognition step
+* Evaluate the use of LSTM RNN for activity classification
 * Improve classification performance
 * Fix visualizations on Kubeflow pipeline
