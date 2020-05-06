@@ -8,6 +8,9 @@ import socketserver
 from http import server
 from threading import Condition
 import picamera
+
+from imutils.video import VideoStream
+
 import cv2
 from PIL import Image
 import glob
@@ -128,13 +131,14 @@ class StreamingHandler(server.BaseHTTPRequestHandler):
             self.send_header('Content-Type', 'multipart/x-mixed-replace; boundary=FRAME')
             self.end_headers()
             try:
-                #stream_video = io.BytesIO()
-                _, width, height, channels = engine.get_input_tensor_shape()
+                face_filters = [cv2.imread(path, -1) for path in FACE_FILTER_PATHS]
                 video_stream = VideoStream(src=0).start()
+                model_faces = DetectionEngine(FACE_DETECTION_MODEL_PATH)
                 cache = Cache(face_filters)
                 frames_counter = 0
-                while True:
 
+                
+                while True:
                     # getting image
                     frames_counter += 1
                     input_frame = video_stream.read()
@@ -156,8 +160,6 @@ class StreamingHandler(server.BaseHTTPRequestHandler):
                         )
                     if len(cache.entries) > 0 and frames_counter % 10 == 0:
                         cache.invalidate()
-                    #elapsed_ms = time.time() - start_ms
-                    #cv2_im = self.append_objs_to_img(cv2_im, detected_faces, labels) #add bounding box to image
 
                     r, buf = cv2.imencode(".jpg", frame)
 
@@ -186,17 +188,13 @@ class StreamingServer(socketserver.ThreadingMixIn, server.HTTPServer):
 if __name__ == '__main__':
     res = '{}x{}'.format(RESOLUTION_X, RESOLUTION_Y)
 
-    face_filters = [cv2.imread(path, -1) for path in FACE_FILTER_PATHS]
-
-    engine = DetectionEngine(FACE_DETECTION_MODEL_PATH)
-
     with picamera.PiCamera(resolution=res, framerate=FRAMERATE, sensor_mode=2) as camera:
         camera.hflip = HFLIP
         camera.vflip = VFLIP
         camera.rotation = ROTATION
 
         try:
-            address = ('', 8000)
+            address = ('', 8080)
             server = StreamingServer(address, StreamingHandler)
             server.serve_forever()
         except:
