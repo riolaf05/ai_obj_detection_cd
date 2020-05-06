@@ -11,6 +11,7 @@ from threading import Condition
 import picamera
 import cv2
 from PIL import Image
+import glob
 
 import numpy as np
 from edgetpu.detection.engine import DetectionEngine
@@ -204,10 +205,6 @@ if __name__ == '__main__':
     res = '{}x{}'.format(RESOLUTION_X, RESOLUTION_Y)
 
     face_filters = [cv2.imread(path, -1) for path in FACE_FILTER_PATHS]
-
-    with open(args.label, 'r') as f:
-        pairs = (l.strip().split(maxsplit=1) for l in f.readlines())
-        labels = dict((int(k), v) for k, v in pairs)
 
     engine = DetectionEngine(FACE_DETECTION_MODEL_PATH)
 
