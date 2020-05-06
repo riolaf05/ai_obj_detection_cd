@@ -34,11 +34,11 @@ RUN apt-get install libopenexr-dev -y
 RUN apt-get install libgstreamer1.0-dev -y
 RUN apt-get install libraspberrypi0 libraspberrypi-dev libraspberrypi-doc libraspberrypi-bin -y
 RUN apt-get install ffmpeg -y
+RUN apt-get install python3-scipy -y
 
 RUN pip3 install imutils
 RUN pip3 install opencv-python
 RUN pip3 install picamera
 RUN pip3 install numpy
 RUN pip3 install Pillow
-RUN pip3 install scipy
 
