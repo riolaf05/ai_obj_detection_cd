@@ -132,7 +132,7 @@ class StreamingHandler(server.BaseHTTPRequestHandler):
             self.end_headers()
             try:
                 face_filters = [cv2.imread(path, -1) for path in FACE_FILTER_PATHS]
-                video_stream = VideoStream(src=0).start()
+                stream_video = io.BytesIO()
                 model_faces = DetectionEngine(FACE_DETECTION_MODEL_PATH)
                 cache = Cache(face_filters)
                 frames_counter = 0
@@ -141,12 +141,21 @@ class StreamingHandler(server.BaseHTTPRequestHandler):
                 while True:
                     # getting image
                     frames_counter += 1
-                    input_frame = video_stream.read()
-                    processed_frame, frame = frame_processor.preprocess(cv2.flip(input_frame, 1))
+    
+                    camera.capture(stream_video, 
+                                format='jpeg', 
+                                use_video_port=True)
+                    stream_video.truncate()
+                    stream_video.seek(0)
+                    
+                    # cv2 / PIL coding
+                    cv2_im = np.frombuffer(stream_video.getvalue(), dtype=np.uint8)
+                    cv2_im = cv2.imdecode(cv2_im, 1)
+                    pil_im = Image.fromarray(cv2_im)
 
                     #face detection
                     detected_faces = model_faces.detect_with_image(
-                        processed_frame,
+                        pil_im,
                         threshold=0.3,
                         keep_aspect_ratio=True,
                         relative_coord=False,
@@ -155,13 +164,13 @@ class StreamingHandler(server.BaseHTTPRequestHandler):
                     for face in detected_faces:
                         bounding_box = face.bounding_box.flatten().astype("int")
                         face_filter = cache.update(bounding_box)
-                        frame = frame_processor.replace_face(
-                            bounding_box, frame, face_filter
+                        cv2_im = frame_processor.replace_face(
+                            bounding_box, cv2_im, face_filter
                         )
                     if len(cache.entries) > 0 and frames_counter % 10 == 0:
                         cache.invalidate()
 
-                    r, buf = cv2.imencode(".jpg", frame)
+                    r, buf = cv2.imencode(".jpg", cv2_im)
 
                     self.wfile.write(b'--FRAME\r\n')
                     self.send_header('Content-type','image/jpeg')
