@@ -1,0 +1,9 @@
+h5py==2.7.*
+Keras==2.1.*
+numpy==1.14.*
+scipy==1.1.*
+six==1.11.*
+google.cloud.storage
+scikit-learn
+tensorflow-gpu==1.14.0
+pandas

@@ -37,10 +37,12 @@ RUN apt-get update
 RUN apt-get install -y libedgetpu1-std \
 && apt-get install -y python3-edgetpu
 
-RUN pip3 install Flask
+#RUN pip3 install Flask
 
 RUN mkdir /home/scripts/pose_detection
-COPY project-posenet /home/scripts/pose_detection
-#COPY 
+RUN mkdir /home/scripts/pose_detection/models
+COPY simple_pose.py /home/scripts/pose_detection
+COPY pose_engine.py /home/scripts/pose_detection
+COPY models/ /home/scripts/pose_detection/models
 
 
