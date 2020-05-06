@@ -9,6 +9,7 @@ RUN apt-get install -y curl zip wget
 
 COPY mobilenet_ssd_v2 /mobilenet_ssd_v2
 COPY face_replace /face_replace
+COPY browser_demo.py /browser_demo.py
 
 RUN apt-get install apt-transport-https -y
 RUN echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | tee /etc/apt/sources.list.d/coral-edgetpu.list \
@@ -31,10 +32,13 @@ RUN apt-get install libqt4-test -y
 RUN apt-get install libilmbase-dev -y
 RUN apt-get install libopenexr-dev -y
 RUN apt-get install libgstreamer1.0-dev -y
+RUN apt-get install libraspberrypi0 libraspberrypi-dev libraspberrypi-doc libraspberrypi-bin -y
+RUN apt-get install ffmpeg -y
 
 RUN pip3 install imutils
 RUN pip3 install opencv-python
-#RUN pip3 install scipy
 RUN pip3 install picamera
 RUN pip3 install numpy
 RUN pip3 install Pillow
+RUN pip3 install scipy
+
