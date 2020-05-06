@@ -3,7 +3,6 @@ import os
 import io
 import time
 import base64
-import argparse
 import logging
 import socketserver
 from http import server
@@ -129,44 +128,34 @@ class StreamingHandler(server.BaseHTTPRequestHandler):
             self.send_header('Content-Type', 'multipart/x-mixed-replace; boundary=FRAME')
             self.end_headers()
             try:
-                stream_video = io.BytesIO()
+                #stream_video = io.BytesIO()
                 _, width, height, channels = engine.get_input_tensor_shape()
-
+                video_stream = VideoStream(src=0).start()
+                cache = Cache(face_filters)
+                frames_counter = 0
                 while True:
+
                     # getting image
-                    camera.capture(stream_video, 
-                                format='jpeg', 
-                                use_video_port=True)
-                    stream_video.truncate()
-                    stream_video.seek(0)
-                    
-                    # cv2 / PIL coding
-                    cv2_im = np.frombuffer(stream_video.getvalue(), dtype=np.uint8)
-                    cv2_im = cv2.imdecode(cv2_im, 1)
-                    pil_im = Image.fromarray(cv2_im)
-                    
-                    # face detection
-                    cache = Cache(face_filters)
-                    start_ms = time.time()
-                    detected_faces = engine.detect_with_image(
-                        pil_im,
-                        threshold=args.threshold,
+                    frames_counter += 1
+                    input_frame = video_stream.read()
+                    processed_frame, frame = frame_processor.preprocess(cv2.flip(input_frame, 1))
+
+                    #face detection
+                    detected_faces = model_faces.detect_with_image(
+                        processed_frame,
+                        threshold=0.3,
                         keep_aspect_ratio=True,
                         relative_coord=False,
                         top_k=MAX_FACES,
                     )
-
                     for face in detected_faces:
                         bounding_box = face.bounding_box.flatten().astype("int")
                         face_filter = cache.update(bounding_box)
                         frame = frame_processor.replace_face(
                             bounding_box, frame, face_filter
                         )
-                    
                     if len(cache.entries) > 0 and frames_counter % 10 == 0:
                         cache.invalidate()
-    
-                    
                     #elapsed_ms = time.time() - start_ms
                     #cv2_im = self.append_objs_to_img(cv2_im, detected_faces, labels) #add bounding box to image
 
@@ -195,13 +184,6 @@ class StreamingServer(socketserver.ThreadingMixIn, server.HTTPServer):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--top_k', type=int, default=3,
-                        help='number of classes with highest score to display')
-    parser.add_argument('--threshold', type=float, default=0.3,
-                        help='class score threshold')
-
-    args = parser.parse_args()
     res = '{}x{}'.format(RESOLUTION_X, RESOLUTION_Y)
 
     face_filters = [cv2.imread(path, -1) for path in FACE_FILTER_PATHS]
