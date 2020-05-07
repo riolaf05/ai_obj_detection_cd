@@ -39,7 +39,7 @@ echo "0 Abyssinian" >> "${OUTPUT_DIR}/labels.txt"
 echo "1 american_bulldog" >> "${OUTPUT_DIR}/labels.txt"
 
 echo "EXPORTING frozen graph from checkpoint..."
-python object_detection/export_tflite_ssd_graph.py \
+python ../models/research/object_detection/export_tflite_ssd_graph.py \
   --pipeline_config_path="${CKPT_DIR}/pipeline.config" \
   --trained_checkpoint_prefix="${TRAIN_DIR}/model.ckpt-${ckpt_number}" \
   --output_directory="${OUTPUT_DIR}" \
