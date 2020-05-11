@@ -12,7 +12,7 @@ The workflow (executed manually or with MLFlow):
 
 4. Launch re-train component. Checkpoint files are stored in: `ai_obj_detection_cd\real_time_object_detection_edge_tpu\object_detection_transfer_learning\x86\training\checkpoints`
 
-5. Lauch convert script which convert checkpoint files into Tensorflow Lite model: TODO
+5. Lauch convert script which convert checkpoint files into a frozen graph, then convert that graph to a TensorFlow Lite flatbuffer file Tensorflow Lite model (`.tflite`).
 
 ### How to run:
 
