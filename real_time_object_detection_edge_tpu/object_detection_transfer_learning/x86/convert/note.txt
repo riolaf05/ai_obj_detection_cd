@@ -1,8 +1,8 @@
-1. dall'output del componente di train: 
+﻿1. dall'output del componente di train: 
 /home/rosario/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/training/output
 
 
-2. leggo input e output layer del .pb
+2. leggo input e output layer del .pb (vedi: https://stackoverflow.com/questions/52918051/how-to-convert-pb-to-tflite-format)
 #!/usr/local/bin/python3	
 import tensorflow as tf
 Graph = tf.GraphDef()   
@@ -16,7 +16,7 @@ for Layer in Graph.node:
     print(Layer.name)
 
 
-3. converto il .pb (frozen graph) in tflite:
+3. converto il .pb (frozen graph) in tflite: (vedi: https://stackoverflow.com/questions/43517959/given-a-tensor-flow-model-graph-how-to-find-the-input-node-and-output-node-name)
 IMAGE_SIZE=300
 tflite_convert --output_file=tflite_graph.tflite --graph_def_file=tflite_graph.pb --input_shape=1,${IMAGE_SIZE},${IMAGE_SIZE},3 --input_arrays='normalized_input_image_tensor' --output_arrays='TFLite_Detection_PostProcess' --allow_custom_ops
 
@@ -28,6 +28,7 @@ python3 demo_real_time_obj_detection_server.py --model tflite_graph.tflite --lab
 
 
 l'errore è: ValueError: Dectection model should have 4 output tensors!This model has 1. !!!!
+(vedi problema simile: https://github.com/tensorflow/tensorflow/issues/20052)
 
 5. oppure local inference test
 echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | sudo tee /etc/apt/sources.list.d/coral-edgetpu.list
