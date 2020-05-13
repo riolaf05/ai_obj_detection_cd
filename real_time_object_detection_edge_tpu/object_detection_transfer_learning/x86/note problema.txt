@@ -1,0 +1,50 @@
+﻿Vedi guida per trasfer learning: https://towardsdatascience.com/creating-your-own-object-detector-ad69dda69c85
+Vedi guda conversione frozen graph in tflite: https://kharbari.com/how-to-convert-pb-to-tflite-format/
+
+Dopo aver eseguito gli step di preprocess (produce il preprocess/ssd_mobilenet_v2_coco.config config file)
+e lo step di train (crea i checkpoint in training/output/) ed aver convertito il checkpoint in frozen graph .pb
+non riesco a convertire quest'ultimo in tflite (la dimensione del tensore di input è incongruente)
+
+#Preprocess e train manuali
+git checkout retrain-test
+docker run -it -v ~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/data:/object_detection/data -v ~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/preprocess/output:/object_detection/preprocess/ rio05docker/obj_detection_cd:x86_retrain_tflite bash
+python config_pipeline.py
+docker run -it -v ~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/data:/object_detection/data -v ~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/preprocess/output:/object_detection/preprocess/ -v ~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/training/output:/object_detection/training/ rio05docker/obj_detection_cd:x86_retrain_tflite bash
+python /tensorflow/models/research/object_detection/model_main.py --pipeline_config_path='/object_detection/preprocess/ssd_mobilenet_v2_coco.config' --model_dir='/object_detection/training/output' --alsologtostderr --num_train_steps=500 --num_eval_steps=100
+
+
+#Conversion:
+
+#Export frozen graph
+python /tensorflow/models/research/object_detection/export_inference_graph.py --input_type image_tensor --pipeline_config_path='/object_detection/preprocess/ssd_mobilenet_v2_coco.config' --trained_checkpoint_prefix training/output/model.ckpt-5.index --output_directory .
+
+#Get layers
+import tensorflow as tf
+Graph = tf.GraphDef()   
+File = open("frozen_inference_graph.pb","rb")
+Graph.ParseFromString(File.read())
+
+Graph.node[0].name <-- first layer
+[n.name + '=>' +  n.op for n in gf.node if n.op in ( 'Softmax','Placeholder')] <-- first layer
+Graph.node[-1].name <-- last layer??
+
+for Layer in Graph.node:
+    print(Layer.name)
+
+#Conversion to tflite
+Tentativi:
+1. IMAGE_SIZE=300 && tflite_convert --output_file=tflite_graph.tflite --graph_def_file=frozen_inference_graph.pb --input_shape=1,${IMAGE_SIZE},${IMAGE_SIZE},3 --input_arrays='image_tensor' --output_arrays=detection_boxes, detection_scores, detection_classes, num_detections --allow_custom_ops
+2. tflite_convert --output_file=tflite_graph.tflite --graph_def_file=frozen_inference_graph.pb --input_arrays='image_tensor' --output_arrays=detection_boxes, detection_scores, detection_classes, num_detections --allow_custom_ops
+3. tflite_convert \
+  --output_file=tflite_graph.tflite \
+  --graph_def_file=frozen_inference_graph.pb \
+  --input_arrays=image_tensor \
+  --output_arrays=detection_boxes,detection_scores,detection_classes,num_detections \
+  --allow_custom_ops
+  
+4. tflite_convert --output_file model.tflite --saved_model_dir saved_model/ --output_format TFLITE --inference_type FLOAT --input_arrays image_tensor --input_shapes 1,300,300,3 --output_arrays detection_boxes,detection_classes,detection_scores,num_detections
+
+5. tflite_convert --output_file=model.tflite --saved_model_dir=saved_model
+
+toco --input_file=frozen_inference_graph.pb --input_format=TENSORFLOW_GRAPHDEF --output_file=frozen_inference_graph.tflite --input_shape=-1,-1,-1,3 --input_array=image_tensor --output_array=detection_boxes,detection_scores,detection_classes,detection_nums 
+
