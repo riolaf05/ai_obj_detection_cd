@@ -5,6 +5,8 @@ Dopo aver eseguito gli step di preprocess (produce il preprocess/ssd_mobilenet_v
 e lo step di train (crea i checkpoint in training/output/) ed aver convertito il checkpoint in frozen graph .pb
 non riesco a convertire quest'ultimo in tflite (la dimensione del tensore di input è incongruente)
 
+Errore ==> Array "image_tensor" has mis-matching actual and final data types (data_type=uint8, final_data_type=float).
+
 #Preprocess e train manuali
 git checkout retrain-test
 docker run -it -v ~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/data:/object_detection/data -v ~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/preprocess/output:/object_detection/preprocess/ rio05docker/obj_detection_cd:x86_retrain_tflite bash
@@ -47,7 +49,7 @@ Tentativi:
 
 5. tflite_convert --output_file=model.tflite --saved_model_dir=saved_model
 
-6. toco --input_file=frozen_inference_graph.pb --input_format=TENSORFLOW_GRAPHDEF --output_file=frozen_inference_graph.tflite --input_shape=-1,-1,-1,3 --input_array=image_tensor --output_array=detection_boxes,detection_scores,detection_classes,detection_nums 
+6. toco --input_file=frozen_inference_graph.pb --input_format=TENSORFLOW_GRAPHDEF --output_file=frozen_inference_graph.tflite --input_shape=-1,-1,-1,3 --input_array=image_tensor --output_array=detection_boxes,detection_scores,detection_classes,num_detections 
 
 Tentativi da fare:
 
