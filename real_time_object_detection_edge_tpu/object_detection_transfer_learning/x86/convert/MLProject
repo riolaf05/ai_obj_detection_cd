@@ -8,4 +8,7 @@ docker_env:
 
 entry_points:
   convert:
-    command: "/object_detection/training/output"
+    parameters:
+      dim_dataset: {type: number, default: 300}
+      checkpoint_dir: {type: string, default: '/object_detection/training/output/'}
+    command: "/object_detection/training/output {dim_dataset} {checkpoint_dir}"

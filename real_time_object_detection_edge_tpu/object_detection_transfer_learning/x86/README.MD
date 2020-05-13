@@ -52,6 +52,14 @@ item {
 
 The network_type can be either `mobilenet_v1_ssd`, or `mobilenet_v2_ssd`.
 
+If the following problem occurs:
+
+```console
+Tensorflow Allocation Memory: Allocation of 38535168 exceeds 10% of system memory
+```
+
+Launch the `reset_graph.py` script inside the container.
+
 ### Notes about saving Tensorflow Models:
 From [Tensorflow Checkpoints](https://www.tensorflow.org/guide/checkpoint)
 
