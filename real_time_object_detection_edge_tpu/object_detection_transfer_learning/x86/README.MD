@@ -60,6 +60,8 @@ Tensorflow Allocation Memory: Allocation of 38535168 exceeds 10% of system memor
 
 Launch the `reset_graph.py` script inside the container.
 
+Per visualizzare il grafo Tensorflow usare [Netron](https://github.com/lutzroeder/netron).
+
 ### Notes about saving Tensorflow Models:
 From [Tensorflow Checkpoints](https://www.tensorflow.org/guide/checkpoint)
 
