@@ -49,3 +49,7 @@ Tentativi:
 
 6. toco --input_file=frozen_inference_graph.pb --input_format=TENSORFLOW_GRAPHDEF --output_file=frozen_inference_graph.tflite --input_shape=-1,-1,-1,3 --input_array=image_tensor --output_array=detection_boxes,detection_scores,detection_classes,detection_nums 
 
+Tentativi da fare:
+
+1. cambiare modello di input
+2. capire quale può essere un valido input shape
