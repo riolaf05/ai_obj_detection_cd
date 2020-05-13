@@ -10,10 +10,11 @@ git checkout retrain-test
 docker run -it -v ~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/data:/object_detection/data -v ~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/preprocess/output:/object_detection/preprocess/ rio05docker/obj_detection_cd:x86_retrain_tflite bash
 python config_pipeline.py
 docker run -it -v ~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/data:/object_detection/data -v ~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/preprocess/output:/object_detection/preprocess/ -v ~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/training/output:/object_detection/training/ rio05docker/obj_detection_cd:x86_retrain_tflite bash
-python /tensorflow/models/research/object_detection/model_main.py --pipeline_config_path='/object_detection/preprocess/ssd_mobilenet_v2_coco.config' --model_dir='/object_detection/training/output' --alsologtostderr --num_train_steps=500 --num_eval_steps=100
+python /tensorflow/models/research/object_detection/model_main.py --pipeline_config_path='/object_detection/preprocess/ssd_mobilenet_v2_coco.config' --model_dir='/object_detection/training/output' --alsologtostderr --num_train_steps=5 --num_eval_steps=1
 
 
 #Conversion:
+
 
 #Export frozen graph
 python /tensorflow/models/research/object_detection/export_inference_graph.py --input_type image_tensor --pipeline_config_path='/object_detection/preprocess/ssd_mobilenet_v2_coco.config' --trained_checkpoint_prefix training/output/model.ckpt-5.index --output_directory .
@@ -46,5 +47,5 @@ Tentativi:
 
 5. tflite_convert --output_file=model.tflite --saved_model_dir=saved_model
 
-toco --input_file=frozen_inference_graph.pb --input_format=TENSORFLOW_GRAPHDEF --output_file=frozen_inference_graph.tflite --input_shape=-1,-1,-1,3 --input_array=image_tensor --output_array=detection_boxes,detection_scores,detection_classes,detection_nums 
+6. toco --input_file=frozen_inference_graph.pb --input_format=TENSORFLOW_GRAPHDEF --output_file=frozen_inference_graph.tflite --input_shape=-1,-1,-1,3 --input_array=image_tensor --output_array=detection_boxes,detection_scores,detection_classes,detection_nums 
 
