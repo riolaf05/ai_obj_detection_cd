@@ -1,7 +1,7 @@
 CONFIG_FILE=$1
 IMAGE_SIZE=$2
 #Export frozen graph
-python /tensorflow/models/research/object_detection/export_inference_graph.py --input_type image_tensor --pipeline_config_path=/object_detection/preprocess/$CONFIG_FILE --trained_checkpoint_prefix training/output/model.ckpt-5.index --output_directory /object_detectiontraining/output/
+python /tensorflow/models/research/object_detection/export_inference_graph.py --input_type image_tensor --input_shape 1,300,300,3 --pipeline_config_path=/object_detection/preprocess/$CONFIG_FILE --trained_checkpoint_prefix training/output/model.ckpt-5 --output_directory /object_detectiontraining/output/
 #Get first and last layer of frozen graph
 get_layers.py --frozen-graph=/object_detectiontraining/output/frozen_inference_graph.pb
 #Convert to TFLite model
