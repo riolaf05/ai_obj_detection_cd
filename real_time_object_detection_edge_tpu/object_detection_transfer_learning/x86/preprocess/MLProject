@@ -7,7 +7,9 @@ docker_env:
 
 entry_points:
   preprocess:
-    command: "python3 config_pipeline.py"
+    parameters:
+      base_model: {type: string, default: ssd_mobilenet_v2}
+    command: "python3 config_pipeline.py --base-model='{base_model}'"
 
   #validate:
   #  parameters:
