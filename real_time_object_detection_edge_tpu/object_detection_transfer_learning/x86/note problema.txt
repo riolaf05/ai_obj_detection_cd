@@ -49,11 +49,15 @@ Tentativi:
 
 5. tflite_convert --output_file=model.tflite --saved_model_dir=saved_model
 
-6. toco --input_file=frozen_inference_graph.pb --input_format=TENSORFLOW_GRAPHDEF --output_file=frozen_inference_graph.tflite --input_shape=-1,-1,-1,3 --input_array=image_tensor --output_array=detection_boxes,detection_scores,detection_classes,num_detections 
+6. toco --graph_def_file=training/output/frozen_inference_graph.pb --input_format=TENSORFLOW_GRAPHDEF --output_file=training/output/frozen_inference_graph.tflite --input_shape=1,300,300,3 --input_array=image_tensor --output_array=detection_boxes,detection_scores,detection_classes,num_detections 
 
 7. https://www.youtube.com/watch?v=3TLxQIRj3yg&t=1s
+
+8. converter = tf.lite.TFLiteConverter.from_frozen_graph(
+        graph, input_arrays, output_arrays,input_shapes={"image_tensor":[1,600,600,3]})
 
 Tentativi da fare:
 
 1. cambiare modello di input
 2. capire quale può essere un valido input shape
+3. cambiare il tipo del layer di input in tf.float32
