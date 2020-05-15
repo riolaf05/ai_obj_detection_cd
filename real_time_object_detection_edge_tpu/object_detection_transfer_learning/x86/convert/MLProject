@@ -9,6 +9,6 @@ docker_env:
 entry_points:
   convert:
     parameters:
+      config_file: {type: string, default: ssd_mobilenet_v2_coco.config}
       dim_dataset: {type: number, default: 300}
-      checkpoint_dir: {type: string, default: '/object_detection/training/output/'}
-    command: "/object_detection/training/output {dim_dataset} {checkpoint_dir}"
+    command: "/object_detection/convert/convert.sh {config_file} {dim_dataset}"
