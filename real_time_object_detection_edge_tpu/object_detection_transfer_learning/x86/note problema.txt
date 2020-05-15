@@ -30,7 +30,7 @@ Graph.node[-1].name <-- output layers: etection_boxes,detection_scores,detection
 for Layer in Graph.node:
     print(Layer.name)
 
-#Conversion to tflite
+#Conversion to tflite <-- vedi info su input_shape qui https://docs.openvinotoolkit.org/latest/_docs_MO_DG_prepare_model_convert_model_tf_specific_Convert_Object_Detection_API_Models.html
 Tentativi:
 1. IMAGE_SIZE=300 && tflite_convert \
  --graph_def_file=training/output/frozen_inference_graph.pb \
