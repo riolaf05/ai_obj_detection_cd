@@ -3,12 +3,12 @@
 helpFunction()
 {
    echo ""
-   echo "Usage: $0 -b base_model -c base_model_config -nt num_train_steps -ne num_eval_steps -d dim_dataset"
+   echo "Usage: $0 -b base_model -c base_model_config -nt num_train_steps -ne num_eval_steps -d img_size"
    echo -e "\t-b Base model to re-train [ssd_mobilenet_v2, faster_rcnn_inception_v2, rfcn_resnet101]"
    echo -e "\t-c Base model configuration file [ssd_mobilenet_v2_coco.config, faster_rcnn_inception_v2_pets.config, rfcn_resnet101_pets.config]"
    echo -e "\t-nt Number of training epochs"
    echo -e "\t-ne Number of evaluation steps"
-   echo -e "\t-d Dataset dimension"
+   echo -e "\t-d Image dimension"
    exit 1 # Exit script after printing help
 }
 
@@ -19,13 +19,13 @@ do
       c ) base_model_config="$OPTARG" ;;
       nt ) num_train_steps="$OPTARG" ;;
       ne ) num_eval_steps="$OPTARG" ;;
-      d ) dim_dataset="$OPTARG" ;;
+      d ) img_size="$OPTARG" ;;
       ? ) helpFunction ;; # Print helpFunction in case parameter is non-existent
    esac
 done
 
 # Print helpFunction in case parameters are empty
-if [ -z "$base_model" ] || [ -z "$base_model_config" ] || [ -z "$num_train_steps" ] || [ -z "$num_eval_steps" ] || [ -z "$dim_dataset" ]
+if [ -z "$base_model" ] || [ -z "$base_model_config" ] || [ -z "$num_train_steps" ] || [ -z "$num_eval_steps" ] || [ -z "$img_size" ]
 then
    echo "Some or all of the parameters are empty";
    helpFunction
@@ -45,4 +45,4 @@ mlflow run preprocess/ -b local --no-conda -e preprocess -P base-model="$base_mo
 #Run train step
 mlflow run training/ -b local --no-conda -e train -P config_file="$base_model_config" -P num_train_steps=$num_train_steps -P num_eval_steps=$num_eval_steps
 #Run conversion step
-mlflow run training/ -b local --no-conda -e convert -P config_file="$base_model_config" -P dim_dataset=$dim_dataset 
+mlflow run training/ -b local --no-conda -e convert -P config_file="$base_model_config" -P img_size=$img_size 

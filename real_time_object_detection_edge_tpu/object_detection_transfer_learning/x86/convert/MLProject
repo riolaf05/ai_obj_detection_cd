@@ -10,5 +10,5 @@ entry_points:
   convert:
     parameters:
       config_file: {type: string, default: ssd_mobilenet_v2_coco.config}
-      dim_dataset: {type: number, default: 300}
-    command: "/object_detection/convert/convert.sh {config_file} {dim_dataset}"
+      img_size: {type: number, default: 300}
+    command: "/object_detection/convert/convert.sh {config_file} {dim_img_sizedataset}"
