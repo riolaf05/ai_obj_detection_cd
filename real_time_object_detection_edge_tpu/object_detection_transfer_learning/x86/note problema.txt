@@ -5,8 +5,6 @@ Dopo aver eseguito gli step di preprocess (produce il preprocess/ssd_mobilenet_v
 e lo step di train (crea i checkpoint in training/output/) ed aver convertito il checkpoint in frozen graph .pb
 non riesco a convertire quest'ultimo in tflite (la dimensione del tensore di input è incongruente)
 
-Errore ==> Array "image_tensor" has mis-matching actual and final data types (data_type=uint8, final_data_type=float).
-
 #Preprocess e train manuali
 git checkout retrain-test
 docker run -it -v ~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/data:/object_detection/data -v ~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/preprocess/output:/object_detection/preprocess/ rio05docker/obj_detection_cd:x86_retrain_tflite bash
@@ -36,8 +34,19 @@ for Layer in Graph.node:
 
 #Conversion to tflite
 Tentativi:
-1. IMAGE_SIZE=300 && tflite_convert --output_file=tflite_graph.tflite --graph_def_file=frozen_inference_graph.pb --input_shape=1,${IMAGE_SIZE},${IMAGE_SIZE},3 --input_arrays='image_tensor' --output_arrays=detection_boxes, detection_scores, detection_classes, num_detections --allow_custom_ops
+1. IMAGE_SIZE=300 && tflite_convert \
+ --graph_def_file=training/output/frozen_inference_graph.pb \
+ --output_file=training/output/tflite_graph.tflite \
+ --input_shape=1,${IMAGE_SIZE},${IMAGE_SIZE},3 \
+ --input_arrays='image_tensor' \
+ --inference_type=FLOAT \
+ --output_arrays=detection_boxes,detection_scores,detection_classes,num_detections \
+ --allow_custom_ops 
+
+
 2. tflite_convert --output_file=tflite_graph.tflite --graph_def_file=frozen_inference_graph.pb --input_arrays='image_tensor' --output_arrays=detection_boxes, detection_scores, detection_classes, num_detections --allow_custom_ops
+
+
 3. tflite_convert \
   --output_file=tflite_graph.tflite \
   --graph_def_file=frozen_inference_graph.pb \
@@ -47,14 +56,15 @@ Tentativi:
   
 4. tflite_convert --output_file model.tflite --saved_model_dir saved_model/ --output_format TFLITE --inference_type FLOAT --input_arrays image_tensor --input_shapes 1,300,300,3 --output_arrays detection_boxes,detection_classes,detection_scores,num_detections
 
-5. tflite_convert --output_file=model.tflite --saved_model_dir=saved_model
+5. tflite_convert --output_file=training/output/frozen_inference_graph.tflite --saved_model_dir=training/output/saved_model
 
 6. toco --graph_def_file=training/output/frozen_inference_graph.pb --input_format=TENSORFLOW_GRAPHDEF --output_file=training/output/frozen_inference_graph.tflite --input_shape=1,300,300,3 --input_array=image_tensor --output_array=detection_boxes,detection_scores,detection_classes,num_detections 
 
 7. https://www.youtube.com/watch?v=3TLxQIRj3yg&t=1s
 
-8. converter = tf.lite.TFLiteConverter.from_frozen_graph(
-        graph, input_arrays, output_arrays,input_shapes={"image_tensor":[1,600,600,3]})
+
+PROBLEMA ==> Check failed: array.data_type == array.final_data_type Array "image_tensor" has mis-matching actual and final data types (data_type=uint8, final_data_type=float)
+(vedi: https://stackoverflow.com/questions/57229664/error-while-converting-from-pb-to-tflite-on-windows)
 
 Tentativi da fare:
 
