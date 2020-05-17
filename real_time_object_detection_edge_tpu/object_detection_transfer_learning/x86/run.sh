@@ -41,8 +41,8 @@ python3 xml_to_csv.py -i data/images/test -o data/annotations/test_labels.csv
 python3 generate_tfrecord.py --csv_input=data/annotations/train_labels.csv --image_dir=data/images/train  --output_path=data/annotations/train.record
 python3 generate_tfrecord.py --csv_input=data/annotations/test_labels.csv --image_dir=data/images/test  --output_path=data/annotations/test.record
 #Run preprocess step
-mlflow run preprocess/ -b local --no-conda -e preprocess -P base-model="$base_model"
+mlflow run preprocess/ -b local --no-conda -e preprocess -P base-model=$base_model
 #Run train step
-mlflow run training/ -b local --no-conda -e train -P config_file="$base_model_config" -P num_train_steps=$num_train_steps -P num_eval_steps=$num_eval_steps
+mlflow run training/ -b local --no-conda -e train -P config_file=$base_model_config -P num_train_steps=$num_train_steps -P num_eval_steps=$num_eval_steps
 #Run conversion step
-mlflow run training/ -b local --no-conda -e convert -P config_file="$base_model_config" -P img_size=$img_size 
+mlflow run training/ -b local --no-conda -e convert -P config_file=$base_model_config -P img_size=$img_size 
