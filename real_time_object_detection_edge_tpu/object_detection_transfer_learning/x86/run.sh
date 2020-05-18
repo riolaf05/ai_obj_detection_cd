@@ -8,6 +8,7 @@ helpFunction()
    echo -e "\t-c Base model configuration file [ssd_mobilenet_v2_coco.config, faster_rcnn_inception_v2_pets.config, rfcn_resnet101_pets.config]"
    echo -e "\t-nt Number of training epochs"
    echo -e "\t-ne Number of evaluation steps"
+   echo -e "\t-n Number of test samples"
    echo -e "\t-d Image dimension"
    exit 1 # Exit script after printing help
 }
@@ -19,13 +20,14 @@ do
       c ) base_model_config="$OPTARG" ;;
       nt ) num_train_steps="$OPTARG" ;;
       ne ) num_eval_steps="$OPTARG" ;;
+      n ) num_example="$OPTARG" ;;
       d ) img_size="$OPTARG" ;;
       ? ) helpFunction ;; # Print helpFunction in case parameter is non-existent
    esac
 done
 
 # Print helpFunction in case parameters are empty
-if [ -z "$base_model" ] || [ -z "$base_model_config" ] || [ -z "$num_train_steps" ] || [ -z "$num_eval_steps" ] || [ -z "$img_size" ]
+if [ -z "$base_model" ] || [ -z "$base_model_config" ] || [ -z "$num_train_steps" ] || [ -z "$num_eval_steps" ] || [ -z "$img_size" ] || [ -z "$num_example" ] 
 then
    echo "Some or all of the parameters are empty";
    helpFunction
@@ -41,7 +43,7 @@ python3 xml_to_csv.py -i data/images/test -o data/annotations/test_labels.csv
 python3 generate_tfrecord.py --csv_input=data/annotations/train_labels.csv --image_dir=data/images/train  --output_path=data/annotations/train.record
 python3 generate_tfrecord.py --csv_input=data/annotations/test_labels.csv --image_dir=data/images/test  --output_path=data/annotations/test.record
 #Run preprocess step
-mlflow run preprocess/ -b local --no-conda -e preprocess -P base-model=$base_model
+mlflow run preprocess/ -b local --no-conda -e preprocess -P base-model=$base_model -P num-example=$num_example
 #Run train step
 mlflow run training/ -b local --no-conda -e train -P config_file=$base_model_config -P num_train_steps=$num_train_steps -P num_eval_steps=$num_eval_steps
 #Run conversion step

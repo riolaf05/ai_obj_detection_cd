@@ -9,7 +9,8 @@ entry_points:
   preprocess:
     parameters:
       base_model: {type: string, default: ssd_mobilenet_v2}
-    command: "python3 config_pipeline.py --base-model='{base_model}'"
+      num_example: {type: int}
+    command: "python3 config_pipeline.py --base-model='{base_model}' --num-example='{num_example}'"
 
   #validate:
   #  parameters:
