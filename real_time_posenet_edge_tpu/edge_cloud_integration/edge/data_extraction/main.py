@@ -10,6 +10,10 @@ encoder.FLOAT_REPR = lambda o: format(o, '.2f')
 
 BASE_DIR='/home/scripts/pose_detection'
 
+def convert(o):
+    if isinstance(o, np.float32): return int(o)  
+    raise TypeError
+
 def write_to_gcs(filename, path, bucket_name):
     """Uploads a file to the bucket."""
     storage_client = storage.Client()
@@ -42,6 +46,7 @@ def main():
             #print('\nPose Score: ', pose.score)
             for label, keypoint in pose.keypoints.items():
                 poses_list[label] = []
+                print(type(keypoint.yx[1]))
                 poses_list[label].append(keypoint.yx[1])
                 poses_list[label].append(keypoint.yx[0])
                 poses_list[label].append(keypoint.score)
@@ -55,8 +60,8 @@ def main():
                 'pose' : args.pose
             })
         print(data)
-        with open('outputs/{}.txt'.format(image[:-4]), 'w') as f:
-            json.dump(data, f)
+        with open('outputs/{}.txt'.format(image[:-4]), 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=4, default=convert)
         if args.bucket:
             write_to_gcs('outputs/{}.txt'.format(image[:-4]), '/home/scripts/pose_detection/images', args.bucket)
 
