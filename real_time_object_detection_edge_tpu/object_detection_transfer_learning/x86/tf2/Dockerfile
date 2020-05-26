@@ -29,4 +29,12 @@ COPY preprocess/resize_images.py /src/resize_images.py
 COPY train/train.py /src/train.py
 COPY convert/convert.py /src/convert.py
 
+WORKDIR /src
+
+#Download Edge TPU compiler
+RUN curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+RUN echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | tee /etc/apt/sources.list.d/coral-edgetpu.list
+RUN apt-get update && apt-get install edgetpu-compiler -y
+
+
 
