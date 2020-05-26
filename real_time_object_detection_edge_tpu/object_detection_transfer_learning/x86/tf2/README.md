@@ -30,6 +30,13 @@ See [model requirements](https://coral.ai/docs/edgetpu/models-intro/#model-requi
 
 Not all operations may be supported by the Edge TPU. A percentage of the model (e.g. `DEPTHWISE_CONV_2D` layer) could be runned on the CPU, which is slower.
 
+### References:
+* [Transfer Learning on TensorFlow 2.0](https://www.tensorflow.org/tutorials/images/transfer_learning)
+* [Transfer Learning on TensorFlow 2.0 example](https://codelabs.developers.google.com/codelabs/recognize-flowers-with-tensorflow-on-android)
+* [Tensorflow Model on Edge TPU](https://coral.ai/docs/edgetpu/models-intro/#compatibility-overview)
+* [Edge TPU Compiler](https://coral.ai/docs/edgetpu/compiler/#performance-considerations)
+* [Edge TPU Quantization](https://www.tensorflow.org/lite/performance/post_training_quantization#integer_only)
+
 ### TODO: 
 * ~~Test batch predictions~~
 * Compile for Edge TPU and add real time inference script with OpenCV
