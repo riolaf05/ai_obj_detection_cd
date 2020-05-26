@@ -2,9 +2,11 @@ import tensorflow as tf
 assert tf.__version__.startswith('2')
 
 import os
+import json
 import argparse
 import numpy as np
 import matplotlib.pyplot as plt
+from tensorflow.python.lib.io import file_io
 
 def train(base_dir, image_size, batch_size, epochs):
     #creo o generatori
