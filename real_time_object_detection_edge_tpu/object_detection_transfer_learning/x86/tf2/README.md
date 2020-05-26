@@ -29,6 +29,6 @@ See [model requirements](https://coral.ai/docs/edgetpu/models-intro/#model-requi
 
 ### TODO: 
 * ~~Test batch predictions~~
-* Test run on Kubeflow
-* Run real time inference on Edge TPU device
+* Compile for Edge TPU and add real time inference script with OpenCV
 * Add MLFlow logging and packaging
+* Test run on Kubeflow
