@@ -21,7 +21,7 @@ mlflow run . -b local --no-conda -e convert
 
 5. Run inference on `image_recognition.ipynb` notebook with new images.
 
-**Note**: you cannot train a model directly with TensorFlow Lite; instead you must convert your model from a TensorFlow file (such as a .pb file) to a TensorFlow Lite file (a .tflite file), using the TensorFlow Lite converter. The figure illustrates the basic process to create a model that's compatible with the Edge TPU. Most of the workflow uses standard TensorFlow tools. Once you have a TensorFlow Lite model, you then use our Edge TPU compiler to create a `.tflite` file that's compatible with the Edge TPU.
+**Note**: you cannot train a model directly with TensorFlow Lite; instead you must convert your model from a TensorFlow file (such as a .pb file) to a TensorFlow Lite file (a `.tflite` file), using the TensorFlow Lite converter. The figure illustrates the basic process to create a model that's compatible with the Edge TPU. Most of the workflow uses standard TensorFlow tools. Once you have a TensorFlow Lite model, you then use our Edge TPU compiler to create a `.tflite` file that's compatible with the Edge TPU.
 
 ![TFLite Workflow](https://coral.ai/static/docs/images/edgetpu/compile-workflow.png)
 
