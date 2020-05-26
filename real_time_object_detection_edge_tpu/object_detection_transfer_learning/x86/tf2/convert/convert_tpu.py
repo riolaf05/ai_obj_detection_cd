@@ -30,6 +30,6 @@ if __name__ == '__main__':
     converter.inference_output_type = tf.int8  # or tf.uint8
     tflite_quant_model = converter.convert()
 
-    with open('/save/model_tpu.tflite', 'wb') as f:
+    with open('/save/model.tflite', 'wb') as f:
       f.write(tflite_quant_model)
 
