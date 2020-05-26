@@ -1,3 +1,4 @@
+#Vedi: https://www.tensorflow.org/lite/guide/get_started#2_convert_the_model
 import tensorflow as tf
 assert tf.__version__.startswith('2')
 
