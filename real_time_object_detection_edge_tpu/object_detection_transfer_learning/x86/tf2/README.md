@@ -25,6 +25,8 @@ mlflow run . -b local --no-conda -e convert
 
 ![TFLite Workflow](https://coral.ai/static/docs/images/edgetpu/compile-workflow.png)
 
+See [model requirements](https://coral.ai/docs/edgetpu/models-intro/#model-requirements) for Edge TPU conversion.
+
 ### TODO: 
 * ~~Test batch predictions~~
 * Test run on Kubeflow
