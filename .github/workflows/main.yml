@@ -48,8 +48,8 @@ jobs:
             --tag rio05docker/obj_detection_cd:x86_retrain_tflite \
             --platform linux \
             --output "type=image,push=true" \
-            --file ./real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/preprocess/Dockerfile \
-            ./real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/preprocess/
+            --file ./real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/tf2/Dockerfile \
+            ./real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/tf2/
       
       #Build&Push - batch masked rcnn model trainer
       #-
