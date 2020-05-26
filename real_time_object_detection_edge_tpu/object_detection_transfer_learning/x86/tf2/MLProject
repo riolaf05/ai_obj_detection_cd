@@ -22,5 +22,11 @@ entry_points:
     command: "python3 /src/train.py --image-size='{image_size}' --batch-size='{batch_size}' --epochs='{epochs}'"
 
   convert:
-    command: "python3 /src/convert.py"
+    parameters:
+      image_size: {type: number, default: 224}
+    command: "python3 /src/convert_tpu.py --image-size={image_size}"
+  
+  compile:
+    command: "python3 /src/compile.sh"
+
       

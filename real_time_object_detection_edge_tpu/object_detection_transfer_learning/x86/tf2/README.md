@@ -16,7 +16,8 @@ pip3 install mlflow
 ```console
 mlflow run . -b local --no-conda -e preprocess -P directory='<data directory>' -P size='800 600'
 mlflow run . -b local --no-conda -e train -P image_size=224 -P batch_size=16 -P epochs=10
-mlflow run . -b local --no-conda -e convert 
+mlflow run . -b local --no-conda -e convert -P image_size=224
+mlflow run . -b local --no-conda -e compile
 ```
 
 5. Run inference on `image_recognition.ipynb` notebook with new images.

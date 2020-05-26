@@ -27,7 +27,8 @@ RUN pip3 install -r /src/requirements.txt
 
 COPY preprocess/resize_images.py /src/resize_images.py
 COPY train/train.py /src/train.py
-COPY convert/convert.py /src/convert.py
+COPY convert/convert_cpu.py /src/convert.py
+COPY compile/compile.sh /src/compile.sh
 
 WORKDIR /src
 
