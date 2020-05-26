@@ -27,7 +27,7 @@ def train(base_dir, image_size, batch_size, epochs):
     #creo il file di label
     labels = '\n'.join(sorted(train_generator.class_indices.keys()))
 
-    with open('/data/labels.txt', 'w') as f:
+    with open('/save/labels.txt', 'w') as f:
         f.write(labels)
 
     IMG_SHAPE = (image_size, image_size, 3)
