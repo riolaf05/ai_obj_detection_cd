@@ -28,6 +28,8 @@ mlflow run . -b local --no-conda -e compile
 
 See [model requirements](https://coral.ai/docs/edgetpu/models-intro/#model-requirements) for Edge TPU conversion.
 
+Not all operations may be supported by the Edge TPU. A percentage of the model (e.g. `DEPTHWISE_CONV_2D` layer) could be runned on the CPU, which is slower.
+
 ### TODO: 
 * ~~Test batch predictions~~
 * Compile for Edge TPU and add real time inference script with OpenCV
