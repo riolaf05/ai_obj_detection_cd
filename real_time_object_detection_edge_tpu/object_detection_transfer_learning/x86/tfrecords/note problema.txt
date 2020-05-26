@@ -1,0 +1,50 @@
+﻿Vedi guida per trasfer learning: https://towardsdatascience.com/creating-your-own-object-detector-ad69dda69c85
+Vedi guda conversione frozen graph in tflite: https://kharbari.com/how-to-convert-pb-to-tflite-format/
+
+Dopo aver eseguito gli step di preprocess (produce il preprocess/ssd_mobilenet_v2_coco.config config file)
+e lo step di train (crea i checkpoint in training/output/) ed aver convertito il checkpoint in frozen graph .pb
+non riesco a convertire quest'ultimo in tflite (la dimensione del tensore di input è incongruente)
+
+#Preprocess e train manuali
+git checkout retrain-test
+docker run -it -v ~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/data:/object_detection/data -v ~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/preprocess/output:/object_detection/preprocess/ rio05docker/obj_detection_cd:x86_retrain_tflite bash
+python config_pipeline.py
+docker run -it -v ~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/data:/object_detection/data -v ~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/preprocess/output:/object_detection/preprocess/ -v ~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/training/output:/object_detection/training/ rio05docker/obj_detection_cd:x86_retrain_tflite bash
+python /tensorflow/models/research/object_detection/model_main.py --pipeline_config_path='/object_detection/preprocess/ssd_mobilenet_v2_coco.config' --model_dir='/object_detection/training/output' --alsologtostderr --num_train_steps=5 --num_eval_steps=1
+
+
+#Conversion (problema qui!!):
+#Export frozen graph
+docker run -it -v ~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/data:/object_detection/data -v ~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/preprocess/output:/object_detection/preprocess/ -v ~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/training/output:/object_detection/training/ rio05docker/obj_detection_cd:x86_retrain_tflite bash
+python /tensorflow/models/research/object_detection/export_inference_graph.py --input_type image_tensor --pipeline_config_path='/object_detection/preprocess/ssd_mobilenet_v2_coco.config' --trained_checkpoint_prefix training/output/model.ckpt-5.index --output_directory .
+
+#Get layers (python)
+import tensorflow as tf
+Graph = tf.GraphDef()   
+File = open("frozen_inference_graph.pb","rb")
+Graph.ParseFromString(File.read())
+Graph.node[0].name <-- first layer
+[n.name + '=>' +  n.op for n in gf.node if n.op in ( 'Softmax','Placeholder')] <-- first layer (image_tensor) è qui il problema!
+Graph.node[-1].name <-- output layers: etection_boxes,detection_scores,detection_classes,num_detections
+#print di tutti i layers
+for Layer in Graph.node:
+    print(Layer.name)
+
+#Conversion to tflite <-- vedi info su input_shape qui https://docs.openvinotoolkit.org/latest/_docs_MO_DG_prepare_model_convert_model_tf_specific_Convert_Object_Detection_API_Models.html
+Tentativi:
+1. IMAGE_SIZE=300 && tflite_convert \
+ --graph_def_file=training/output/frozen_inference_graph.pb \
+ --output_file=training/output/tflite_graph.tflite \
+ --input_shape=1,${IMAGE_SIZE},${IMAGE_SIZE},3 \
+ --input_arrays='image_tensor' \
+ --inference_type=FLOAT \
+ --output_arrays=detection_boxes,detection_scores,detection_classes,num_detections \
+ --allow_custom_ops 
+
+
+PROBLEMA ==> Check failed: array.data_type == array.final_data_type Array "image_tensor" has mis-matching actual and final data types (data_type=uint8, final_data_type=float)
+(vedi: https://stackoverflow.com/questions/57229664/error-while-converting-from-pb-to-tflite-on-windows)
+
+Tentativi da fare:
+
+1. cambiare il tipo del layer di input in tf.float32

@@ -8,11 +8,11 @@ Workflow:
 
 To run edge device pipeline (RaspberryPi3 with Coral Edge TPU):
 
-1. Put video on `edge/video`
+1. Put video on `edge/video` folder.
 
-2. `edge/run.sh`
+2. `edge/run.sh <video_name> <pose_name> <bucket_name>`, this step will produce video embeddings and put them on provided GCP bucket.
 
-To run Kubeflow pipeline, run `cloud/src/activity_classification.ipynb`
+3. Run Kubeflow pipeline, run `cloud/src/activity_classification.ipynb`
 
 
 ### TODO: 
