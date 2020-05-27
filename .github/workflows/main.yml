@@ -42,14 +42,14 @@ jobs:
             ./batch_custom_model/
         
       -
-        name: Build and push object detection retrain x86 container #see: https://github.com/marketplace/actions/docker-buildx
+        name: Build and push batch image recognition transfer learning retrain container #see: https://github.com/marketplace/actions/docker-buildx
         run: |
           docker buildx build \
-            --tag rio05docker/obj_detection_cd:x86_retrain_tflite \
+            --tag rio05docker/tf2_transfer_learning:${GITHUB_SHA} \
             --platform linux \
             --output "type=image,push=true" \
-            --file ./real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/preprocess/Dockerfile \
-            ./real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/preprocess/
+            --file ./batch_edge_tpu_image_classification/image_classification_transfer_learning_tf2/Dockerfile \
+            ./batch_edge_tpu_image_classification/image_classification_transfer_learning_tf2/
       
       #Build&Push - batch masked rcnn model trainer
       #-

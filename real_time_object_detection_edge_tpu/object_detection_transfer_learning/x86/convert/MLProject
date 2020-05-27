@@ -1,0 +1,14 @@
+#See: https://www.mlflow.org/docs/latest/projects.html
+name: convert
+
+docker_env:
+    image: rio05docker/obj_detection_cd:x86_retrain_tflite
+    volumes: ["~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/data:/object_detection/data", "~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/preprocess/output:/object_detection/preprocess/", "~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86/training/output:/object_detection/training/"]
+    #environment: [["NEW_ENV_VAR", "new_var_value"], "VAR_TO_COPY_FROM_HOST_ENVIRONMENT"]
+
+entry_points:
+  convert:
+    parameters:
+      config_file: {type: string, default: ssd_mobilenet_v2_coco.config}
+      img_size: {type: number, default: 300}
+    command: "/object_detection/convert/convert.sh {config_file} {dim_img_sizedataset}"

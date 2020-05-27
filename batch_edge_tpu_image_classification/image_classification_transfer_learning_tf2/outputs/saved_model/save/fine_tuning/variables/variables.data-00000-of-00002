@@ -1,0 +1,6903 @@
+∫˘ko<À
+Ä
+layer_with_weights-0
+layer-0
+layer_with_weights-1
+layer-1
+layer-2
+layer-3
+layer_with_weights-2
+layer-4
+	optimizer
+	variables
+trainable_variables
+	regularization_losses
+
+	keras_api
+
+signatures
+∞(
+layer-0
+layer-1
+layer_with_weights-0
+layer-2
+layer_with_weights-1
+layer-3
+layer-4
+layer_with_weights-2
+layer-5
+layer_with_weights-3
+layer-6
+layer-7
+layer_with_weights-4
+layer-8
+layer_with_weights-5
+layer-9
+layer_with_weights-6
+layer-10
+layer_with_weights-7
+layer-11
+layer-12
+layer-13
+layer_with_weights-8
+layer-14
+layer_with_weights-9
+layer-15
+layer-16
+layer_with_weights-10
+layer-17
+layer_with_weights-11
+layer-18
+layer_with_weights-12
+layer-19
+ layer_with_weights-13
+ layer-20
+!layer-21
+"layer_with_weights-14
+"layer-22
+#layer_with_weights-15
+#layer-23
+$layer-24
+%layer_with_weights-16
+%layer-25
+&layer_with_weights-17
+&layer-26
+'layer-27
+(layer_with_weights-18
+(layer-28
+)layer_with_weights-19
+)layer-29
+*layer-30
++layer-31
+,layer_with_weights-20
+,layer-32
+-layer_with_weights-21
+-layer-33
+.layer-34
+/layer_with_weights-22
+/layer-35
+0layer_with_weights-23
+0layer-36
+1layer_with_weights-24
+1layer-37
+2layer_with_weights-25
+2layer-38
+3layer-39
+4layer_with_weights-26
+4layer-40
+5layer_with_weights-27
+5layer-41
+6layer-42
+7layer_with_weights-28
+7layer-43
+8layer_with_weights-29
+8layer-44
+9layer-45
+:layer_with_weights-30
+:layer-46
+;layer_with_weights-31
+;layer-47
+<layer-48
+=layer_with_weights-32
+=layer-49
+>layer_with_weights-33
+>layer-50
+?layer-51
+@layer_with_weights-34
+@layer-52
+Alayer_with_weights-35
+Alayer-53
+Blayer-54
+Clayer_with_weights-36
+Clayer-55
+Dlayer_with_weights-37
+Dlayer-56
+Elayer-57
+Flayer-58
+Glayer_with_weights-38
+Glayer-59
+Hlayer_with_weights-39
+Hlayer-60
+Ilayer-61
+Jlayer_with_weights-40
+Jlayer-62
+Klayer_with_weights-41
+Klayer-63
+Llayer_with_weights-42
+Llayer-64
+Mlayer_with_weights-43
+Mlayer-65
+Nlayer-66
+Olayer_with_weights-44
+Olayer-67
+Player_with_weights-45
+Player-68
+Qlayer-69
+Rlayer_with_weights-46
+Rlayer-70
+Slayer_with_weights-47
+Slayer-71
+Tlayer-72
+Ulayer_with_weights-48
+Ulayer-73
+Vlayer_with_weights-49
+Vlayer-74
+Wlayer-75
+Xlayer_with_weights-50
+Xlayer-76
+Ylayer_with_weights-51
+Ylayer-77
+Zlayer-78
+[layer_with_weights-52
+[layer-79
+\layer_with_weights-53
+\layer-80
+]layer-81
+^layer_with_weights-54
+^layer-82
+_layer_with_weights-55
+_layer-83
+`layer-84
+alayer_with_weights-56
+alayer-85
+blayer_with_weights-57
+blayer-86
+clayer-87
+dlayer_with_weights-58
+dlayer-88
+elayer_with_weights-59
+elayer-89
+flayer-90
+glayer_with_weights-60
+glayer-91
+hlayer_with_weights-61
+hlayer-92
+ilayer-93
+jlayer_with_weights-62
+jlayer-94
+klayer_with_weights-63
+klayer-95
+llayer-96
+mlayer_with_weights-64
+mlayer-97
+nlayer_with_weights-65
+nlayer-98
+olayer_with_weights-66
+olayer-99
+player_with_weights-67
+p	layer-100
+q	layer-101
+rlayer_with_weights-68
+r	layer-102
+slayer_with_weights-69
+s	layer-103
+t	layer-104
+ulayer_with_weights-70
+u	layer-105
+vlayer_with_weights-71
+v	layer-106
+w	layer-107
+xlayer_with_weights-72
+x	layer-108
+ylayer_with_weights-73
+y	layer-109
+z	layer-110
+{layer_with_weights-74
+{	layer-111
+|layer_with_weights-75
+|	layer-112
+}	layer-113
+~layer_with_weights-76
+~	layer-114
+layer_with_weights-77
+	layer-115
+Ä	layer-116
+Ålayer_with_weights-78
+Å	layer-117
+Çlayer_with_weights-79
+Ç	layer-118
+É	layer-119
+Ñ	layer-120
+Ölayer_with_weights-80
+Ö	layer-121
+Ülayer_with_weights-81
+Ü	layer-122
+á	layer-123
+àlayer_with_weights-82
+à	layer-124
+âlayer_with_weights-83
+â	layer-125
+älayer_with_weights-84
+ä	layer-126
+ãlayer_with_weights-85
+ã	layer-127
+å	layer-128
+çlayer_with_weights-86
+ç	layer-129
+élayer_with_weights-87
+é	layer-130
+è	layer-131
+êlayer_with_weights-88
+ê	layer-132
+ëlayer_with_weights-89
+ë	layer-133
+í	layer-134
+ìlayer_with_weights-90
+ì	layer-135
+îlayer_with_weights-91
+î	layer-136
+ï	layer-137
+ñlayer_with_weights-92
+ñ	layer-138
+ólayer_with_weights-93
+ó	layer-139
+ò	layer-140
+ôlayer_with_weights-94
+ô	layer-141
+ölayer_with_weights-95
+ö	layer-142
+õ	layer-143
+úlayer_with_weights-96
+ú	layer-144
+ùlayer_with_weights-97
+ù	layer-145
+û	layer-146
+ülayer_with_weights-98
+ü	layer-147
+†layer_with_weights-99
+†	layer-148
+°	layer-149
+¢layer_with_weights-100
+¢	layer-150
+£layer_with_weights-101
+£	layer-151
+§layer_with_weights-102
+§	layer-152
+•layer_with_weights-103
+•	layer-153
+¶	layer-154
+ß	variables
+®trainable_variables
+©regularization_losses
+™	keras_api
+n
+´kernel
+	¨bias
+≠	variables
+Ætrainable_variables
+Øregularization_losses
+∞	keras_api
+V
+±	variables
+≤trainable_variables
+≥regularization_losses
+¥	keras_api
+V
+µ	variables
+∂trainable_variables
+∑regularization_losses
+∏	keras_api
+n
+πkernel
+	∫bias
+ª	variables
+ºtrainable_variables
+Ωregularization_losses
+æ	keras_api
+Ì
+
+	øiter
+¿beta_1
+¡beta_2
+
+¬decay
+√learning_rate	´mè	¨mê	πmë	∫mí	Ímì	Îmî	Ómï	Ômñ	mó	Ûmò	Ùmô	ımö	¯mõ	˘mú	˙mù	˝mû	˛mü	ˇm†	Çm°	Ém¢	Ñm£	ám§	àm•	âm¶	åmß	çm®	ém©	ëm™	ím´	ìm¨	ñm≠	ómÆ	òmØ	õm∞	úm±	ùm≤	†m≥	°m¥	¢mµ	•m∂	¶m∑	ßm∏	™mπ	´m∫	¨mª	Ømº	∞mΩ	±mæ	¥mø	µm¿	∂m¡	πm¬	∫m√	ªmƒ	æm≈	øm∆	¿m«	√m»	ƒm…	≈m 	´vÀ	¨vÃ	πvÕ	∫vŒ	Ívœ	Îv–	Óv—	Ôv“	v”	Ûv‘	Ùv’	ıv÷	¯v◊	˘vÿ	˙vŸ	˝v⁄	˛v€	ˇv‹	Çv›	Évﬁ	Ñvﬂ	áv‡	àv·	âv‚	åv„	çv‰	évÂ	ëvÊ	ívÁ	ìvË	ñvÈ	óvÍ	òvÎ	õvÏ	úvÌ	ùvÓ	†vÔ	°v	¢vÒ	•vÚ	¶vÛ	ßvÙ	™vı	´vˆ	¨v˜	Øv¯	∞v˘	±v˙	¥v˚	µv¸	∂v˝	πv˛	∫vˇ	ªvÄ	ævÅ	øvÇ	¿vÉ	√vÑ	ƒvÖ	≈vÜ
+‚
+ƒ0
+≈1
+∆2
+«3
+»4
+…5
+ 6
+À7
+Ã8
+Õ9
+Œ10
+œ11
+–12
+—13
+“14
+”15
+‘16
+’17
+÷18
+◊19
+ÿ20
+Ÿ21
+⁄22
+€23
+‹24
+›25
+ﬁ26
+ﬂ27
+‡28
+·29
+‚30
+„31
+‰32
+Â33
+Ê34
+Á35
+Ë36
+È37
+Í38
+Î39
+Ï40
+Ì41
+Ó42
+Ô43
+44
+Ò45
+Ú46
+Û47
+Ù48
+ı49
+ˆ50
+˜51
+¯52
+˘53
+˙54
+˚55
+¸56
+˝57
+˛58
+ˇ59
+Ä60
+Å61
+Ç62
+É63
+Ñ64
+Ö65
+Ü66
+á67
+à68
+â69
+ä70
+ã71
+å72
+ç73
+é74
+è75
+ê76
+ë77
+í78
+ì79
+î80
+ï81
+ñ82
+ó83
+ò84
+ô85
+ö86
+õ87
+ú88
+ù89
+û90
+ü91
+†92
+°93
+¢94
+£95
+§96
+•97
+¶98
+ß99
+®100
+©101
+™102
+´103
+¨104
+≠105
+Æ106
+Ø107
+∞108
+±109
+≤110
+≥111
+¥112
+µ113
+∂114
+∑115
+∏116
+π117
+∫118
+ª119
+º120
+Ω121
+æ122
+ø123
+¿124
+¡125
+¬126
+√127
+ƒ128
+≈129
+∆130
+«131
+»132
+…133
+ 134
+À135
+Ã136
+Õ137
+Œ138
+œ139
+–140
+—141
+“142
+”143
+‘144
+’145
+÷146
+◊147
+ÿ148
+Ÿ149
+⁄150
+€151
+‹152
+›153
+ﬁ154
+ﬂ155
+‡156
+·157
+‚158
+„159
+‰160
+Â161
+Ê162
+Á163
+Ë164
+È165
+Í166
+Î167
+Ï168
+Ì169
+Ó170
+Ô171
+172
+Ò173
+Ú174
+Û175
+Ù176
+ı177
+ˆ178
+˜179
+¯180
+˘181
+˙182
+˚183
+¸184
+˝185
+˛186
+ˇ187
+Ä188
+Å189
+Ç190
+É191
+Ñ192
+Ö193
+Ü194
+á195
+à196
+â197
+ä198
+ã199
+å200
+ç201
+é202
+è203
+ê204
+ë205
+í206
+ì207
+î208
+ï209
+ñ210
+ó211
+ò212
+ô213
+ö214
+õ215
+ú216
+ù217
+û218
+ü219
+†220
+°221
+¢222
+£223
+§224
+•225
+¶226
+ß227
+®228
+©229
+™230
+´231
+¨232
+≠233
+Æ234
+Ø235
+∞236
+±237
+≤238
+≥239
+¥240
+µ241
+∂242
+∑243
+∏244
+π245
+∫246
+ª247
+º248
+Ω249
+æ250
+ø251
+¿252
+¡253
+¬254
+√255
+ƒ256
+≈257
+∆258
+«259
+´260
+¨261
+π262
+∫263
+í
+Í0
+Î1
+Ó2
+Ô3
+4
+Û5
+Ù6
+ı7
+¯8
+˘9
+˙10
+˝11
+˛12
+ˇ13
+Ç14
+É15
+Ñ16
+á17
+à18
+â19
+å20
+ç21
+é22
+ë23
+í24
+ì25
+ñ26
+ó27
+ò28
+õ29
+ú30
+ù31
+†32
+°33
+¢34
+•35
+¶36
+ß37
+™38
+´39
+¨40
+Ø41
+∞42
+±43
+¥44
+µ45
+∂46
+π47
+∫48
+ª49
+æ50
+ø51
+¿52
+√53
+ƒ54
+≈55
+´56
+¨57
+π58
+∫59
+ 
+≤
+	variables
+»layers
+trainable_variables
+ …layer_regularization_losses
+ non_trainable_variables
+	regularization_losses
+Àlayer_metrics
+Ãmetrics
+ 
+ 
+V
+Õ	variables
+Œtrainable_variables
+œregularization_losses
+–	keras_api
+c
+ƒkernel
+—	variables
+“trainable_variables
+”regularization_losses
+‘	keras_api
+†
+	’axis
+
+≈gamma
+	∆beta
+«moving_mean
+»moving_variance
+÷	variables
+◊trainable_variables
+ÿregularization_losses
+Ÿ	keras_api
+V
+⁄	variables
+€trainable_variables
+‹regularization_losses
+›	keras_api
+m
+…depthwise_kernel
+ﬁ	variables
+ﬂtrainable_variables
+‡regularization_losses
+·	keras_api
+†
+	‚axis
+
+ gamma
+	Àbeta
+Ãmoving_mean
+Õmoving_variance
+„	variables
+‰trainable_variables
+Âregularization_losses
+Ê	keras_api
+V
+Á	variables
+Ëtrainable_variables
+Èregularization_losses
+Í	keras_api
+c
+Œkernel
+Î	variables
+Ïtrainable_variables
+Ìregularization_losses
+Ó	keras_api
+†
+	Ôaxis
+
+œgamma
+	–beta
+—moving_mean
+“moving_variance
+	variables
+Òtrainable_variables
+Úregularization_losses
+Û	keras_api
+c
+”kernel
+Ù	variables
+ıtrainable_variables
+ˆregularization_losses
+˜	keras_api
+†
+	¯axis
+
+‘gamma
+	’beta
+÷moving_mean
+◊moving_variance
+˘	variables
+˙trainable_variables
+˚regularization_losses
+¸	keras_api
+V
+˝	variables
+˛trainable_variables
+ˇregularization_losses
+Ä	keras_api
+V
+Å	variables
+Çtrainable_variables
+Éregularization_losses
+Ñ	keras_api
+m
+ÿdepthwise_kernel
+Ö	variables
+Ütrainable_variables
+áregularization_losses
+à	keras_api
+†
+	âaxis
+
+Ÿgamma
+	⁄beta
+€moving_mean
+‹moving_variance
+ä	variables
+ãtrainable_variables
+åregularization_losses
+ç	keras_api
+V
+é	variables
+ètrainable_variables
+êregularization_losses
+ë	keras_api
+c
+›kernel
+í	variables
+ìtrainable_variables
+îregularization_losses
+ï	keras_api
+†
+	ñaxis
+
+ﬁgamma
+	ﬂbeta
+‡moving_mean
+·moving_variance
+ó	variables
+òtrainable_variables
+ôregularization_losses
+ö	keras_api
+c
+‚kernel
+õ	variables
+útrainable_variables
+ùregularization_losses
+û	keras_api
+†
+	üaxis
+
+„gamma
+	‰beta
+Âmoving_mean
+Êmoving_variance
+†	variables
+°trainable_variables
+¢regularization_losses
+£	keras_api
+V
+§	variables
+•trainable_variables
+¶regularization_losses
+ß	keras_api
+m
+Ádepthwise_kernel
+®	variables
+©trainable_variables
+™regularization_losses
+´	keras_api
+†
+	¨axis
+
+Ëgamma
+	Èbeta
+Ímoving_mean
+Îmoving_variance
+≠	variables
+Ætrainable_variables
+Øregularization_losses
+∞	keras_api
+V
+±	variables
+≤trainable_variables
+≥regularization_losses
+¥	keras_api
+c
+Ïkernel
+µ	variables
+∂trainable_variables
+∑regularization_losses
+∏	keras_api
+†
+	πaxis
+
+Ìgamma
+	Óbeta
+Ômoving_mean
+moving_variance
+∫	variables
+ªtrainable_variables
+ºregularization_losses
+Ω	keras_api
+V
+æ	variables
+øtrainable_variables
+¿regularization_losses
+¡	keras_api
+c
+Òkernel
+¬	variables
+√trainable_variables
+ƒregularization_losses
+≈	keras_api
+†
+	∆axis
+
+Úgamma
+	Ûbeta
+Ùmoving_mean
+ımoving_variance
+«	variables
+»trainable_variables
+…regularization_losses
+ 	keras_api
+V
+À	variables
+Ãtrainable_variables
+Õregularization_losses
+Œ	keras_api
+V
+œ	variables
+–trainable_variables
+—regularization_losses
+“	keras_api
+m
+ˆdepthwise_kernel
+”	variables
+‘trainable_variables
+’regularization_losses
+÷	keras_api
+†
+	◊axis
+
+˜gamma
+	¯beta
+˘moving_mean
+˙moving_variance
+ÿ	variables
+Ÿtrainable_variables
+⁄regularization_losses
+€	keras_api
+V
+‹	variables
+›trainable_variables
+ﬁregularization_losses
+ﬂ	keras_api
+c
+˚kernel
+‡	variables
+·trainable_variables
+‚regularization_losses
+„	keras_api
+†
+	‰axis
+
+¸gamma
+	˝beta
+˛moving_mean
+ˇmoving_variance
+Â	variables
+Êtrainable_variables
+Áregularization_losses
+Ë	keras_api
+c
+Äkernel
+È	variables
+Ítrainable_variables
+Îregularization_losses
+Ï	keras_api
+†
+	Ìaxis
+
+Ågamma
+	Çbeta
+Émoving_mean
+Ñmoving_variance
+Ó	variables
+Ôtrainable_variables
+regularization_losses
+Ò	keras_api
+V
+Ú	variables
+Ûtrainable_variables
+Ùregularization_losses
+ı	keras_api
+m
+Ödepthwise_kernel
+ˆ	variables
+˜trainable_variables
+¯regularization_losses
+˘	keras_api
+†
+	˙axis
+
+Ügamma
+	ábeta
+àmoving_mean
+âmoving_variance
+˚	variables
+¸trainable_variables
+˝regularization_losses
+˛	keras_api
+V
+ˇ	variables
+Ätrainable_variables
+Åregularization_losses
+Ç	keras_api
+c
+äkernel
+É	variables
+Ñtrainable_variables
+Öregularization_losses
+Ü	keras_api
+†
+	áaxis
+
+ãgamma
+	åbeta
+çmoving_mean
+émoving_variance
+à	variables
+âtrainable_variables
+äregularization_losses
+ã	keras_api
+V
+å	variables
+çtrainable_variables
+éregularization_losses
+è	keras_api
+c
+èkernel
+ê	variables
+ëtrainable_variables
+íregularization_losses
+ì	keras_api
+†
+	îaxis
+
+êgamma
+	ëbeta
+ímoving_mean
+ìmoving_variance
+ï	variables
+ñtrainable_variables
+óregularization_losses
+ò	keras_api
+V
+ô	variables
+ötrainable_variables
+õregularization_losses
+ú	keras_api
+m
+îdepthwise_kernel
+ù	variables
+ûtrainable_variables
+üregularization_losses
+†	keras_api
+†
+	°axis
+
+ïgamma
+	ñbeta
+ómoving_mean
+òmoving_variance
+¢	variables
+£trainable_variables
+§regularization_losses
+•	keras_api
+V
+¶	variables
+ßtrainable_variables
+®regularization_losses
+©	keras_api
+c
+ôkernel
+™	variables
+´trainable_variables
+¨regularization_losses
+≠	keras_api
+†
+	Æaxis
+
+ögamma
+	õbeta
+úmoving_mean
+ùmoving_variance
+Ø	variables
+∞trainable_variables
+±regularization_losses
+≤	keras_api
+V
+≥	variables
+¥trainable_variables
+µregularization_losses
+∂	keras_api
+c
+ûkernel
+∑	variables
+∏trainable_variables
+πregularization_losses
+∫	keras_api
+†
+	ªaxis
+
+ügamma
+	†beta
+°moving_mean
+¢moving_variance
+º	variables
+Ωtrainable_variables
+æregularization_losses
+ø	keras_api
+V
+¿	variables
+¡trainable_variables
+¬regularization_losses
+√	keras_api
+V
+ƒ	variables
+≈trainable_variables
+∆regularization_losses
+«	keras_api
+m
+£depthwise_kernel
+»	variables
+…trainable_variables
+ regularization_losses
+À	keras_api
+†
+	Ãaxis
+
+§gamma
+	•beta
+¶moving_mean
+ßmoving_variance
+Õ	variables
+Œtrainable_variables
+œregularization_losses
+–	keras_api
+V
+—	variables
+“trainable_variables
+”regularization_losses
+‘	keras_api
+c
+®kernel
+’	variables
+÷trainable_variables
+◊regularization_losses
+ÿ	keras_api
+†
+	Ÿaxis
+
+©gamma
+	™beta
+´moving_mean
+¨moving_variance
+⁄	variables
+€trainable_variables
+‹regularization_losses
+›	keras_api
+c
+≠kernel
+ﬁ	variables
+ﬂtrainable_variables
+‡regularization_losses
+·	keras_api
+†
+	‚axis
+
+Ægamma
+	Øbeta
+∞moving_mean
+±moving_variance
+„	variables
+‰trainable_variables
+Âregularization_losses
+Ê	keras_api
+V
+Á	variables
+Ëtrainable_variables
+Èregularization_losses
+Í	keras_api
+m
+≤depthwise_kernel
+Î	variables
+Ïtrainable_variables
+Ìregularization_losses
+Ó	keras_api
+†
+	Ôaxis
+
+≥gamma
+	¥beta
+µmoving_mean
+∂moving_variance
+	variables
+Òtrainable_variables
+Úregularization_losses
+Û	keras_api
+V
+Ù	variables
+ıtrainable_variables
+ˆregularization_losses
+˜	keras_api
+c
+∑kernel
+¯	variables
+˘trainable_variables
+˙regularization_losses
+˚	keras_api
+†
+	¸axis
+
+∏gamma
+	πbeta
+∫moving_mean
+ªmoving_variance
+˝	variables
+˛trainable_variables
+ˇregularization_losses
+Ä	keras_api
+V
+Å	variables
+Çtrainable_variables
+Éregularization_losses
+Ñ	keras_api
+c
+ºkernel
+Ö	variables
+Ütrainable_variables
+áregularization_losses
+à	keras_api
+†
+	âaxis
+
+Ωgamma
+	æbeta
+ømoving_mean
+¿moving_variance
+ä	variables
+ãtrainable_variables
+åregularization_losses
+ç	keras_api
+V
+é	variables
+ètrainable_variables
+êregularization_losses
+ë	keras_api
+m
+¡depthwise_kernel
+í	variables
+ìtrainable_variables
+îregularization_losses
+ï	keras_api
+†
+	ñaxis
+
+¬gamma
+	√beta
+ƒmoving_mean
+≈moving_variance
+ó	variables
+òtrainable_variables
+ôregularization_losses
+ö	keras_api
+V
+õ	variables
+útrainable_variables
+ùregularization_losses
+û	keras_api
+c
+∆kernel
+ü	variables
+†trainable_variables
+°regularization_losses
+¢	keras_api
+†
+	£axis
+
+«gamma
+	»beta
+…moving_mean
+ moving_variance
+§	variables
+•trainable_variables
+¶regularization_losses
+ß	keras_api
+V
+®	variables
+©trainable_variables
+™regularization_losses
+´	keras_api
+c
+Àkernel
+¨	variables
+≠trainable_variables
+Æregularization_losses
+Ø	keras_api
+†
+	∞axis
+
+Ãgamma
+	Õbeta
+Œmoving_mean
+œmoving_variance
+±	variables
+≤trainable_variables
+≥regularization_losses
+¥	keras_api
+V
+µ	variables
+∂trainable_variables
+∑regularization_losses
+∏	keras_api
+m
+–depthwise_kernel
+π	variables
+∫trainable_variables
+ªregularization_losses
+º	keras_api
+†
+	Ωaxis
+
+—gamma
+	“beta
+”moving_mean
+‘moving_variance
+æ	variables
+øtrainable_variables
+¿regularization_losses
+¡	keras_api
+V
+¬	variables
+√trainable_variables
+ƒregularization_losses
+≈	keras_api
+c
+’kernel
+∆	variables
+«trainable_variables
+»regularization_losses
+…	keras_api
+†
+	 axis
+
+÷gamma
+	◊beta
+ÿmoving_mean
+Ÿmoving_variance
+À	variables
+Ãtrainable_variables
+Õregularization_losses
+Œ	keras_api
+V
+œ	variables
+–trainable_variables
+—regularization_losses
+“	keras_api
+c
+⁄kernel
+”	variables
+‘trainable_variables
+’regularization_losses
+÷	keras_api
+†
+	◊axis
+
+€gamma
+	‹beta
+›moving_mean
+ﬁmoving_variance
+ÿ	variables
+Ÿtrainable_variables
+⁄regularization_losses
+€	keras_api
+V
+‹	variables
+›trainable_variables
+ﬁregularization_losses
+ﬂ	keras_api
+m
+ﬂdepthwise_kernel
+‡	variables
+·trainable_variables
+‚regularization_losses
+„	keras_api
+†
+	‰axis
+
+‡gamma
+	·beta
+‚moving_mean
+„moving_variance
+Â	variables
+Êtrainable_variables
+Áregularization_losses
+Ë	keras_api
+V
+È	variables
+Ítrainable_variables
+Îregularization_losses
+Ï	keras_api
+c
+‰kernel
+Ì	variables
+Ótrainable_variables
+Ôregularization_losses
+	keras_api
+†
+	Òaxis
+
+Âgamma
+	Êbeta
+Ámoving_mean
+Ëmoving_variance
+Ú	variables
+Ûtrainable_variables
+Ùregularization_losses
+ı	keras_api
+c
+Èkernel
+ˆ	variables
+˜trainable_variables
+¯regularization_losses
+˘	keras_api
+†
+	˙axis
+
+Ígamma
+	Îbeta
+Ïmoving_mean
+Ìmoving_variance
+˚	variables
+¸trainable_variables
+˝regularization_losses
+˛	keras_api
+V
+ˇ	variables
+Ätrainable_variables
+Åregularization_losses
+Ç	keras_api
+m
+Ódepthwise_kernel
+É	variables
+Ñtrainable_variables
+Öregularization_losses
+Ü	keras_api
+†
+	áaxis
+
+Ôgamma
+	beta
+Òmoving_mean
+Úmoving_variance
+à	variables
+âtrainable_variables
+äregularization_losses
+ã	keras_api
+V
+å	variables
+çtrainable_variables
+éregularization_losses
+è	keras_api
+c
+Ûkernel
+ê	variables
+ëtrainable_variables
+íregularization_losses
+ì	keras_api
+†
+	îaxis
+
+Ùgamma
+	ıbeta
+ˆmoving_mean
+˜moving_variance
+ï	variables
+ñtrainable_variables
+óregularization_losses
+ò	keras_api
+V
+ô	variables
+ötrainable_variables
+õregularization_losses
+ú	keras_api
+c
+¯kernel
+ù	variables
+ûtrainable_variables
+üregularization_losses
+†	keras_api
+†
+	°axis
+
+˘gamma
+	˙beta
+˚moving_mean
+¸moving_variance
+¢	variables
+£trainable_variables
+§regularization_losses
+•	keras_api
+V
+¶	variables
+ßtrainable_variables
+®regularization_losses
+©	keras_api
+m
+˝depthwise_kernel
+™	variables
+´trainable_variables
+¨regularization_losses
+≠	keras_api
+†
+	Æaxis
+
+˛gamma
+	ˇbeta
+Ämoving_mean
+Åmoving_variance
+Ø	variables
+∞trainable_variables
+±regularization_losses
+≤	keras_api
+V
+≥	variables
+¥trainable_variables
+µregularization_losses
+∂	keras_api
+c
+Çkernel
+∑	variables
+∏trainable_variables
+πregularization_losses
+∫	keras_api
+†
+	ªaxis
+
+Égamma
+	Ñbeta
+Ömoving_mean
+Ümoving_variance
+º	variables
+Ωtrainable_variables
+æregularization_losses
+ø	keras_api
+V
+¿	variables
+¡trainable_variables
+¬regularization_losses
+√	keras_api
+c
+ákernel
+ƒ	variables
+≈trainable_variables
+∆regularization_losses
+«	keras_api
+†
+	»axis
+
+àgamma
+	âbeta
+ämoving_mean
+ãmoving_variance
+…	variables
+ trainable_variables
+Àregularization_losses
+Ã	keras_api
+V
+Õ	variables
+Œtrainable_variables
+œregularization_losses
+–	keras_api
+V
+—	variables
+“trainable_variables
+”regularization_losses
+‘	keras_api
+m
+ådepthwise_kernel
+’	variables
+÷trainable_variables
+◊regularization_losses
+ÿ	keras_api
+†
+	Ÿaxis
+
+çgamma
+	ébeta
+èmoving_mean
+êmoving_variance
+⁄	variables
+€trainable_variables
+‹regularization_losses
+›	keras_api
+V
+ﬁ	variables
+ﬂtrainable_variables
+‡regularization_losses
+·	keras_api
+c
+ëkernel
+‚	variables
+„trainable_variables
+‰regularization_losses
+Â	keras_api
+†
+	Êaxis
+
+ígamma
+	ìbeta
+îmoving_mean
+ïmoving_variance
+Á	variables
+Ëtrainable_variables
+Èregularization_losses
+Í	keras_api
+c
+ñkernel
+Î	variables
+Ïtrainable_variables
+Ìregularization_losses
+Ó	keras_api
+†
+	Ôaxis
+
+ógamma
+	òbeta
+ômoving_mean
+ömoving_variance
+	variables
+Òtrainable_variables
+Úregularization_losses
+Û	keras_api
+V
+Ù	variables
+ıtrainable_variables
+ˆregularization_losses
+˜	keras_api
+m
+õdepthwise_kernel
+¯	variables
+˘trainable_variables
+˙regularization_losses
+˚	keras_api
+†
+	¸axis
+
+úgamma
+	ùbeta
+ûmoving_mean
+ümoving_variance
+˝	variables
+˛trainable_variables
+ˇregularization_losses
+Ä	keras_api
+V
+Å	variables
+Çtrainable_variables
+Éregularization_losses
+Ñ	keras_api
+c
+†kernel
+Ö	variables
+Ütrainable_variables
+áregularization_losses
+à	keras_api
+†
+	âaxis
+
+°gamma
+	¢beta
+£moving_mean
+§moving_variance
+ä	variables
+ãtrainable_variables
+åregularization_losses
+ç	keras_api
+V
+é	variables
+ètrainable_variables
+êregularization_losses
+ë	keras_api
+c
+•kernel
+í	variables
+ìtrainable_variables
+îregularization_losses
+ï	keras_api
+†
+	ñaxis
+
+¶gamma
+	ßbeta
+®moving_mean
+©moving_variance
+ó	variables
+òtrainable_variables
+ôregularization_losses
+ö	keras_api
+V
+õ	variables
+útrainable_variables
+ùregularization_losses
+û	keras_api
+m
+™depthwise_kernel
+ü	variables
+†trainable_variables
+°regularization_losses
+¢	keras_api
+†
+	£axis
+
+´gamma
+	¨beta
+≠moving_mean
+Æmoving_variance
+§	variables
+•trainable_variables
+¶regularization_losses
+ß	keras_api
+V
+®	variables
+©trainable_variables
+™regularization_losses
+´	keras_api
+c
+Økernel
+¨	variables
+≠trainable_variables
+Æregularization_losses
+Ø	keras_api
+†
+	∞axis
+
+∞gamma
+	±beta
+≤moving_mean
+≥moving_variance
+±	variables
+≤trainable_variables
+≥regularization_losses
+¥	keras_api
+V
+µ	variables
+∂trainable_variables
+∑regularization_losses
+∏	keras_api
+c
+¥kernel
+π	variables
+∫trainable_variables
+ªregularization_losses
+º	keras_api
+†
+	Ωaxis
+
+µgamma
+	∂beta
+∑moving_mean
+∏moving_variance
+æ	variables
+øtrainable_variables
+¿regularization_losses
+¡	keras_api
+V
+¬	variables
+√trainable_variables
+ƒregularization_losses
+≈	keras_api
+m
+πdepthwise_kernel
+∆	variables
+«trainable_variables
+»regularization_losses
+…	keras_api
+†
+	 axis
+
+∫gamma
+	ªbeta
+ºmoving_mean
+Ωmoving_variance
+À	variables
+Ãtrainable_variables
+Õregularization_losses
+Œ	keras_api
+V
+œ	variables
+–trainable_variables
+—regularization_losses
+“	keras_api
+c
+ækernel
+”	variables
+‘trainable_variables
+’regularization_losses
+÷	keras_api
+†
+	◊axis
+
+øgamma
+	¿beta
+¡moving_mean
+¬moving_variance
+ÿ	variables
+Ÿtrainable_variables
+⁄regularization_losses
+€	keras_api
+c
+√kernel
+‹	variables
+›trainable_variables
+ﬁregularization_losses
+ﬂ	keras_api
+†
+	‡axis
+
+ƒgamma
+	≈beta
+∆moving_mean
+«moving_variance
+·	variables
+‚trainable_variables
+„regularization_losses
+‰	keras_api
+V
+Â	variables
+Êtrainable_variables
+Áregularization_losses
+Ë	keras_api
+∫
+ƒ0
+≈1
+∆2
+«3
+»4
+…5
+ 6
+À7
+Ã8
+Õ9
+Œ10
+œ11
+–12
+—13
+“14
+”15
+‘16
+’17
+÷18
+◊19
+ÿ20
+Ÿ21
+⁄22
+€23
+‹24
+›25
+ﬁ26
+ﬂ27
+‡28
+·29
+‚30
+„31
+‰32
+Â33
+Ê34
+Á35
+Ë36
+È37
+Í38
+Î39
+Ï40
+Ì41
+Ó42
+Ô43
+44
+Ò45
+Ú46
+Û47
+Ù48
+ı49
+ˆ50
+˜51
+¯52
+˘53
+˙54
+˚55
+¸56
+˝57
+˛58
+ˇ59
+Ä60
+Å61
+Ç62
+É63
+Ñ64
+Ö65
+Ü66
+á67
+à68
+â69
+ä70
+ã71
+å72
+ç73
+é74
+è75
+ê76
+ë77
+í78
+ì79
+î80
+ï81
+ñ82
+ó83
+ò84
+ô85
+ö86
+õ87
+ú88
+ù89
+û90
+ü91
+†92
+°93
+¢94
+£95
+§96
+•97
+¶98
+ß99
+®100
+©101
+™102
+´103
+¨104
+≠105
+Æ106
+Ø107
+∞108
+±109
+≤110
+≥111
+¥112
+µ113
+∂114
+∑115
+∏116
+π117
+∫118
+ª119
+º120
+Ω121
+æ122
+ø123
+¿124
+¡125
+¬126
+√127
+ƒ128
+≈129
+∆130
+«131
+»132
+…133
+ 134
+À135
+Ã136
+Õ137
+Œ138
+œ139
+–140
+—141
+“142
+”143
+‘144
+’145
+÷146
+◊147
+ÿ148
+Ÿ149
+⁄150
+€151
+‹152
+›153
+ﬁ154
+ﬂ155
+‡156
+·157
+‚158
+„159
+‰160
+Â161
+Ê162
+Á163
+Ë164
+È165
+Í166
+Î167
+Ï168
+Ì169
+Ó170
+Ô171
+172
+Ò173
+Ú174
+Û175
+Ù176
+ı177
+ˆ178
+˜179
+¯180
+˘181
+˙182
+˚183
+¸184
+˝185
+˛186
+ˇ187
+Ä188
+Å189
+Ç190
+É191
+Ñ192
+Ö193
+Ü194
+á195
+à196
+â197
+ä198
+ã199
+å200
+ç201
+é202
+è203
+ê204
+ë205
+í206
+ì207
+î208
+ï209
+ñ210
+ó211
+ò212
+ô213
+ö214
+õ215
+ú216
+ù217
+û218
+ü219
+†220
+°221
+¢222
+£223
+§224
+•225
+¶226
+ß227
+®228
+©229
+™230
+´231
+¨232
+≠233
+Æ234
+Ø235
+∞236
+±237
+≤238
+≥239
+¥240
+µ241
+∂242
+∑243
+∏244
+π245
+∫246
+ª247
+º248
+Ω249
+æ250
+ø251
+¿252
+¡253
+¬254
+√255
+ƒ256
+≈257
+∆258
+«259
+Ó
+Í0
+Î1
+Ó2
+Ô3
+4
+Û5
+Ù6
+ı7
+¯8
+˘9
+˙10
+˝11
+˛12
+ˇ13
+Ç14
+É15
+Ñ16
+á17
+à18
+â19
+å20
+ç21
+é22
+ë23
+í24
+ì25
+ñ26
+ó27
+ò28
+õ29
+ú30
+ù31
+†32
+°33
+¢34
+•35
+¶36
+ß37
+™38
+´39
+¨40
+Ø41
+∞42
+±43
+¥44
+µ45
+∂46
+π47
+∫48
+ª49
+æ50
+ø51
+¿52
+√53
+ƒ54
+≈55
+ 
+µ
+ß	variables
+Èlayers
+®trainable_variables
+ Ílayer_regularization_losses
+Înon_trainable_variables
+©regularization_losses
+Ïlayer_metrics
+Ìmetrics
+[Y
+VARIABLE_VALUEconv2d_3/kernel6layer_with_weights-1/kernel/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEconv2d_3/bias4layer_with_weights-1/bias/.ATTRIBUTES/VARIABLE_VALUE
+
+´0
+¨1
+
+´0
+¨1
+ 
+µ
+≠	variables
+Ólayers
+Ætrainable_variables
+ Ôlayer_regularization_losses
+non_trainable_variables
+Øregularization_losses
+Òlayer_metrics
+Úmetrics
+ 
+ 
+ 
+µ
+±	variables
+Ûlayers
+≤trainable_variables
+ Ùlayer_regularization_losses
+ınon_trainable_variables
+≥regularization_losses
+ˆlayer_metrics
+˜metrics
+ 
+ 
+ 
+µ
+µ	variables
+¯layers
+∂trainable_variables
+ ˘layer_regularization_losses
+˙non_trainable_variables
+∑regularization_losses
+˚layer_metrics
+¸metrics
+ZX
+VARIABLE_VALUEdense_3/kernel6layer_with_weights-2/kernel/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEdense_3/bias4layer_with_weights-2/bias/.ATTRIBUTES/VARIABLE_VALUE
+
+π0
+∫1
+
+π0
+∫1
+ 
+µ
+ª	variables
+˝layers
+ºtrainable_variables
+ ˛layer_regularization_losses
+ˇnon_trainable_variables
+Ωregularization_losses
+Ä	layer_metrics
+Å	metrics
+HF
+VARIABLE_VALUE	Adam/iter)optimizer/iter/.ATTRIBUTES/VARIABLE_VALUE
+LJ
+VARIABLE_VALUEAdam/beta_1+optimizer/beta_1/.ATTRIBUTES/VARIABLE_VALUE
+LJ
+VARIABLE_VALUEAdam/beta_2+optimizer/beta_2/.ATTRIBUTES/VARIABLE_VALUE
+JH
+VARIABLE_VALUE
+Adam/decay*optimizer/decay/.ATTRIBUTES/VARIABLE_VALUE
+ZX
+VARIABLE_VALUEAdam/learning_rate2optimizer/learning_rate/.ATTRIBUTES/VARIABLE_VALUE
+JH
+VARIABLE_VALUEConv1_3/kernel&variables/0/.ATTRIBUTES/VARIABLE_VALUE
+LJ
+VARIABLE_VALUEbn_Conv1_3/gamma&variables/1/.ATTRIBUTES/VARIABLE_VALUE
+KI
+VARIABLE_VALUEbn_Conv1_3/beta&variables/2/.ATTRIBUTES/VARIABLE_VALUE
+RP
+VARIABLE_VALUEbn_Conv1_3/moving_mean&variables/3/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEbn_Conv1_3/moving_variance&variables/4/.ATTRIBUTES/VARIABLE_VALUE
+fd
+VARIABLE_VALUE*expanded_conv_depthwise_3/depthwise_kernel&variables/5/.ATTRIBUTES/VARIABLE_VALUE
+^\
+VARIABLE_VALUE"expanded_conv_depthwise_BN_3/gamma&variables/6/.ATTRIBUTES/VARIABLE_VALUE
+][
+VARIABLE_VALUE!expanded_conv_depthwise_BN_3/beta&variables/7/.ATTRIBUTES/VARIABLE_VALUE
+db
+VARIABLE_VALUE(expanded_conv_depthwise_BN_3/moving_mean&variables/8/.ATTRIBUTES/VARIABLE_VALUE
+hf
+VARIABLE_VALUE,expanded_conv_depthwise_BN_3/moving_variance&variables/9/.ATTRIBUTES/VARIABLE_VALUE
+[Y
+VARIABLE_VALUEexpanded_conv_project_3/kernel'variables/10/.ATTRIBUTES/VARIABLE_VALUE
+][
+VARIABLE_VALUE expanded_conv_project_BN_3/gamma'variables/11/.ATTRIBUTES/VARIABLE_VALUE
+\Z
+VARIABLE_VALUEexpanded_conv_project_BN_3/beta'variables/12/.ATTRIBUTES/VARIABLE_VALUE
+ca
+VARIABLE_VALUE&expanded_conv_project_BN_3/moving_mean'variables/13/.ATTRIBUTES/VARIABLE_VALUE
+ge
+VARIABLE_VALUE*expanded_conv_project_BN_3/moving_variance'variables/14/.ATTRIBUTES/VARIABLE_VALUE
+TR
+VARIABLE_VALUEblock_1_expand_3/kernel'variables/15/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_1_expand_BN_3/gamma'variables/16/.ATTRIBUTES/VARIABLE_VALUE
+US
+VARIABLE_VALUEblock_1_expand_BN_3/beta'variables/17/.ATTRIBUTES/VARIABLE_VALUE
+\Z
+VARIABLE_VALUEblock_1_expand_BN_3/moving_mean'variables/18/.ATTRIBUTES/VARIABLE_VALUE
+`^
+VARIABLE_VALUE#block_1_expand_BN_3/moving_variance'variables/19/.ATTRIBUTES/VARIABLE_VALUE
+a_
+VARIABLE_VALUE$block_1_depthwise_3/depthwise_kernel'variables/20/.ATTRIBUTES/VARIABLE_VALUE
+YW
+VARIABLE_VALUEblock_1_depthwise_BN_3/gamma'variables/21/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEblock_1_depthwise_BN_3/beta'variables/22/.ATTRIBUTES/VARIABLE_VALUE
+_]
+VARIABLE_VALUE"block_1_depthwise_BN_3/moving_mean'variables/23/.ATTRIBUTES/VARIABLE_VALUE
+ca
+VARIABLE_VALUE&block_1_depthwise_BN_3/moving_variance'variables/24/.ATTRIBUTES/VARIABLE_VALUE
+US
+VARIABLE_VALUEblock_1_project_3/kernel'variables/25/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_1_project_BN_3/gamma'variables/26/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_1_project_BN_3/beta'variables/27/.ATTRIBUTES/VARIABLE_VALUE
+][
+VARIABLE_VALUE block_1_project_BN_3/moving_mean'variables/28/.ATTRIBUTES/VARIABLE_VALUE
+a_
+VARIABLE_VALUE$block_1_project_BN_3/moving_variance'variables/29/.ATTRIBUTES/VARIABLE_VALUE
+TR
+VARIABLE_VALUEblock_2_expand_3/kernel'variables/30/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_2_expand_BN_3/gamma'variables/31/.ATTRIBUTES/VARIABLE_VALUE
+US
+VARIABLE_VALUEblock_2_expand_BN_3/beta'variables/32/.ATTRIBUTES/VARIABLE_VALUE
+\Z
+VARIABLE_VALUEblock_2_expand_BN_3/moving_mean'variables/33/.ATTRIBUTES/VARIABLE_VALUE
+`^
+VARIABLE_VALUE#block_2_expand_BN_3/moving_variance'variables/34/.ATTRIBUTES/VARIABLE_VALUE
+a_
+VARIABLE_VALUE$block_2_depthwise_3/depthwise_kernel'variables/35/.ATTRIBUTES/VARIABLE_VALUE
+YW
+VARIABLE_VALUEblock_2_depthwise_BN_3/gamma'variables/36/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEblock_2_depthwise_BN_3/beta'variables/37/.ATTRIBUTES/VARIABLE_VALUE
+_]
+VARIABLE_VALUE"block_2_depthwise_BN_3/moving_mean'variables/38/.ATTRIBUTES/VARIABLE_VALUE
+ca
+VARIABLE_VALUE&block_2_depthwise_BN_3/moving_variance'variables/39/.ATTRIBUTES/VARIABLE_VALUE
+US
+VARIABLE_VALUEblock_2_project_3/kernel'variables/40/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_2_project_BN_3/gamma'variables/41/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_2_project_BN_3/beta'variables/42/.ATTRIBUTES/VARIABLE_VALUE
+][
+VARIABLE_VALUE block_2_project_BN_3/moving_mean'variables/43/.ATTRIBUTES/VARIABLE_VALUE
+a_
+VARIABLE_VALUE$block_2_project_BN_3/moving_variance'variables/44/.ATTRIBUTES/VARIABLE_VALUE
+TR
+VARIABLE_VALUEblock_3_expand_3/kernel'variables/45/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_3_expand_BN_3/gamma'variables/46/.ATTRIBUTES/VARIABLE_VALUE
+US
+VARIABLE_VALUEblock_3_expand_BN_3/beta'variables/47/.ATTRIBUTES/VARIABLE_VALUE
+\Z
+VARIABLE_VALUEblock_3_expand_BN_3/moving_mean'variables/48/.ATTRIBUTES/VARIABLE_VALUE
+`^
+VARIABLE_VALUE#block_3_expand_BN_3/moving_variance'variables/49/.ATTRIBUTES/VARIABLE_VALUE
+a_
+VARIABLE_VALUE$block_3_depthwise_3/depthwise_kernel'variables/50/.ATTRIBUTES/VARIABLE_VALUE
+YW
+VARIABLE_VALUEblock_3_depthwise_BN_3/gamma'variables/51/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEblock_3_depthwise_BN_3/beta'variables/52/.ATTRIBUTES/VARIABLE_VALUE
+_]
+VARIABLE_VALUE"block_3_depthwise_BN_3/moving_mean'variables/53/.ATTRIBUTES/VARIABLE_VALUE
+ca
+VARIABLE_VALUE&block_3_depthwise_BN_3/moving_variance'variables/54/.ATTRIBUTES/VARIABLE_VALUE
+US
+VARIABLE_VALUEblock_3_project_3/kernel'variables/55/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_3_project_BN_3/gamma'variables/56/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_3_project_BN_3/beta'variables/57/.ATTRIBUTES/VARIABLE_VALUE
+][
+VARIABLE_VALUE block_3_project_BN_3/moving_mean'variables/58/.ATTRIBUTES/VARIABLE_VALUE
+a_
+VARIABLE_VALUE$block_3_project_BN_3/moving_variance'variables/59/.ATTRIBUTES/VARIABLE_VALUE
+TR
+VARIABLE_VALUEblock_4_expand_3/kernel'variables/60/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_4_expand_BN_3/gamma'variables/61/.ATTRIBUTES/VARIABLE_VALUE
+US
+VARIABLE_VALUEblock_4_expand_BN_3/beta'variables/62/.ATTRIBUTES/VARIABLE_VALUE
+\Z
+VARIABLE_VALUEblock_4_expand_BN_3/moving_mean'variables/63/.ATTRIBUTES/VARIABLE_VALUE
+`^
+VARIABLE_VALUE#block_4_expand_BN_3/moving_variance'variables/64/.ATTRIBUTES/VARIABLE_VALUE
+a_
+VARIABLE_VALUE$block_4_depthwise_3/depthwise_kernel'variables/65/.ATTRIBUTES/VARIABLE_VALUE
+YW
+VARIABLE_VALUEblock_4_depthwise_BN_3/gamma'variables/66/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEblock_4_depthwise_BN_3/beta'variables/67/.ATTRIBUTES/VARIABLE_VALUE
+_]
+VARIABLE_VALUE"block_4_depthwise_BN_3/moving_mean'variables/68/.ATTRIBUTES/VARIABLE_VALUE
+ca
+VARIABLE_VALUE&block_4_depthwise_BN_3/moving_variance'variables/69/.ATTRIBUTES/VARIABLE_VALUE
+US
+VARIABLE_VALUEblock_4_project_3/kernel'variables/70/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_4_project_BN_3/gamma'variables/71/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_4_project_BN_3/beta'variables/72/.ATTRIBUTES/VARIABLE_VALUE
+][
+VARIABLE_VALUE block_4_project_BN_3/moving_mean'variables/73/.ATTRIBUTES/VARIABLE_VALUE
+a_
+VARIABLE_VALUE$block_4_project_BN_3/moving_variance'variables/74/.ATTRIBUTES/VARIABLE_VALUE
+TR
+VARIABLE_VALUEblock_5_expand_3/kernel'variables/75/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_5_expand_BN_3/gamma'variables/76/.ATTRIBUTES/VARIABLE_VALUE
+US
+VARIABLE_VALUEblock_5_expand_BN_3/beta'variables/77/.ATTRIBUTES/VARIABLE_VALUE
+\Z
+VARIABLE_VALUEblock_5_expand_BN_3/moving_mean'variables/78/.ATTRIBUTES/VARIABLE_VALUE
+`^
+VARIABLE_VALUE#block_5_expand_BN_3/moving_variance'variables/79/.ATTRIBUTES/VARIABLE_VALUE
+a_
+VARIABLE_VALUE$block_5_depthwise_3/depthwise_kernel'variables/80/.ATTRIBUTES/VARIABLE_VALUE
+YW
+VARIABLE_VALUEblock_5_depthwise_BN_3/gamma'variables/81/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEblock_5_depthwise_BN_3/beta'variables/82/.ATTRIBUTES/VARIABLE_VALUE
+_]
+VARIABLE_VALUE"block_5_depthwise_BN_3/moving_mean'variables/83/.ATTRIBUTES/VARIABLE_VALUE
+ca
+VARIABLE_VALUE&block_5_depthwise_BN_3/moving_variance'variables/84/.ATTRIBUTES/VARIABLE_VALUE
+US
+VARIABLE_VALUEblock_5_project_3/kernel'variables/85/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_5_project_BN_3/gamma'variables/86/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_5_project_BN_3/beta'variables/87/.ATTRIBUTES/VARIABLE_VALUE
+][
+VARIABLE_VALUE block_5_project_BN_3/moving_mean'variables/88/.ATTRIBUTES/VARIABLE_VALUE
+a_
+VARIABLE_VALUE$block_5_project_BN_3/moving_variance'variables/89/.ATTRIBUTES/VARIABLE_VALUE
+TR
+VARIABLE_VALUEblock_6_expand_3/kernel'variables/90/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_6_expand_BN_3/gamma'variables/91/.ATTRIBUTES/VARIABLE_VALUE
+US
+VARIABLE_VALUEblock_6_expand_BN_3/beta'variables/92/.ATTRIBUTES/VARIABLE_VALUE
+\Z
+VARIABLE_VALUEblock_6_expand_BN_3/moving_mean'variables/93/.ATTRIBUTES/VARIABLE_VALUE
+`^
+VARIABLE_VALUE#block_6_expand_BN_3/moving_variance'variables/94/.ATTRIBUTES/VARIABLE_VALUE
+a_
+VARIABLE_VALUE$block_6_depthwise_3/depthwise_kernel'variables/95/.ATTRIBUTES/VARIABLE_VALUE
+YW
+VARIABLE_VALUEblock_6_depthwise_BN_3/gamma'variables/96/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEblock_6_depthwise_BN_3/beta'variables/97/.ATTRIBUTES/VARIABLE_VALUE
+_]
+VARIABLE_VALUE"block_6_depthwise_BN_3/moving_mean'variables/98/.ATTRIBUTES/VARIABLE_VALUE
+ca
+VARIABLE_VALUE&block_6_depthwise_BN_3/moving_variance'variables/99/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_6_project_3/kernel(variables/100/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEblock_6_project_BN_3/gamma(variables/101/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_6_project_BN_3/beta(variables/102/.ATTRIBUTES/VARIABLE_VALUE
+^\
+VARIABLE_VALUE block_6_project_BN_3/moving_mean(variables/103/.ATTRIBUTES/VARIABLE_VALUE
+b`
+VARIABLE_VALUE$block_6_project_BN_3/moving_variance(variables/104/.ATTRIBUTES/VARIABLE_VALUE
+US
+VARIABLE_VALUEblock_7_expand_3/kernel(variables/105/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_7_expand_BN_3/gamma(variables/106/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_7_expand_BN_3/beta(variables/107/.ATTRIBUTES/VARIABLE_VALUE
+][
+VARIABLE_VALUEblock_7_expand_BN_3/moving_mean(variables/108/.ATTRIBUTES/VARIABLE_VALUE
+a_
+VARIABLE_VALUE#block_7_expand_BN_3/moving_variance(variables/109/.ATTRIBUTES/VARIABLE_VALUE
+b`
+VARIABLE_VALUE$block_7_depthwise_3/depthwise_kernel(variables/110/.ATTRIBUTES/VARIABLE_VALUE
+ZX
+VARIABLE_VALUEblock_7_depthwise_BN_3/gamma(variables/111/.ATTRIBUTES/VARIABLE_VALUE
+YW
+VARIABLE_VALUEblock_7_depthwise_BN_3/beta(variables/112/.ATTRIBUTES/VARIABLE_VALUE
+`^
+VARIABLE_VALUE"block_7_depthwise_BN_3/moving_mean(variables/113/.ATTRIBUTES/VARIABLE_VALUE
+db
+VARIABLE_VALUE&block_7_depthwise_BN_3/moving_variance(variables/114/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_7_project_3/kernel(variables/115/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEblock_7_project_BN_3/gamma(variables/116/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_7_project_BN_3/beta(variables/117/.ATTRIBUTES/VARIABLE_VALUE
+^\
+VARIABLE_VALUE block_7_project_BN_3/moving_mean(variables/118/.ATTRIBUTES/VARIABLE_VALUE
+b`
+VARIABLE_VALUE$block_7_project_BN_3/moving_variance(variables/119/.ATTRIBUTES/VARIABLE_VALUE
+US
+VARIABLE_VALUEblock_8_expand_3/kernel(variables/120/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_8_expand_BN_3/gamma(variables/121/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_8_expand_BN_3/beta(variables/122/.ATTRIBUTES/VARIABLE_VALUE
+][
+VARIABLE_VALUEblock_8_expand_BN_3/moving_mean(variables/123/.ATTRIBUTES/VARIABLE_VALUE
+a_
+VARIABLE_VALUE#block_8_expand_BN_3/moving_variance(variables/124/.ATTRIBUTES/VARIABLE_VALUE
+b`
+VARIABLE_VALUE$block_8_depthwise_3/depthwise_kernel(variables/125/.ATTRIBUTES/VARIABLE_VALUE
+ZX
+VARIABLE_VALUEblock_8_depthwise_BN_3/gamma(variables/126/.ATTRIBUTES/VARIABLE_VALUE
+YW
+VARIABLE_VALUEblock_8_depthwise_BN_3/beta(variables/127/.ATTRIBUTES/VARIABLE_VALUE
+`^
+VARIABLE_VALUE"block_8_depthwise_BN_3/moving_mean(variables/128/.ATTRIBUTES/VARIABLE_VALUE
+db
+VARIABLE_VALUE&block_8_depthwise_BN_3/moving_variance(variables/129/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_8_project_3/kernel(variables/130/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEblock_8_project_BN_3/gamma(variables/131/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_8_project_BN_3/beta(variables/132/.ATTRIBUTES/VARIABLE_VALUE
+^\
+VARIABLE_VALUE block_8_project_BN_3/moving_mean(variables/133/.ATTRIBUTES/VARIABLE_VALUE
+b`
+VARIABLE_VALUE$block_8_project_BN_3/moving_variance(variables/134/.ATTRIBUTES/VARIABLE_VALUE
+US
+VARIABLE_VALUEblock_9_expand_3/kernel(variables/135/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_9_expand_BN_3/gamma(variables/136/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_9_expand_BN_3/beta(variables/137/.ATTRIBUTES/VARIABLE_VALUE
+][
+VARIABLE_VALUEblock_9_expand_BN_3/moving_mean(variables/138/.ATTRIBUTES/VARIABLE_VALUE
+a_
+VARIABLE_VALUE#block_9_expand_BN_3/moving_variance(variables/139/.ATTRIBUTES/VARIABLE_VALUE
+b`
+VARIABLE_VALUE$block_9_depthwise_3/depthwise_kernel(variables/140/.ATTRIBUTES/VARIABLE_VALUE
+ZX
+VARIABLE_VALUEblock_9_depthwise_BN_3/gamma(variables/141/.ATTRIBUTES/VARIABLE_VALUE
+YW
+VARIABLE_VALUEblock_9_depthwise_BN_3/beta(variables/142/.ATTRIBUTES/VARIABLE_VALUE
+`^
+VARIABLE_VALUE"block_9_depthwise_BN_3/moving_mean(variables/143/.ATTRIBUTES/VARIABLE_VALUE
+db
+VARIABLE_VALUE&block_9_depthwise_BN_3/moving_variance(variables/144/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_9_project_3/kernel(variables/145/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEblock_9_project_BN_3/gamma(variables/146/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_9_project_BN_3/beta(variables/147/.ATTRIBUTES/VARIABLE_VALUE
+^\
+VARIABLE_VALUE block_9_project_BN_3/moving_mean(variables/148/.ATTRIBUTES/VARIABLE_VALUE
+b`
+VARIABLE_VALUE$block_9_project_BN_3/moving_variance(variables/149/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_10_expand_3/kernel(variables/150/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEblock_10_expand_BN_3/gamma(variables/151/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_10_expand_BN_3/beta(variables/152/.ATTRIBUTES/VARIABLE_VALUE
+^\
+VARIABLE_VALUE block_10_expand_BN_3/moving_mean(variables/153/.ATTRIBUTES/VARIABLE_VALUE
+b`
+VARIABLE_VALUE$block_10_expand_BN_3/moving_variance(variables/154/.ATTRIBUTES/VARIABLE_VALUE
+ca
+VARIABLE_VALUE%block_10_depthwise_3/depthwise_kernel(variables/155/.ATTRIBUTES/VARIABLE_VALUE
+[Y
+VARIABLE_VALUEblock_10_depthwise_BN_3/gamma(variables/156/.ATTRIBUTES/VARIABLE_VALUE
+ZX
+VARIABLE_VALUEblock_10_depthwise_BN_3/beta(variables/157/.ATTRIBUTES/VARIABLE_VALUE
+a_
+VARIABLE_VALUE#block_10_depthwise_BN_3/moving_mean(variables/158/.ATTRIBUTES/VARIABLE_VALUE
+ec
+VARIABLE_VALUE'block_10_depthwise_BN_3/moving_variance(variables/159/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_10_project_3/kernel(variables/160/.ATTRIBUTES/VARIABLE_VALUE
+YW
+VARIABLE_VALUEblock_10_project_BN_3/gamma(variables/161/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEblock_10_project_BN_3/beta(variables/162/.ATTRIBUTES/VARIABLE_VALUE
+_]
+VARIABLE_VALUE!block_10_project_BN_3/moving_mean(variables/163/.ATTRIBUTES/VARIABLE_VALUE
+ca
+VARIABLE_VALUE%block_10_project_BN_3/moving_variance(variables/164/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_11_expand_3/kernel(variables/165/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEblock_11_expand_BN_3/gamma(variables/166/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_11_expand_BN_3/beta(variables/167/.ATTRIBUTES/VARIABLE_VALUE
+^\
+VARIABLE_VALUE block_11_expand_BN_3/moving_mean(variables/168/.ATTRIBUTES/VARIABLE_VALUE
+b`
+VARIABLE_VALUE$block_11_expand_BN_3/moving_variance(variables/169/.ATTRIBUTES/VARIABLE_VALUE
+ca
+VARIABLE_VALUE%block_11_depthwise_3/depthwise_kernel(variables/170/.ATTRIBUTES/VARIABLE_VALUE
+[Y
+VARIABLE_VALUEblock_11_depthwise_BN_3/gamma(variables/171/.ATTRIBUTES/VARIABLE_VALUE
+ZX
+VARIABLE_VALUEblock_11_depthwise_BN_3/beta(variables/172/.ATTRIBUTES/VARIABLE_VALUE
+a_
+VARIABLE_VALUE#block_11_depthwise_BN_3/moving_mean(variables/173/.ATTRIBUTES/VARIABLE_VALUE
+ec
+VARIABLE_VALUE'block_11_depthwise_BN_3/moving_variance(variables/174/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_11_project_3/kernel(variables/175/.ATTRIBUTES/VARIABLE_VALUE
+YW
+VARIABLE_VALUEblock_11_project_BN_3/gamma(variables/176/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEblock_11_project_BN_3/beta(variables/177/.ATTRIBUTES/VARIABLE_VALUE
+_]
+VARIABLE_VALUE!block_11_project_BN_3/moving_mean(variables/178/.ATTRIBUTES/VARIABLE_VALUE
+ca
+VARIABLE_VALUE%block_11_project_BN_3/moving_variance(variables/179/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_12_expand_3/kernel(variables/180/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEblock_12_expand_BN_3/gamma(variables/181/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_12_expand_BN_3/beta(variables/182/.ATTRIBUTES/VARIABLE_VALUE
+^\
+VARIABLE_VALUE block_12_expand_BN_3/moving_mean(variables/183/.ATTRIBUTES/VARIABLE_VALUE
+b`
+VARIABLE_VALUE$block_12_expand_BN_3/moving_variance(variables/184/.ATTRIBUTES/VARIABLE_VALUE
+ca
+VARIABLE_VALUE%block_12_depthwise_3/depthwise_kernel(variables/185/.ATTRIBUTES/VARIABLE_VALUE
+[Y
+VARIABLE_VALUEblock_12_depthwise_BN_3/gamma(variables/186/.ATTRIBUTES/VARIABLE_VALUE
+ZX
+VARIABLE_VALUEblock_12_depthwise_BN_3/beta(variables/187/.ATTRIBUTES/VARIABLE_VALUE
+a_
+VARIABLE_VALUE#block_12_depthwise_BN_3/moving_mean(variables/188/.ATTRIBUTES/VARIABLE_VALUE
+ec
+VARIABLE_VALUE'block_12_depthwise_BN_3/moving_variance(variables/189/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_12_project_3/kernel(variables/190/.ATTRIBUTES/VARIABLE_VALUE
+YW
+VARIABLE_VALUEblock_12_project_BN_3/gamma(variables/191/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEblock_12_project_BN_3/beta(variables/192/.ATTRIBUTES/VARIABLE_VALUE
+_]
+VARIABLE_VALUE!block_12_project_BN_3/moving_mean(variables/193/.ATTRIBUTES/VARIABLE_VALUE
+ca
+VARIABLE_VALUE%block_12_project_BN_3/moving_variance(variables/194/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_13_expand_3/kernel(variables/195/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEblock_13_expand_BN_3/gamma(variables/196/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_13_expand_BN_3/beta(variables/197/.ATTRIBUTES/VARIABLE_VALUE
+^\
+VARIABLE_VALUE block_13_expand_BN_3/moving_mean(variables/198/.ATTRIBUTES/VARIABLE_VALUE
+b`
+VARIABLE_VALUE$block_13_expand_BN_3/moving_variance(variables/199/.ATTRIBUTES/VARIABLE_VALUE
+ca
+VARIABLE_VALUE%block_13_depthwise_3/depthwise_kernel(variables/200/.ATTRIBUTES/VARIABLE_VALUE
+[Y
+VARIABLE_VALUEblock_13_depthwise_BN_3/gamma(variables/201/.ATTRIBUTES/VARIABLE_VALUE
+ZX
+VARIABLE_VALUEblock_13_depthwise_BN_3/beta(variables/202/.ATTRIBUTES/VARIABLE_VALUE
+a_
+VARIABLE_VALUE#block_13_depthwise_BN_3/moving_mean(variables/203/.ATTRIBUTES/VARIABLE_VALUE
+ec
+VARIABLE_VALUE'block_13_depthwise_BN_3/moving_variance(variables/204/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_13_project_3/kernel(variables/205/.ATTRIBUTES/VARIABLE_VALUE
+YW
+VARIABLE_VALUEblock_13_project_BN_3/gamma(variables/206/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEblock_13_project_BN_3/beta(variables/207/.ATTRIBUTES/VARIABLE_VALUE
+_]
+VARIABLE_VALUE!block_13_project_BN_3/moving_mean(variables/208/.ATTRIBUTES/VARIABLE_VALUE
+ca
+VARIABLE_VALUE%block_13_project_BN_3/moving_variance(variables/209/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_14_expand_3/kernel(variables/210/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEblock_14_expand_BN_3/gamma(variables/211/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_14_expand_BN_3/beta(variables/212/.ATTRIBUTES/VARIABLE_VALUE
+^\
+VARIABLE_VALUE block_14_expand_BN_3/moving_mean(variables/213/.ATTRIBUTES/VARIABLE_VALUE
+b`
+VARIABLE_VALUE$block_14_expand_BN_3/moving_variance(variables/214/.ATTRIBUTES/VARIABLE_VALUE
+ca
+VARIABLE_VALUE%block_14_depthwise_3/depthwise_kernel(variables/215/.ATTRIBUTES/VARIABLE_VALUE
+[Y
+VARIABLE_VALUEblock_14_depthwise_BN_3/gamma(variables/216/.ATTRIBUTES/VARIABLE_VALUE
+ZX
+VARIABLE_VALUEblock_14_depthwise_BN_3/beta(variables/217/.ATTRIBUTES/VARIABLE_VALUE
+a_
+VARIABLE_VALUE#block_14_depthwise_BN_3/moving_mean(variables/218/.ATTRIBUTES/VARIABLE_VALUE
+ec
+VARIABLE_VALUE'block_14_depthwise_BN_3/moving_variance(variables/219/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_14_project_3/kernel(variables/220/.ATTRIBUTES/VARIABLE_VALUE
+YW
+VARIABLE_VALUEblock_14_project_BN_3/gamma(variables/221/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEblock_14_project_BN_3/beta(variables/222/.ATTRIBUTES/VARIABLE_VALUE
+_]
+VARIABLE_VALUE!block_14_project_BN_3/moving_mean(variables/223/.ATTRIBUTES/VARIABLE_VALUE
+ca
+VARIABLE_VALUE%block_14_project_BN_3/moving_variance(variables/224/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_15_expand_3/kernel(variables/225/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEblock_15_expand_BN_3/gamma(variables/226/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_15_expand_BN_3/beta(variables/227/.ATTRIBUTES/VARIABLE_VALUE
+^\
+VARIABLE_VALUE block_15_expand_BN_3/moving_mean(variables/228/.ATTRIBUTES/VARIABLE_VALUE
+b`
+VARIABLE_VALUE$block_15_expand_BN_3/moving_variance(variables/229/.ATTRIBUTES/VARIABLE_VALUE
+ca
+VARIABLE_VALUE%block_15_depthwise_3/depthwise_kernel(variables/230/.ATTRIBUTES/VARIABLE_VALUE
+[Y
+VARIABLE_VALUEblock_15_depthwise_BN_3/gamma(variables/231/.ATTRIBUTES/VARIABLE_VALUE
+ZX
+VARIABLE_VALUEblock_15_depthwise_BN_3/beta(variables/232/.ATTRIBUTES/VARIABLE_VALUE
+a_
+VARIABLE_VALUE#block_15_depthwise_BN_3/moving_mean(variables/233/.ATTRIBUTES/VARIABLE_VALUE
+ec
+VARIABLE_VALUE'block_15_depthwise_BN_3/moving_variance(variables/234/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_15_project_3/kernel(variables/235/.ATTRIBUTES/VARIABLE_VALUE
+YW
+VARIABLE_VALUEblock_15_project_BN_3/gamma(variables/236/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEblock_15_project_BN_3/beta(variables/237/.ATTRIBUTES/VARIABLE_VALUE
+_]
+VARIABLE_VALUE!block_15_project_BN_3/moving_mean(variables/238/.ATTRIBUTES/VARIABLE_VALUE
+ca
+VARIABLE_VALUE%block_15_project_BN_3/moving_variance(variables/239/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEblock_16_expand_3/kernel(variables/240/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEblock_16_expand_BN_3/gamma(variables/241/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_16_expand_BN_3/beta(variables/242/.ATTRIBUTES/VARIABLE_VALUE
+^\
+VARIABLE_VALUE block_16_expand_BN_3/moving_mean(variables/243/.ATTRIBUTES/VARIABLE_VALUE
+b`
+VARIABLE_VALUE$block_16_expand_BN_3/moving_variance(variables/244/.ATTRIBUTES/VARIABLE_VALUE
+ca
+VARIABLE_VALUE%block_16_depthwise_3/depthwise_kernel(variables/245/.ATTRIBUTES/VARIABLE_VALUE
+[Y
+VARIABLE_VALUEblock_16_depthwise_BN_3/gamma(variables/246/.ATTRIBUTES/VARIABLE_VALUE
+ZX
+VARIABLE_VALUEblock_16_depthwise_BN_3/beta(variables/247/.ATTRIBUTES/VARIABLE_VALUE
+a_
+VARIABLE_VALUE#block_16_depthwise_BN_3/moving_mean(variables/248/.ATTRIBUTES/VARIABLE_VALUE
+ec
+VARIABLE_VALUE'block_16_depthwise_BN_3/moving_variance(variables/249/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEblock_16_project_3/kernel(variables/250/.ATTRIBUTES/VARIABLE_VALUE
+YW
+VARIABLE_VALUEblock_16_project_BN_3/gamma(variables/251/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEblock_16_project_BN_3/beta(variables/252/.ATTRIBUTES/VARIABLE_VALUE
+_]
+VARIABLE_VALUE!block_16_project_BN_3/moving_mean(variables/253/.ATTRIBUTES/VARIABLE_VALUE
+ca
+VARIABLE_VALUE%block_16_project_BN_3/moving_variance(variables/254/.ATTRIBUTES/VARIABLE_VALUE
+MK
+VARIABLE_VALUEConv_1_3/kernel(variables/255/.ATTRIBUTES/VARIABLE_VALUE
+OM
+VARIABLE_VALUEConv_1_bn_3/gamma(variables/256/.ATTRIBUTES/VARIABLE_VALUE
+NL
+VARIABLE_VALUEConv_1_bn_3/beta(variables/257/.ATTRIBUTES/VARIABLE_VALUE
+US
+VARIABLE_VALUEConv_1_bn_3/moving_mean(variables/258/.ATTRIBUTES/VARIABLE_VALUE
+YW
+VARIABLE_VALUEConv_1_bn_3/moving_variance(variables/259/.ATTRIBUTES/VARIABLE_VALUE
+#
+0
+1
+2
+3
+4
+ 
+ä
+ƒ0
+≈1
+∆2
+«3
+»4
+…5
+ 6
+À7
+Ã8
+Õ9
+Œ10
+œ11
+–12
+—13
+“14
+”15
+‘16
+’17
+÷18
+◊19
+ÿ20
+Ÿ21
+⁄22
+€23
+‹24
+›25
+ﬁ26
+ﬂ27
+‡28
+·29
+‚30
+„31
+‰32
+Â33
+Ê34
+Á35
+Ë36
+È37
+Í38
+Î39
+Ï40
+Ì41
+Ó42
+Ô43
+44
+Ò45
+Ú46
+Û47
+Ù48
+ı49
+ˆ50
+˜51
+¯52
+˘53
+˙54
+˚55
+¸56
+˝57
+˛58
+ˇ59
+Ä60
+Å61
+Ç62
+É63
+Ñ64
+Ö65
+Ü66
+á67
+à68
+â69
+ä70
+ã71
+å72
+ç73
+é74
+è75
+ê76
+ë77
+í78
+ì79
+î80
+ï81
+ñ82
+ó83
+ò84
+ô85
+ö86
+õ87
+ú88
+ù89
+û90
+ü91
+†92
+°93
+¢94
+£95
+§96
+•97
+¶98
+ß99
+®100
+©101
+™102
+´103
+¨104
+≠105
+Æ106
+Ø107
+∞108
+±109
+≤110
+≥111
+¥112
+µ113
+∂114
+∑115
+∏116
+π117
+∫118
+ª119
+º120
+Ω121
+æ122
+ø123
+¿124
+¡125
+¬126
+√127
+ƒ128
+≈129
+∆130
+«131
+»132
+…133
+ 134
+À135
+Ã136
+Õ137
+Œ138
+œ139
+–140
+—141
+“142
+”143
+‘144
+’145
+÷146
+◊147
+ÿ148
+Ÿ149
+⁄150
+€151
+‹152
+›153
+ﬁ154
+ﬂ155
+‡156
+·157
+‚158
+„159
+‰160
+Â161
+Ê162
+Á163
+Ë164
+È165
+Ï166
+Ì167
+Ò168
+Ú169
+ˆ170
+˜171
+˚172
+¸173
+Ä174
+Å175
+Ö176
+Ü177
+ä178
+ã179
+è180
+ê181
+î182
+ï183
+ô184
+ö185
+û186
+ü187
+£188
+§189
+®190
+©191
+≠192
+Æ193
+≤194
+≥195
+∑196
+∏197
+º198
+Ω199
+¡200
+¬201
+∆202
+«203
+ 
+
+Ç	0
+É	1
+ 
+ 
+ 
+µ
+Õ	variables
+Ñ	layers
+Œtrainable_variables
+ Ö	layer_regularization_losses
+Ü	non_trainable_variables
+œregularization_losses
+á	layer_metrics
+à	metrics
+
+ƒ0
+ 
+ 
+µ
+—	variables
+â	layers
+“trainable_variables
+ ä	layer_regularization_losses
+ã	non_trainable_variables
+”regularization_losses
+å	layer_metrics
+ç	metrics
+ 
+ 
+≈0
+∆1
+«2
+»3
+ 
+ 
+µ
+÷	variables
+é	layers
+◊trainable_variables
+ è	layer_regularization_losses
+ê	non_trainable_variables
+ÿregularization_losses
+ë	layer_metrics
+í	metrics
+ 
+ 
+ 
+µ
+⁄	variables
+ì	layers
+€trainable_variables
+ î	layer_regularization_losses
+ï	non_trainable_variables
+‹regularization_losses
+ñ	layer_metrics
+ó	metrics
+
+…0
+ 
+ 
+µ
+ﬁ	variables
+ò	layers
+ﬂtrainable_variables
+ ô	layer_regularization_losses
+ö	non_trainable_variables
+‡regularization_losses
+õ	layer_metrics
+ú	metrics
+ 
+ 
+ 0
+À1
+Ã2
+Õ3
+ 
+ 
+µ
+„	variables
+ù	layers
+‰trainable_variables
+ û	layer_regularization_losses
+ü	non_trainable_variables
+Âregularization_losses
+†	layer_metrics
+°	metrics
+ 
+ 
+ 
+µ
+Á	variables
+¢	layers
+Ëtrainable_variables
+ £	layer_regularization_losses
+§	non_trainable_variables
+Èregularization_losses
+•	layer_metrics
+¶	metrics
+
+Œ0
+ 
+ 
+µ
+Î	variables
+ß	layers
+Ïtrainable_variables
+ ®	layer_regularization_losses
+©	non_trainable_variables
+Ìregularization_losses
+™	layer_metrics
+´	metrics
+ 
+ 
+œ0
+–1
+—2
+“3
+ 
+ 
+µ
+	variables
+¨	layers
+Òtrainable_variables
+ ≠	layer_regularization_losses
+Æ	non_trainable_variables
+Úregularization_losses
+Ø	layer_metrics
+∞	metrics
+
+”0
+ 
+ 
+µ
+Ù	variables
+±	layers
+ıtrainable_variables
+ ≤	layer_regularization_losses
+≥	non_trainable_variables
+ˆregularization_losses
+¥	layer_metrics
+µ	metrics
+ 
+ 
+‘0
+’1
+÷2
+◊3
+ 
+ 
+µ
+˘	variables
+∂	layers
+˙trainable_variables
+ ∑	layer_regularization_losses
+∏	non_trainable_variables
+˚regularization_losses
+π	layer_metrics
+∫	metrics
+ 
+ 
+ 
+µ
+˝	variables
+ª	layers
+˛trainable_variables
+ º	layer_regularization_losses
+Ω	non_trainable_variables
+ˇregularization_losses
+æ	layer_metrics
+ø	metrics
+ 
+ 
+ 
+µ
+Å	variables
+¿	layers
+Çtrainable_variables
+ ¡	layer_regularization_losses
+¬	non_trainable_variables
+Éregularization_losses
+√	layer_metrics
+ƒ	metrics
+
+ÿ0
+ 
+ 
+µ
+Ö	variables
+≈	layers
+Ütrainable_variables
+ ∆	layer_regularization_losses
+«	non_trainable_variables
+áregularization_losses
+»	layer_metrics
+…	metrics
+ 
+ 
+Ÿ0
+⁄1
+€2
+‹3
+ 
+ 
+µ
+ä	variables
+ 	layers
+ãtrainable_variables
+ À	layer_regularization_losses
+Ã	non_trainable_variables
+åregularization_losses
+Õ	layer_metrics
+Œ	metrics
+ 
+ 
+ 
+µ
+é	variables
+œ	layers
+ètrainable_variables
+ –	layer_regularization_losses
+—	non_trainable_variables
+êregularization_losses
+“	layer_metrics
+”	metrics
+
+›0
+ 
+ 
+µ
+í	variables
+‘	layers
+ìtrainable_variables
+ ’	layer_regularization_losses
+÷	non_trainable_variables
+îregularization_losses
+◊	layer_metrics
+ÿ	metrics
+ 
+ 
+ﬁ0
+ﬂ1
+‡2
+·3
+ 
+ 
+µ
+ó	variables
+Ÿ	layers
+òtrainable_variables
+ ⁄	layer_regularization_losses
+€	non_trainable_variables
+ôregularization_losses
+‹	layer_metrics
+›	metrics
+
+‚0
+ 
+ 
+µ
+õ	variables
+ﬁ	layers
+útrainable_variables
+ ﬂ	layer_regularization_losses
+‡	non_trainable_variables
+ùregularization_losses
+·	layer_metrics
+‚	metrics
+ 
+ 
+„0
+‰1
+Â2
+Ê3
+ 
+ 
+µ
+†	variables
+„	layers
+°trainable_variables
+ ‰	layer_regularization_losses
+Â	non_trainable_variables
+¢regularization_losses
+Ê	layer_metrics
+Á	metrics
+ 
+ 
+ 
+µ
+§	variables
+Ë	layers
+•trainable_variables
+ È	layer_regularization_losses
+Í	non_trainable_variables
+¶regularization_losses
+Î	layer_metrics
+Ï	metrics
+
+Á0
+ 
+ 
+µ
+®	variables
+Ì	layers
+©trainable_variables
+ Ó	layer_regularization_losses
+Ô	non_trainable_variables
+™regularization_losses
+	layer_metrics
+Ò	metrics
+ 
+ 
+Ë0
+È1
+Í2
+Î3
+ 
+ 
+µ
+≠	variables
+Ú	layers
+Ætrainable_variables
+ Û	layer_regularization_losses
+Ù	non_trainable_variables
+Øregularization_losses
+ı	layer_metrics
+ˆ	metrics
+ 
+ 
+ 
+µ
+±	variables
+˜	layers
+≤trainable_variables
+ ¯	layer_regularization_losses
+˘	non_trainable_variables
+≥regularization_losses
+˙	layer_metrics
+˚	metrics
+
+Ï0
+ 
+ 
+µ
+µ	variables
+¸	layers
+∂trainable_variables
+ ˝	layer_regularization_losses
+˛	non_trainable_variables
+∑regularization_losses
+ˇ	layer_metrics
+Ä
+metrics
+ 
+ 
+Ì0
+Ó1
+Ô2
+3
+ 
+ 
+µ
+∫	variables
+Å
+layers
+ªtrainable_variables
+ Ç
+layer_regularization_losses
+É
+non_trainable_variables
+ºregularization_losses
+Ñ
+layer_metrics
+Ö
+metrics
+ 
+ 
+ 
+µ
+æ	variables
+Ü
+layers
+øtrainable_variables
+ á
+layer_regularization_losses
+à
+non_trainable_variables
+¿regularization_losses
+â
+layer_metrics
+ä
+metrics
+
+Ò0
+ 
+ 
+µ
+¬	variables
+ã
+layers
+√trainable_variables
+ å
+layer_regularization_losses
+ç
+non_trainable_variables
+ƒregularization_losses
+é
+layer_metrics
+è
+metrics
+ 
+ 
+Ú0
+Û1
+Ù2
+ı3
+ 
+ 
+µ
+«	variables
+ê
+layers
+»trainable_variables
+ ë
+layer_regularization_losses
+í
+non_trainable_variables
+…regularization_losses
+ì
+layer_metrics
+î
+metrics
+ 
+ 
+ 
+µ
+À	variables
+ï
+layers
+Ãtrainable_variables
+ ñ
+layer_regularization_losses
+ó
+non_trainable_variables
+Õregularization_losses
+ò
+layer_metrics
+ô
+metrics
+ 
+ 
+ 
+µ
+œ	variables
+ö
+layers
+–trainable_variables
+ õ
+layer_regularization_losses
+ú
+non_trainable_variables
+—regularization_losses
+ù
+layer_metrics
+û
+metrics
+
+ˆ0
+ 
+ 
+µ
+”	variables
+ü
+layers
+‘trainable_variables
+ †
+layer_regularization_losses
+°
+non_trainable_variables
+’regularization_losses
+¢
+layer_metrics
+£
+metrics
+ 
+ 
+˜0
+¯1
+˘2
+˙3
+ 
+ 
+µ
+ÿ	variables
+§
+layers
+Ÿtrainable_variables
+ •
+layer_regularization_losses
+¶
+non_trainable_variables
+⁄regularization_losses
+ß
+layer_metrics
+®
+metrics
+ 
+ 
+ 
+µ
+‹	variables
+©
+layers
+›trainable_variables
+ ™
+layer_regularization_losses
+´
+non_trainable_variables
+ﬁregularization_losses
+¨
+layer_metrics
+≠
+metrics
+
+˚0
+ 
+ 
+µ
+‡	variables
+Æ
+layers
+·trainable_variables
+ Ø
+layer_regularization_losses
+∞
+non_trainable_variables
+‚regularization_losses
+±
+layer_metrics
+≤
+metrics
+ 
+ 
+¸0
+˝1
+˛2
+ˇ3
+ 
+ 
+µ
+Â	variables
+≥
+layers
+Êtrainable_variables
+ ¥
+layer_regularization_losses
+µ
+non_trainable_variables
+Áregularization_losses
+∂
+layer_metrics
+∑
+metrics
+
+Ä0
+ 
+ 
+µ
+È	variables
+∏
+layers
+Ítrainable_variables
+ π
+layer_regularization_losses
+∫
+non_trainable_variables
+Îregularization_losses
+ª
+layer_metrics
+º
+metrics
+ 
+ 
+Å0
+Ç1
+É2
+Ñ3
+ 
+ 
+µ
+Ó	variables
+Ω
+layers
+Ôtrainable_variables
+ æ
+layer_regularization_losses
+ø
+non_trainable_variables
+regularization_losses
+¿
+layer_metrics
+¡
+metrics
+ 
+ 
+ 
+µ
+Ú	variables
+¬
+layers
+Ûtrainable_variables
+ √
+layer_regularization_losses
+ƒ
+non_trainable_variables
+Ùregularization_losses
+≈
+layer_metrics
+∆
+metrics
+
+Ö0
+ 
+ 
+µ
+ˆ	variables
+«
+layers
+˜trainable_variables
+ »
+layer_regularization_losses
+…
+non_trainable_variables
+¯regularization_losses
+ 
+layer_metrics
+À
+metrics
+ 
+ 
+Ü0
+á1
+à2
+â3
+ 
+ 
+µ
+˚	variables
+Ã
+layers
+¸trainable_variables
+ Õ
+layer_regularization_losses
+Œ
+non_trainable_variables
+˝regularization_losses
+œ
+layer_metrics
+–
+metrics
+ 
+ 
+ 
+µ
+ˇ	variables
+—
+layers
+Ätrainable_variables
+ “
+layer_regularization_losses
+”
+non_trainable_variables
+Åregularization_losses
+‘
+layer_metrics
+’
+metrics
+
+ä0
+ 
+ 
+µ
+É	variables
+÷
+layers
+Ñtrainable_variables
+ ◊
+layer_regularization_losses
+ÿ
+non_trainable_variables
+Öregularization_losses
+Ÿ
+layer_metrics
+⁄
+metrics
+ 
+ 
+ã0
+å1
+ç2
+é3
+ 
+ 
+µ
+à	variables
+€
+layers
+âtrainable_variables
+ ‹
+layer_regularization_losses
+›
+non_trainable_variables
+äregularization_losses
+ﬁ
+layer_metrics
+ﬂ
+metrics
+ 
+ 
+ 
+µ
+å	variables
+‡
+layers
+çtrainable_variables
+ ·
+layer_regularization_losses
+‚
+non_trainable_variables
+éregularization_losses
+„
+layer_metrics
+‰
+metrics
+
+è0
+ 
+ 
+µ
+ê	variables
+Â
+layers
+ëtrainable_variables
+ Ê
+layer_regularization_losses
+Á
+non_trainable_variables
+íregularization_losses
+Ë
+layer_metrics
+È
+metrics
+ 
+ 
+ê0
+ë1
+í2
+ì3
+ 
+ 
+µ
+ï	variables
+Í
+layers
+ñtrainable_variables
+ Î
+layer_regularization_losses
+Ï
+non_trainable_variables
+óregularization_losses
+Ì
+layer_metrics
+Ó
+metrics
+ 
+ 
+ 
+µ
+ô	variables
+Ô
+layers
+ötrainable_variables
+ 
+layer_regularization_losses
+Ò
+non_trainable_variables
+õregularization_losses
+Ú
+layer_metrics
+Û
+metrics
+
+î0
+ 
+ 
+µ
+ù	variables
+Ù
+layers
+ûtrainable_variables
+ ı
+layer_regularization_losses
+ˆ
+non_trainable_variables
+üregularization_losses
+˜
+layer_metrics
+¯
+metrics
+ 
+ 
+ï0
+ñ1
+ó2
+ò3
+ 
+ 
+µ
+¢	variables
+˘
+layers
+£trainable_variables
+ ˙
+layer_regularization_losses
+˚
+non_trainable_variables
+§regularization_losses
+¸
+layer_metrics
+˝
+metrics
+ 
+ 
+ 
+µ
+¶	variables
+˛
+layers
+ßtrainable_variables
+ ˇ
+layer_regularization_losses
+Änon_trainable_variables
+®regularization_losses
+Ålayer_metrics
+Çmetrics
+
+ô0
+ 
+ 
+µ
+™	variables
+Élayers
+´trainable_variables
+ Ñlayer_regularization_losses
+Önon_trainable_variables
+¨regularization_losses
+Ülayer_metrics
+ámetrics
+ 
+ 
+ö0
+õ1
+ú2
+ù3
+ 
+ 
+µ
+Ø	variables
+àlayers
+∞trainable_variables
+ âlayer_regularization_losses
+änon_trainable_variables
+±regularization_losses
+ãlayer_metrics
+åmetrics
+ 
+ 
+ 
+µ
+≥	variables
+çlayers
+¥trainable_variables
+ élayer_regularization_losses
+ènon_trainable_variables
+µregularization_losses
+êlayer_metrics
+ëmetrics
+
+û0
+ 
+ 
+µ
+∑	variables
+ílayers
+∏trainable_variables
+ ìlayer_regularization_losses
+înon_trainable_variables
+πregularization_losses
+ïlayer_metrics
+ñmetrics
+ 
+ 
+ü0
+†1
+°2
+¢3
+ 
+ 
+µ
+º	variables
+ólayers
+Ωtrainable_variables
+ òlayer_regularization_losses
+ônon_trainable_variables
+æregularization_losses
+ölayer_metrics
+õmetrics
+ 
+ 
+ 
+µ
+¿	variables
+úlayers
+¡trainable_variables
+ ùlayer_regularization_losses
+ûnon_trainable_variables
+¬regularization_losses
+ülayer_metrics
+†metrics
+ 
+ 
+ 
+µ
+ƒ	variables
+°layers
+≈trainable_variables
+ ¢layer_regularization_losses
+£non_trainable_variables
+∆regularization_losses
+§layer_metrics
+•metrics
+
+£0
+ 
+ 
+µ
+»	variables
+¶layers
+…trainable_variables
+ ßlayer_regularization_losses
+®non_trainable_variables
+ regularization_losses
+©layer_metrics
+™metrics
+ 
+ 
+§0
+•1
+¶2
+ß3
+ 
+ 
+µ
+Õ	variables
+´layers
+Œtrainable_variables
+ ¨layer_regularization_losses
+≠non_trainable_variables
+œregularization_losses
+Ælayer_metrics
+Ømetrics
+ 
+ 
+ 
+µ
+—	variables
+∞layers
+“trainable_variables
+ ±layer_regularization_losses
+≤non_trainable_variables
+”regularization_losses
+≥layer_metrics
+¥metrics
+
+®0
+ 
+ 
+µ
+’	variables
+µlayers
+÷trainable_variables
+ ∂layer_regularization_losses
+∑non_trainable_variables
+◊regularization_losses
+∏layer_metrics
+πmetrics
+ 
+ 
+©0
+™1
+´2
+¨3
+ 
+ 
+µ
+⁄	variables
+∫layers
+€trainable_variables
+ ªlayer_regularization_losses
+ºnon_trainable_variables
+‹regularization_losses
+Ωlayer_metrics
+æmetrics
+
+≠0
+ 
+ 
+µ
+ﬁ	variables
+ølayers
+ﬂtrainable_variables
+ ¿layer_regularization_losses
+¡non_trainable_variables
+‡regularization_losses
+¬layer_metrics
+√metrics
+ 
+ 
+Æ0
+Ø1
+∞2
+±3
+ 
+ 
+µ
+„	variables
+ƒlayers
+‰trainable_variables
+ ≈layer_regularization_losses
+∆non_trainable_variables
+Âregularization_losses
+«layer_metrics
+»metrics
+ 
+ 
+ 
+µ
+Á	variables
+…layers
+Ëtrainable_variables
+  layer_regularization_losses
+Ànon_trainable_variables
+Èregularization_losses
+Ãlayer_metrics
+Õmetrics
+
+≤0
+ 
+ 
+µ
+Î	variables
+Œlayers
+Ïtrainable_variables
+ œlayer_regularization_losses
+–non_trainable_variables
+Ìregularization_losses
+—layer_metrics
+“metrics
+ 
+ 
+≥0
+¥1
+µ2
+∂3
+ 
+ 
+µ
+	variables
+”layers
+Òtrainable_variables
+ ‘layer_regularization_losses
+’non_trainable_variables
+Úregularization_losses
+÷layer_metrics
+◊metrics
+ 
+ 
+ 
+µ
+Ù	variables
+ÿlayers
+ıtrainable_variables
+ Ÿlayer_regularization_losses
+⁄non_trainable_variables
+ˆregularization_losses
+€layer_metrics
+‹metrics
+
+∑0
+ 
+ 
+µ
+¯	variables
+›layers
+˘trainable_variables
+ ﬁlayer_regularization_losses
+ﬂnon_trainable_variables
+˙regularization_losses
+‡layer_metrics
+·metrics
+ 
+ 
+∏0
+π1
+∫2
+ª3
+ 
+ 
+µ
+˝	variables
+‚layers
+˛trainable_variables
+ „layer_regularization_losses
+‰non_trainable_variables
+ˇregularization_losses
+Âlayer_metrics
+Êmetrics
+ 
+ 
+ 
+µ
+Å	variables
+Álayers
+Çtrainable_variables
+ Ëlayer_regularization_losses
+Ènon_trainable_variables
+Éregularization_losses
+Ílayer_metrics
+Îmetrics
+
+º0
+ 
+ 
+µ
+Ö	variables
+Ïlayers
+Ütrainable_variables
+ Ìlayer_regularization_losses
+Ónon_trainable_variables
+áregularization_losses
+Ôlayer_metrics
+metrics
+ 
+ 
+Ω0
+æ1
+ø2
+¿3
+ 
+ 
+µ
+ä	variables
+Òlayers
+ãtrainable_variables
+ Úlayer_regularization_losses
+Ûnon_trainable_variables
+åregularization_losses
+Ùlayer_metrics
+ımetrics
+ 
+ 
+ 
+µ
+é	variables
+ˆlayers
+ètrainable_variables
+ ˜layer_regularization_losses
+¯non_trainable_variables
+êregularization_losses
+˘layer_metrics
+˙metrics
+
+¡0
+ 
+ 
+µ
+í	variables
+˚layers
+ìtrainable_variables
+ ¸layer_regularization_losses
+˝non_trainable_variables
+îregularization_losses
+˛layer_metrics
+ˇmetrics
+ 
+ 
+¬0
+√1
+ƒ2
+≈3
+ 
+ 
+µ
+ó	variables
+Älayers
+òtrainable_variables
+ Ålayer_regularization_losses
+Çnon_trainable_variables
+ôregularization_losses
+Élayer_metrics
+Ñmetrics
+ 
+ 
+ 
+µ
+õ	variables
+Ölayers
+útrainable_variables
+ Ülayer_regularization_losses
+ánon_trainable_variables
+ùregularization_losses
+àlayer_metrics
+âmetrics
+
+∆0
+ 
+ 
+µ
+ü	variables
+älayers
+†trainable_variables
+ ãlayer_regularization_losses
+ånon_trainable_variables
+°regularization_losses
+çlayer_metrics
+émetrics
+ 
+ 
+«0
+»1
+…2
+ 3
+ 
+ 
+µ
+§	variables
+èlayers
+•trainable_variables
+ êlayer_regularization_losses
+ënon_trainable_variables
+¶regularization_losses
+ílayer_metrics
+ìmetrics
+ 
+ 
+ 
+µ
+®	variables
+îlayers
+©trainable_variables
+ ïlayer_regularization_losses
+ñnon_trainable_variables
+™regularization_losses
+ólayer_metrics
+òmetrics
+
+À0
+ 
+ 
+µ
+¨	variables
+ôlayers
+≠trainable_variables
+ ölayer_regularization_losses
+õnon_trainable_variables
+Æregularization_losses
+úlayer_metrics
+ùmetrics
+ 
+ 
+Ã0
+Õ1
+Œ2
+œ3
+ 
+ 
+µ
+±	variables
+ûlayers
+≤trainable_variables
+ ülayer_regularization_losses
+†non_trainable_variables
+≥regularization_losses
+°layer_metrics
+¢metrics
+ 
+ 
+ 
+µ
+µ	variables
+£layers
+∂trainable_variables
+ §layer_regularization_losses
+•non_trainable_variables
+∑regularization_losses
+¶layer_metrics
+ßmetrics
+
+–0
+ 
+ 
+µ
+π	variables
+®layers
+∫trainable_variables
+ ©layer_regularization_losses
+™non_trainable_variables
+ªregularization_losses
+´layer_metrics
+¨metrics
+ 
+ 
+—0
+“1
+”2
+‘3
+ 
+ 
+µ
+æ	variables
+≠layers
+øtrainable_variables
+ Ælayer_regularization_losses
+Ønon_trainable_variables
+¿regularization_losses
+∞layer_metrics
+±metrics
+ 
+ 
+ 
+µ
+¬	variables
+≤layers
+√trainable_variables
+ ≥layer_regularization_losses
+¥non_trainable_variables
+ƒregularization_losses
+µlayer_metrics
+∂metrics
+
+’0
+ 
+ 
+µ
+∆	variables
+∑layers
+«trainable_variables
+ ∏layer_regularization_losses
+πnon_trainable_variables
+»regularization_losses
+∫layer_metrics
+ªmetrics
+ 
+ 
+÷0
+◊1
+ÿ2
+Ÿ3
+ 
+ 
+µ
+À	variables
+ºlayers
+Ãtrainable_variables
+ Ωlayer_regularization_losses
+ænon_trainable_variables
+Õregularization_losses
+ølayer_metrics
+¿metrics
+ 
+ 
+ 
+µ
+œ	variables
+¡layers
+–trainable_variables
+ ¬layer_regularization_losses
+√non_trainable_variables
+—regularization_losses
+ƒlayer_metrics
+≈metrics
+
+⁄0
+ 
+ 
+µ
+”	variables
+∆layers
+‘trainable_variables
+ «layer_regularization_losses
+»non_trainable_variables
+’regularization_losses
+…layer_metrics
+ metrics
+ 
+ 
+€0
+‹1
+›2
+ﬁ3
+ 
+ 
+µ
+ÿ	variables
+Àlayers
+Ÿtrainable_variables
+ Ãlayer_regularization_losses
+Õnon_trainable_variables
+⁄regularization_losses
+Œlayer_metrics
+œmetrics
+ 
+ 
+ 
+µ
+‹	variables
+–layers
+›trainable_variables
+ —layer_regularization_losses
+“non_trainable_variables
+ﬁregularization_losses
+”layer_metrics
+‘metrics
+
+ﬂ0
+ 
+ 
+µ
+‡	variables
+’layers
+·trainable_variables
+ ÷layer_regularization_losses
+◊non_trainable_variables
+‚regularization_losses
+ÿlayer_metrics
+Ÿmetrics
+ 
+ 
+‡0
+·1
+‚2
+„3
+ 
+ 
+µ
+Â	variables
+⁄layers
+Êtrainable_variables
+ €layer_regularization_losses
+‹non_trainable_variables
+Áregularization_losses
+›layer_metrics
+ﬁmetrics
+ 
+ 
+ 
+µ
+È	variables
+ﬂlayers
+Ítrainable_variables
+ ‡layer_regularization_losses
+·non_trainable_variables
+Îregularization_losses
+‚layer_metrics
+„metrics
+
+‰0
+ 
+ 
+µ
+Ì	variables
+‰layers
+Ótrainable_variables
+ Âlayer_regularization_losses
+Ênon_trainable_variables
+Ôregularization_losses
+Álayer_metrics
+Ëmetrics
+ 
+ 
+Â0
+Ê1
+Á2
+Ë3
+ 
+ 
+µ
+Ú	variables
+Èlayers
+Ûtrainable_variables
+ Ílayer_regularization_losses
+Înon_trainable_variables
+Ùregularization_losses
+Ïlayer_metrics
+Ìmetrics
+
+È0
+ 
+ 
+µ
+ˆ	variables
+Ólayers
+˜trainable_variables
+ Ôlayer_regularization_losses
+non_trainable_variables
+¯regularization_losses
+Òlayer_metrics
+Úmetrics
+ 
+ 
+Í0
+Î1
+Ï2
+Ì3
+
+Í0
+Î1
+ 
+µ
+˚	variables
+Ûlayers
+¸trainable_variables
+ Ùlayer_regularization_losses
+ınon_trainable_variables
+˝regularization_losses
+ˆlayer_metrics
+˜metrics
+ 
+ 
+ 
+µ
+ˇ	variables
+¯layers
+Ätrainable_variables
+ ˘layer_regularization_losses
+˙non_trainable_variables
+Åregularization_losses
+˚layer_metrics
+¸metrics
+
+Ó0
+
+Ó0
+ 
+µ
+É	variables
+˝layers
+Ñtrainable_variables
+ ˛layer_regularization_losses
+ˇnon_trainable_variables
+Öregularization_losses
+Älayer_metrics
+Åmetrics
+ 
+ 
+Ô0
+1
+Ò2
+Ú3
+
+Ô0
+1
+ 
+µ
+à	variables
+Çlayers
+âtrainable_variables
+ Élayer_regularization_losses
+Ñnon_trainable_variables
+äregularization_losses
+Ölayer_metrics
+Ümetrics
+ 
+ 
+ 
+µ
+å	variables
+álayers
+çtrainable_variables
+ àlayer_regularization_losses
+ânon_trainable_variables
+éregularization_losses
+älayer_metrics
+ãmetrics
+
+Û0
+
+Û0
+ 
+µ
+ê	variables
+ålayers
+ëtrainable_variables
+ çlayer_regularization_losses
+énon_trainable_variables
+íregularization_losses
+èlayer_metrics
+êmetrics
+ 
+ 
+Ù0
+ı1
+ˆ2
+˜3
+
+Ù0
+ı1
+ 
+µ
+ï	variables
+ëlayers
+ñtrainable_variables
+ ílayer_regularization_losses
+ìnon_trainable_variables
+óregularization_losses
+îlayer_metrics
+ïmetrics
+ 
+ 
+ 
+µ
+ô	variables
+ñlayers
+ötrainable_variables
+ ólayer_regularization_losses
+ònon_trainable_variables
+õregularization_losses
+ôlayer_metrics
+ömetrics
+
+¯0
+
+¯0
+ 
+µ
+ù	variables
+õlayers
+ûtrainable_variables
+ úlayer_regularization_losses
+ùnon_trainable_variables
+üregularization_losses
+ûlayer_metrics
+ümetrics
+ 
+ 
+˘0
+˙1
+˚2
+¸3
+
+˘0
+˙1
+ 
+µ
+¢	variables
+†layers
+£trainable_variables
+ °layer_regularization_losses
+¢non_trainable_variables
+§regularization_losses
+£layer_metrics
+§metrics
+ 
+ 
+ 
+µ
+¶	variables
+•layers
+ßtrainable_variables
+ ¶layer_regularization_losses
+ßnon_trainable_variables
+®regularization_losses
+®layer_metrics
+©metrics
+
+˝0
+
+˝0
+ 
+µ
+™	variables
+™layers
+´trainable_variables
+ ´layer_regularization_losses
+¨non_trainable_variables
+¨regularization_losses
+≠layer_metrics
+Æmetrics
+ 
+ 
+˛0
+ˇ1
+Ä2
+Å3
+
+˛0
+ˇ1
+ 
+µ
+Ø	variables
+Ølayers
+∞trainable_variables
+ ∞layer_regularization_losses
+±non_trainable_variables
+±regularization_losses
+≤layer_metrics
+≥metrics
+ 
+ 
+ 
+µ
+≥	variables
+¥layers
+¥trainable_variables
+ µlayer_regularization_losses
+∂non_trainable_variables
+µregularization_losses
+∑layer_metrics
+∏metrics
+
+Ç0
+
+Ç0
+ 
+µ
+∑	variables
+πlayers
+∏trainable_variables
+ ∫layer_regularization_losses
+ªnon_trainable_variables
+πregularization_losses
+ºlayer_metrics
+Ωmetrics
+ 
+ 
+É0
+Ñ1
+Ö2
+Ü3
+
+É0
+Ñ1
+ 
+µ
+º	variables
+ælayers
+Ωtrainable_variables
+ ølayer_regularization_losses
+¿non_trainable_variables
+æregularization_losses
+¡layer_metrics
+¬metrics
+ 
+ 
+ 
+µ
+¿	variables
+√layers
+¡trainable_variables
+ ƒlayer_regularization_losses
+≈non_trainable_variables
+¬regularization_losses
+∆layer_metrics
+«metrics
+
+á0
+
+á0
+ 
+µ
+ƒ	variables
+»layers
+≈trainable_variables
+ …layer_regularization_losses
+ non_trainable_variables
+∆regularization_losses
+Àlayer_metrics
+Ãmetrics
+ 
+ 
+à0
+â1
+ä2
+ã3
+
+à0
+â1
+ 
+µ
+…	variables
+Õlayers
+ trainable_variables
+ Œlayer_regularization_losses
+œnon_trainable_variables
+Àregularization_losses
+–layer_metrics
+—metrics
+ 
+ 
+ 
+µ
+Õ	variables
+“layers
+Œtrainable_variables
+ ”layer_regularization_losses
+‘non_trainable_variables
+œregularization_losses
+’layer_metrics
+÷metrics
+ 
+ 
+ 
+µ
+—	variables
+◊layers
+“trainable_variables
+ ÿlayer_regularization_losses
+Ÿnon_trainable_variables
+”regularization_losses
+⁄layer_metrics
+€metrics
+
+å0
+
+å0
+ 
+µ
+’	variables
+‹layers
+÷trainable_variables
+ ›layer_regularization_losses
+ﬁnon_trainable_variables
+◊regularization_losses
+ﬂlayer_metrics
+‡metrics
+ 
+ 
+ç0
+é1
+è2
+ê3
+
+ç0
+é1
+ 
+µ
+⁄	variables
+·layers
+€trainable_variables
+ ‚layer_regularization_losses
+„non_trainable_variables
+‹regularization_losses
+‰layer_metrics
+Âmetrics
+ 
+ 
+ 
+µ
+ﬁ	variables
+Êlayers
+ﬂtrainable_variables
+ Álayer_regularization_losses
+Ënon_trainable_variables
+‡regularization_losses
+Èlayer_metrics
+Ímetrics
+
+ë0
+
+ë0
+ 
+µ
+‚	variables
+Îlayers
+„trainable_variables
+ Ïlayer_regularization_losses
+Ìnon_trainable_variables
+‰regularization_losses
+Ólayer_metrics
+Ômetrics
+ 
+ 
+í0
+ì1
+î2
+ï3
+
+í0
+ì1
+ 
+µ
+Á	variables
+layers
+Ëtrainable_variables
+ Òlayer_regularization_losses
+Únon_trainable_variables
+Èregularization_losses
+Ûlayer_metrics
+Ùmetrics
+
+ñ0
+
+ñ0
+ 
+µ
+Î	variables
+ılayers
+Ïtrainable_variables
+ ˆlayer_regularization_losses
+˜non_trainable_variables
+Ìregularization_losses
+¯layer_metrics
+˘metrics
+ 
+ 
+ó0
+ò1
+ô2
+ö3
+
+ó0
+ò1
+ 
+µ
+	variables
+˙layers
+Òtrainable_variables
+ ˚layer_regularization_losses
+¸non_trainable_variables
+Úregularization_losses
+˝layer_metrics
+˛metrics
+ 
+ 
+ 
+µ
+Ù	variables
+ˇlayers
+ıtrainable_variables
+ Älayer_regularization_losses
+Ånon_trainable_variables
+ˆregularization_losses
+Çlayer_metrics
+Émetrics
+
+õ0
+
+õ0
+ 
+µ
+¯	variables
+Ñlayers
+˘trainable_variables
+ Ölayer_regularization_losses
+Ünon_trainable_variables
+˙regularization_losses
+álayer_metrics
+àmetrics
+ 
+ 
+ú0
+ù1
+û2
+ü3
+
+ú0
+ù1
+ 
+µ
+˝	variables
+âlayers
+˛trainable_variables
+ älayer_regularization_losses
+ãnon_trainable_variables
+ˇregularization_losses
+ålayer_metrics
+çmetrics
+ 
+ 
+ 
+µ
+Å	variables
+élayers
+Çtrainable_variables
+ èlayer_regularization_losses
+ênon_trainable_variables
+Éregularization_losses
+ëlayer_metrics
+ímetrics
+
+†0
+
+†0
+ 
+µ
+Ö	variables
+ìlayers
+Ütrainable_variables
+ îlayer_regularization_losses
+ïnon_trainable_variables
+áregularization_losses
+ñlayer_metrics
+ómetrics
+ 
+ 
+°0
+¢1
+£2
+§3
+
+°0
+¢1
+ 
+µ
+ä	variables
+òlayers
+ãtrainable_variables
+ ôlayer_regularization_losses
+önon_trainable_variables
+åregularization_losses
+õlayer_metrics
+úmetrics
+ 
+ 
+ 
+µ
+é	variables
+ùlayers
+ètrainable_variables
+ ûlayer_regularization_losses
+ünon_trainable_variables
+êregularization_losses
+†layer_metrics
+°metrics
+
+•0
+
+•0
+ 
+µ
+í	variables
+¢layers
+ìtrainable_variables
+ £layer_regularization_losses
+§non_trainable_variables
+îregularization_losses
+•layer_metrics
+¶metrics
+ 
+ 
+¶0
+ß1
+®2
+©3
+
+¶0
+ß1
+ 
+µ
+ó	variables
+ßlayers
+òtrainable_variables
+ ®layer_regularization_losses
+©non_trainable_variables
+ôregularization_losses
+™layer_metrics
+´metrics
+ 
+ 
+ 
+µ
+õ	variables
+¨layers
+útrainable_variables
+ ≠layer_regularization_losses
+Ænon_trainable_variables
+ùregularization_losses
+Ølayer_metrics
+∞metrics
+
+™0
+
+™0
+ 
+µ
+ü	variables
+±layers
+†trainable_variables
+ ≤layer_regularization_losses
+≥non_trainable_variables
+°regularization_losses
+¥layer_metrics
+µmetrics
+ 
+ 
+´0
+¨1
+≠2
+Æ3
+
+´0
+¨1
+ 
+µ
+§	variables
+∂layers
+•trainable_variables
+ ∑layer_regularization_losses
+∏non_trainable_variables
+¶regularization_losses
+πlayer_metrics
+∫metrics
+ 
+ 
+ 
+µ
+®	variables
+ªlayers
+©trainable_variables
+ ºlayer_regularization_losses
+Ωnon_trainable_variables
+™regularization_losses
+ælayer_metrics
+ømetrics
+
+Ø0
+
+Ø0
+ 
+µ
+¨	variables
+¿layers
+≠trainable_variables
+ ¡layer_regularization_losses
+¬non_trainable_variables
+Æregularization_losses
+√layer_metrics
+ƒmetrics
+ 
+ 
+∞0
+±1
+≤2
+≥3
+
+∞0
+±1
+ 
+µ
+±	variables
+≈layers
+≤trainable_variables
+ ∆layer_regularization_losses
+«non_trainable_variables
+≥regularization_losses
+»layer_metrics
+…metrics
+ 
+ 
+ 
+µ
+µ	variables
+ layers
+∂trainable_variables
+ Àlayer_regularization_losses
+Ãnon_trainable_variables
+∑regularization_losses
+Õlayer_metrics
+Œmetrics
+
+¥0
+
+¥0
+ 
+µ
+π	variables
+œlayers
+∫trainable_variables
+ –layer_regularization_losses
+—non_trainable_variables
+ªregularization_losses
+“layer_metrics
+”metrics
+ 
+ 
+µ0
+∂1
+∑2
+∏3
+
+µ0
+∂1
+ 
+µ
+æ	variables
+‘layers
+øtrainable_variables
+ ’layer_regularization_losses
+÷non_trainable_variables
+¿regularization_losses
+◊layer_metrics
+ÿmetrics
+ 
+ 
+ 
+µ
+¬	variables
+Ÿlayers
+√trainable_variables
+ ⁄layer_regularization_losses
+€non_trainable_variables
+ƒregularization_losses
+‹layer_metrics
+›metrics
+
+π0
+
+π0
+ 
+µ
+∆	variables
+ﬁlayers
+«trainable_variables
+ ﬂlayer_regularization_losses
+‡non_trainable_variables
+»regularization_losses
+·layer_metrics
+‚metrics
+ 
+ 
+∫0
+ª1
+º2
+Ω3
+
+∫0
+ª1
+ 
+µ
+À	variables
+„layers
+Ãtrainable_variables
+ ‰layer_regularization_losses
+Ânon_trainable_variables
+Õregularization_losses
+Êlayer_metrics
+Ámetrics
+ 
+ 
+ 
+µ
+œ	variables
+Ëlayers
+–trainable_variables
+ Èlayer_regularization_losses
+Ínon_trainable_variables
+—regularization_losses
+Îlayer_metrics
+Ïmetrics
+
+æ0
+
+æ0
+ 
+µ
+”	variables
+Ìlayers
+‘trainable_variables
+ Ólayer_regularization_losses
+Ônon_trainable_variables
+’regularization_losses
+layer_metrics
+Òmetrics
+ 
+ 
+ø0
+¿1
+¡2
+¬3
+
+ø0
+¿1
+ 
+µ
+ÿ	variables
+Úlayers
+Ÿtrainable_variables
+ Ûlayer_regularization_losses
+Ùnon_trainable_variables
+⁄regularization_losses
+ılayer_metrics
+ˆmetrics
+
+√0
+
+√0
+ 
+µ
+‹	variables
+˜layers
+›trainable_variables
+ ¯layer_regularization_losses
+˘non_trainable_variables
+ﬁregularization_losses
+˙layer_metrics
+˚metrics
+ 
+ 
+ƒ0
+≈1
+∆2
+«3
+
+ƒ0
+≈1
+ 
+µ
+·	variables
+¸layers
+‚trainable_variables
+ ˝layer_regularization_losses
+˛non_trainable_variables
+„regularization_losses
+ˇlayer_metrics
+Ämetrics
+ 
+ 
+ 
+µ
+Â	variables
+Ålayers
+Êtrainable_variables
+ Çlayer_regularization_losses
+Énon_trainable_variables
+Áregularization_losses
+Ñlayer_metrics
+Ömetrics
+¨
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+ 20
+!21
+"22
+#23
+$24
+%25
+&26
+'27
+(28
+)29
+*30
++31
+,32
+-33
+.34
+/35
+036
+137
+238
+339
+440
+541
+642
+743
+844
+945
+:46
+;47
+<48
+=49
+>50
+?51
+@52
+A53
+B54
+C55
+D56
+E57
+F58
+G59
+H60
+I61
+J62
+K63
+L64
+M65
+N66
+O67
+P68
+Q69
+R70
+S71
+T72
+U73
+V74
+W75
+X76
+Y77
+Z78
+[79
+\80
+]81
+^82
+_83
+`84
+a85
+b86
+c87
+d88
+e89
+f90
+g91
+h92
+i93
+j94
+k95
+l96
+m97
+n98
+o99
+p100
+q101
+r102
+s103
+t104
+u105
+v106
+w107
+x108
+y109
+z110
+{111
+|112
+}113
+~114
+115
+Ä116
+Å117
+Ç118
+É119
+Ñ120
+Ö121
+Ü122
+á123
+à124
+â125
+ä126
+ã127
+å128
+ç129
+é130
+è131
+ê132
+ë133
+í134
+ì135
+î136
+ï137
+ñ138
+ó139
+ò140
+ô141
+ö142
+õ143
+ú144
+ù145
+û146
+ü147
+†148
+°149
+¢150
+£151
+§152
+•153
+¶154
+ 
+ä
+ƒ0
+≈1
+∆2
+«3
+»4
+…5
+ 6
+À7
+Ã8
+Õ9
+Œ10
+œ11
+–12
+—13
+“14
+”15
+‘16
+’17
+÷18
+◊19
+ÿ20
+Ÿ21
+⁄22
+€23
+‹24
+›25
+ﬁ26
+ﬂ27
+‡28
+·29
+‚30
+„31
+‰32
+Â33
+Ê34
+Á35
+Ë36
+È37
+Í38
+Î39
+Ï40
+Ì41
+Ó42
+Ô43
+44
+Ò45
+Ú46
+Û47
+Ù48
+ı49
+ˆ50
+˜51
+¯52
+˘53
+˙54
+˚55
+¸56
+˝57
+˛58
+ˇ59
+Ä60
+Å61
+Ç62
+É63
+Ñ64
+Ö65
+Ü66
+á67
+à68
+â69
+ä70
+ã71
+å72
+ç73
+é74
+è75
+ê76
+ë77
+í78
+ì79
+î80
+ï81
+ñ82
+ó83
+ò84
+ô85
+ö86
+õ87
+ú88
+ù89
+û90
+ü91
+†92
+°93
+¢94
+£95
+§96
+•97
+¶98
+ß99
+®100
+©101
+™102
+´103
+¨104
+≠105
+Æ106
+Ø107
+∞108
+±109
+≤110
+≥111
+¥112
+µ113
+∂114
+∑115
+∏116
+π117
+∫118
+ª119
+º120
+Ω121
+æ122
+ø123
+¿124
+¡125
+¬126
+√127
+ƒ128
+≈129
+∆130
+«131
+»132
+…133
+ 134
+À135
+Ã136
+Õ137
+Œ138
+œ139
+–140
+—141
+“142
+”143
+‘144
+’145
+÷146
+◊147
+ÿ148
+Ÿ149
+⁄150
+€151
+‹152
+›153
+ﬁ154
+ﬂ155
+‡156
+·157
+‚158
+„159
+‰160
+Â161
+Ê162
+Á163
+Ë164
+È165
+Ï166
+Ì167
+Ò168
+Ú169
+ˆ170
+˜171
+˚172
+¸173
+Ä174
+Å175
+Ö176
+Ü177
+ä178
+ã179
+è180
+ê181
+î182
+ï183
+ô184
+ö185
+û186
+ü187
+£188
+§189
+®190
+©191
+≠192
+Æ193
+≤194
+≥195
+∑196
+∏197
+º198
+Ω199
+¡200
+¬201
+∆202
+«203
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+8
+
+Ütotal
+
+ácount
+à	variables
+â	keras_api
+I
+
+ätotal
+
+ãcount
+å
+_fn_kwargs
+ç	variables
+é	keras_api
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ƒ0
+ 
+ 
+ 
+ 
+ 
+≈0
+∆1
+«2
+»3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+…0
+ 
+ 
+ 
+ 
+ 
+ 0
+À1
+Ã2
+Õ3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Œ0
+ 
+ 
+ 
+ 
+ 
+œ0
+–1
+—2
+“3
+ 
+ 
+ 
+ 
+
+”0
+ 
+ 
+ 
+ 
+ 
+‘0
+’1
+÷2
+◊3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ÿ0
+ 
+ 
+ 
+ 
+ 
+Ÿ0
+⁄1
+€2
+‹3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+›0
+ 
+ 
+ 
+ 
+ 
+ﬁ0
+ﬂ1
+‡2
+·3
+ 
+ 
+ 
+ 
+
+‚0
+ 
+ 
+ 
+ 
+ 
+„0
+‰1
+Â2
+Ê3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Á0
+ 
+ 
+ 
+ 
+ 
+Ë0
+È1
+Í2
+Î3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Ï0
+ 
+ 
+ 
+ 
+ 
+Ì0
+Ó1
+Ô2
+3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Ò0
+ 
+ 
+ 
+ 
+ 
+Ú0
+Û1
+Ù2
+ı3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ˆ0
+ 
+ 
+ 
+ 
+ 
+˜0
+¯1
+˘2
+˙3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+˚0
+ 
+ 
+ 
+ 
+ 
+¸0
+˝1
+˛2
+ˇ3
+ 
+ 
+ 
+ 
+
+Ä0
+ 
+ 
+ 
+ 
+ 
+Å0
+Ç1
+É2
+Ñ3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Ö0
+ 
+ 
+ 
+ 
+ 
+Ü0
+á1
+à2
+â3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ä0
+ 
+ 
+ 
+ 
+ 
+ã0
+å1
+ç2
+é3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+è0
+ 
+ 
+ 
+ 
+ 
+ê0
+ë1
+í2
+ì3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+î0
+ 
+ 
+ 
+ 
+ 
+ï0
+ñ1
+ó2
+ò3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ô0
+ 
+ 
+ 
+ 
+ 
+ö0
+õ1
+ú2
+ù3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+û0
+ 
+ 
+ 
+ 
+ 
+ü0
+†1
+°2
+¢3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+£0
+ 
+ 
+ 
+ 
+ 
+§0
+•1
+¶2
+ß3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+®0
+ 
+ 
+ 
+ 
+ 
+©0
+™1
+´2
+¨3
+ 
+ 
+ 
+ 
+
+≠0
+ 
+ 
+ 
+ 
+ 
+Æ0
+Ø1
+∞2
+±3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+≤0
+ 
+ 
+ 
+ 
+ 
+≥0
+¥1
+µ2
+∂3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+∑0
+ 
+ 
+ 
+ 
+ 
+∏0
+π1
+∫2
+ª3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+º0
+ 
+ 
+ 
+ 
+ 
+Ω0
+æ1
+ø2
+¿3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+¡0
+ 
+ 
+ 
+ 
+ 
+¬0
+√1
+ƒ2
+≈3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+∆0
+ 
+ 
+ 
+ 
+ 
+«0
+»1
+…2
+ 3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+À0
+ 
+ 
+ 
+ 
+ 
+Ã0
+Õ1
+Œ2
+œ3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+–0
+ 
+ 
+ 
+ 
+ 
+—0
+“1
+”2
+‘3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+’0
+ 
+ 
+ 
+ 
+ 
+÷0
+◊1
+ÿ2
+Ÿ3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+⁄0
+ 
+ 
+ 
+ 
+ 
+€0
+‹1
+›2
+ﬁ3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ﬂ0
+ 
+ 
+ 
+ 
+ 
+‡0
+·1
+‚2
+„3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+‰0
+ 
+ 
+ 
+ 
+ 
+Â0
+Ê1
+Á2
+Ë3
+ 
+ 
+ 
+ 
+
+È0
+ 
+ 
+ 
+ 
+
+Ï0
+Ì1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Ò0
+Ú1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ˆ0
+˜1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+˚0
+¸1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Ä0
+Å1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Ö0
+Ü1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ä0
+ã1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+è0
+ê1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+î0
+ï1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ô0
+ö1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+û0
+ü1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+£0
+§1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+®0
+©1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+≠0
+Æ1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+≤0
+≥1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+∑0
+∏1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+º0
+Ω1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+¡0
+¬1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+∆0
+«1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+OM
+VARIABLE_VALUEtotal4keras_api/metrics/0/total/.ATTRIBUTES/VARIABLE_VALUE
+OM
+VARIABLE_VALUEcount4keras_api/metrics/0/count/.ATTRIBUTES/VARIABLE_VALUE
+
+Ü0
+á1
+
+à	variables
+OM
+VARIABLE_VALUEtotal4keras_api/metrics/1/total/.ATTRIBUTES/VARIABLE_VALUE
+OM
+VARIABLE_VALUEcount4keras_api/metrics/1/count/.ATTRIBUTES/VARIABLE_VALUE
+ 
+
+ä0
+ã1
+
+ç	variables
+~|
+VARIABLE_VALUEAdam/conv2d_3/kernel/mRlayer_with_weights-1/kernel/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUEAdam/conv2d_3/bias/mPlayer_with_weights-1/bias/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+}{
+VARIABLE_VALUEAdam/dense_3/kernel/mRlayer_with_weights-2/kernel/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+yw
+VARIABLE_VALUEAdam/dense_3/bias/mPlayer_with_weights-2/bias/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+{y
+VARIABLE_VALUE!Adam/block_11_expand_BN_3/gamma/mDvariables/166/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUE Adam/block_11_expand_BN_3/beta/mDvariables/167/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+áÑ
+VARIABLE_VALUE,Adam/block_11_depthwise_3/depthwise_kernel/mDvariables/170/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+~|
+VARIABLE_VALUE$Adam/block_11_depthwise_BN_3/gamma/mDvariables/171/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+}{
+VARIABLE_VALUE#Adam/block_11_depthwise_BN_3/beta/mDvariables/172/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUE Adam/block_11_project_3/kernel/mDvariables/175/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+|z
+VARIABLE_VALUE"Adam/block_11_project_BN_3/gamma/mDvariables/176/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+{y
+VARIABLE_VALUE!Adam/block_11_project_BN_3/beta/mDvariables/177/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+yw
+VARIABLE_VALUEAdam/block_12_expand_3/kernel/mDvariables/180/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+{y
+VARIABLE_VALUE!Adam/block_12_expand_BN_3/gamma/mDvariables/181/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUE Adam/block_12_expand_BN_3/beta/mDvariables/182/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+áÑ
+VARIABLE_VALUE,Adam/block_12_depthwise_3/depthwise_kernel/mDvariables/185/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+~|
+VARIABLE_VALUE$Adam/block_12_depthwise_BN_3/gamma/mDvariables/186/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+}{
+VARIABLE_VALUE#Adam/block_12_depthwise_BN_3/beta/mDvariables/187/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUE Adam/block_12_project_3/kernel/mDvariables/190/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+|z
+VARIABLE_VALUE"Adam/block_12_project_BN_3/gamma/mDvariables/191/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+{y
+VARIABLE_VALUE!Adam/block_12_project_BN_3/beta/mDvariables/192/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+yw
+VARIABLE_VALUEAdam/block_13_expand_3/kernel/mDvariables/195/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+{y
+VARIABLE_VALUE!Adam/block_13_expand_BN_3/gamma/mDvariables/196/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUE Adam/block_13_expand_BN_3/beta/mDvariables/197/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+áÑ
+VARIABLE_VALUE,Adam/block_13_depthwise_3/depthwise_kernel/mDvariables/200/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+~|
+VARIABLE_VALUE$Adam/block_13_depthwise_BN_3/gamma/mDvariables/201/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+}{
+VARIABLE_VALUE#Adam/block_13_depthwise_BN_3/beta/mDvariables/202/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUE Adam/block_13_project_3/kernel/mDvariables/205/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+|z
+VARIABLE_VALUE"Adam/block_13_project_BN_3/gamma/mDvariables/206/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+{y
+VARIABLE_VALUE!Adam/block_13_project_BN_3/beta/mDvariables/207/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+yw
+VARIABLE_VALUEAdam/block_14_expand_3/kernel/mDvariables/210/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+{y
+VARIABLE_VALUE!Adam/block_14_expand_BN_3/gamma/mDvariables/211/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUE Adam/block_14_expand_BN_3/beta/mDvariables/212/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+áÑ
+VARIABLE_VALUE,Adam/block_14_depthwise_3/depthwise_kernel/mDvariables/215/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+~|
+VARIABLE_VALUE$Adam/block_14_depthwise_BN_3/gamma/mDvariables/216/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+}{
+VARIABLE_VALUE#Adam/block_14_depthwise_BN_3/beta/mDvariables/217/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUE Adam/block_14_project_3/kernel/mDvariables/220/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+|z
+VARIABLE_VALUE"Adam/block_14_project_BN_3/gamma/mDvariables/221/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+{y
+VARIABLE_VALUE!Adam/block_14_project_BN_3/beta/mDvariables/222/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+yw
+VARIABLE_VALUEAdam/block_15_expand_3/kernel/mDvariables/225/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+{y
+VARIABLE_VALUE!Adam/block_15_expand_BN_3/gamma/mDvariables/226/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUE Adam/block_15_expand_BN_3/beta/mDvariables/227/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+áÑ
+VARIABLE_VALUE,Adam/block_15_depthwise_3/depthwise_kernel/mDvariables/230/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+~|
+VARIABLE_VALUE$Adam/block_15_depthwise_BN_3/gamma/mDvariables/231/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+}{
+VARIABLE_VALUE#Adam/block_15_depthwise_BN_3/beta/mDvariables/232/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUE Adam/block_15_project_3/kernel/mDvariables/235/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+|z
+VARIABLE_VALUE"Adam/block_15_project_BN_3/gamma/mDvariables/236/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+{y
+VARIABLE_VALUE!Adam/block_15_project_BN_3/beta/mDvariables/237/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+yw
+VARIABLE_VALUEAdam/block_16_expand_3/kernel/mDvariables/240/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+{y
+VARIABLE_VALUE!Adam/block_16_expand_BN_3/gamma/mDvariables/241/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUE Adam/block_16_expand_BN_3/beta/mDvariables/242/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+áÑ
+VARIABLE_VALUE,Adam/block_16_depthwise_3/depthwise_kernel/mDvariables/245/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+~|
+VARIABLE_VALUE$Adam/block_16_depthwise_BN_3/gamma/mDvariables/246/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+}{
+VARIABLE_VALUE#Adam/block_16_depthwise_BN_3/beta/mDvariables/247/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUE Adam/block_16_project_3/kernel/mDvariables/250/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+|z
+VARIABLE_VALUE"Adam/block_16_project_BN_3/gamma/mDvariables/251/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+{y
+VARIABLE_VALUE!Adam/block_16_project_BN_3/beta/mDvariables/252/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+pn
+VARIABLE_VALUEAdam/Conv_1_3/kernel/mDvariables/255/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+rp
+VARIABLE_VALUEAdam/Conv_1_bn_3/gamma/mDvariables/256/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+qo
+VARIABLE_VALUEAdam/Conv_1_bn_3/beta/mDvariables/257/.OPTIMIZER_SLOT/optimizer/m/.ATTRIBUTES/VARIABLE_VALUE
+~|
+VARIABLE_VALUEAdam/conv2d_3/kernel/vRlayer_with_weights-1/kernel/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUEAdam/conv2d_3/bias/vPlayer_with_weights-1/bias/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+}{
+VARIABLE_VALUEAdam/dense_3/kernel/vRlayer_with_weights-2/kernel/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+yw
+VARIABLE_VALUEAdam/dense_3/bias/vPlayer_with_weights-2/bias/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+{y
+VARIABLE_VALUE!Adam/block_11_expand_BN_3/gamma/vDvariables/166/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUE Adam/block_11_expand_BN_3/beta/vDvariables/167/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+áÑ
+VARIABLE_VALUE,Adam/block_11_depthwise_3/depthwise_kernel/vDvariables/170/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+~|
+VARIABLE_VALUE$Adam/block_11_depthwise_BN_3/gamma/vDvariables/171/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+}{
+VARIABLE_VALUE#Adam/block_11_depthwise_BN_3/beta/vDvariables/172/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUE Adam/block_11_project_3/kernel/vDvariables/175/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+|z
+VARIABLE_VALUE"Adam/block_11_project_BN_3/gamma/vDvariables/176/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+{y
+VARIABLE_VALUE!Adam/block_11_project_BN_3/beta/vDvariables/177/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+yw
+VARIABLE_VALUEAdam/block_12_expand_3/kernel/vDvariables/180/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+{y
+VARIABLE_VALUE!Adam/block_12_expand_BN_3/gamma/vDvariables/181/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUE Adam/block_12_expand_BN_3/beta/vDvariables/182/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+áÑ
+VARIABLE_VALUE,Adam/block_12_depthwise_3/depthwise_kernel/vDvariables/185/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+~|
+VARIABLE_VALUE$Adam/block_12_depthwise_BN_3/gamma/vDvariables/186/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+}{
+VARIABLE_VALUE#Adam/block_12_depthwise_BN_3/beta/vDvariables/187/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUE Adam/block_12_project_3/kernel/vDvariables/190/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+|z
+VARIABLE_VALUE"Adam/block_12_project_BN_3/gamma/vDvariables/191/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+{y
+VARIABLE_VALUE!Adam/block_12_project_BN_3/beta/vDvariables/192/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+yw
+VARIABLE_VALUEAdam/block_13_expand_3/kernel/vDvariables/195/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+{y
+VARIABLE_VALUE!Adam/block_13_expand_BN_3/gamma/vDvariables/196/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUE Adam/block_13_expand_BN_3/beta/vDvariables/197/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+áÑ
+VARIABLE_VALUE,Adam/block_13_depthwise_3/depthwise_kernel/vDvariables/200/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+~|
+VARIABLE_VALUE$Adam/block_13_depthwise_BN_3/gamma/vDvariables/201/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+}{
+VARIABLE_VALUE#Adam/block_13_depthwise_BN_3/beta/vDvariables/202/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUE Adam/block_13_project_3/kernel/vDvariables/205/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+|z
+VARIABLE_VALUE"Adam/block_13_project_BN_3/gamma/vDvariables/206/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+{y
+VARIABLE_VALUE!Adam/block_13_project_BN_3/beta/vDvariables/207/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+yw
+VARIABLE_VALUEAdam/block_14_expand_3/kernel/vDvariables/210/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+{y
+VARIABLE_VALUE!Adam/block_14_expand_BN_3/gamma/vDvariables/211/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUE Adam/block_14_expand_BN_3/beta/vDvariables/212/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+áÑ
+VARIABLE_VALUE,Adam/block_14_depthwise_3/depthwise_kernel/vDvariables/215/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+~|
+VARIABLE_VALUE$Adam/block_14_depthwise_BN_3/gamma/vDvariables/216/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+}{
+VARIABLE_VALUE#Adam/block_14_depthwise_BN_3/beta/vDvariables/217/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUE Adam/block_14_project_3/kernel/vDvariables/220/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+|z
+VARIABLE_VALUE"Adam/block_14_project_BN_3/gamma/vDvariables/221/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+{y
+VARIABLE_VALUE!Adam/block_14_project_BN_3/beta/vDvariables/222/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+yw
+VARIABLE_VALUEAdam/block_15_expand_3/kernel/vDvariables/225/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+{y
+VARIABLE_VALUE!Adam/block_15_expand_BN_3/gamma/vDvariables/226/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUE Adam/block_15_expand_BN_3/beta/vDvariables/227/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+áÑ
+VARIABLE_VALUE,Adam/block_15_depthwise_3/depthwise_kernel/vDvariables/230/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+~|
+VARIABLE_VALUE$Adam/block_15_depthwise_BN_3/gamma/vDvariables/231/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+}{
+VARIABLE_VALUE#Adam/block_15_depthwise_BN_3/beta/vDvariables/232/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUE Adam/block_15_project_3/kernel/vDvariables/235/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+|z
+VARIABLE_VALUE"Adam/block_15_project_BN_3/gamma/vDvariables/236/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+{y
+VARIABLE_VALUE!Adam/block_15_project_BN_3/beta/vDvariables/237/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+yw
+VARIABLE_VALUEAdam/block_16_expand_3/kernel/vDvariables/240/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+{y
+VARIABLE_VALUE!Adam/block_16_expand_BN_3/gamma/vDvariables/241/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUE Adam/block_16_expand_BN_3/beta/vDvariables/242/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+áÑ
+VARIABLE_VALUE,Adam/block_16_depthwise_3/depthwise_kernel/vDvariables/245/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+~|
+VARIABLE_VALUE$Adam/block_16_depthwise_BN_3/gamma/vDvariables/246/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+}{
+VARIABLE_VALUE#Adam/block_16_depthwise_BN_3/beta/vDvariables/247/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+zx
+VARIABLE_VALUE Adam/block_16_project_3/kernel/vDvariables/250/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+|z
+VARIABLE_VALUE"Adam/block_16_project_BN_3/gamma/vDvariables/251/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+{y
+VARIABLE_VALUE!Adam/block_16_project_BN_3/beta/vDvariables/252/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+pn
+VARIABLE_VALUEAdam/Conv_1_3/kernel/vDvariables/255/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+rp
+VARIABLE_VALUEAdam/Conv_1_bn_3/gamma/vDvariables/256/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE
+qo
+VARIABLE_VALUEAdam/Conv_1_bn_3/beta/vDvariables/257/.OPTIMIZER_SLOT/optimizer/v/.ATTRIBUTES/VARIABLE_VALUE

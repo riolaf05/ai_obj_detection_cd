@@ -1,0 +1,1 @@
+edgetpu_compiler --show_operations /save/model.tflite

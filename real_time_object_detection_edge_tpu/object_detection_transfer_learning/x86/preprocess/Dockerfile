@@ -61,5 +61,8 @@ WORKDIR /object_detection/
 
 COPY config_pipeline.py /object_detection
 
+RUN mkdir /object_detection/convert/
+COPY ../convert/convert.sh /object_detection/convert/
+
 
 

@@ -2,25 +2,11 @@
 
 The workflow (executed manually or with MLFlow):
 
-0. Clone this repository
+1. Clone this repository
 
-1. Get new images to retrain base model 
+2. Get new images (both for train and for test) to retrain base model (e.g. with [image_downloader](https://github.com/Swaini/object_detection_retraining/blob/master/image_downloader.py))
 
-2. Label new images (e.g. with `LabelImg`)
-
-3. Launch preprocess component. Object Detection retrain config file is stored in:`ai_obj_detection_cd\real_time_object_detection_edge_tpu\object_detection_transfer_learning\x86\training`
-
-4. Launch re-train component. Checkpoint files are stored in: `ai_obj_detection_cd\real_time_object_detection_edge_tpu\object_detection_transfer_learning\x86\training\checkpoints`
-
-5. Lauch convert script which convert checkpoint files into Tensorflow Lite model: TODO
-
-### How to run:
-
-1. Download your own image datasets
-
-Is is possible to use [image_downloader](https://github.com/Swaini/object_detection_retraining/blob/master/image_downloader.py) to find all related images from Google. 
-
-2. Label images 
+3. **Label** new images (e.g. with `LabelImg`) and create **label map**, put images in `data/images` folder
 
 This steps produces a list of **bounding boxes** for the image. You can use [Labelimg](https://github.com/tzutalin/labelImg) for annotations. Labelimg is a great tool for drawing bounding boxes on images, the bounding boxes get automatically converted into xml documents which you can then use for tensorflow.
 
@@ -35,9 +21,6 @@ git clone https://github.com/tzutalin/labelImg \
 && make qt5py3 \
 #python3 labelImg.py
 ```
-
-3. Label Map
-
 Create a **label map** which defines a mapping from string class names to integer class Ids. The label map should be a `StringIntLabelMap` text protobuf.
 
 e.g.:
@@ -59,37 +42,25 @@ item {
 }
 ```
 
-4. Convert into TFRecords
+4. Launch run.sh which executes (it uses **MLFlow**):
 
-Use conversion script to define label maps and create the `tf.Example` protocol buffer message (see example [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/using_your_own_dataset.md)) for each image/annotation/label map in the dataset.
+* Launch preprocess component. Object Detection retrain config file is stored in:`ai_obj_detection_cd\real_time_object_detection_edge_tpu\object_detection_transfer_learning\x86\training`
 
-To both create label map and TFRecords from labeled images (with train and test dataset):
+* Launch re-train component. Checkpoint files are stored in: `ai_obj_detection_cd\real_time_object_detection_edge_tpu\object_detection_transfer_learning\x86\training\checkpoints`
 
-* use the `-v <host_folder>/label/train:data/label/train` and -v `<host_folder>/label/test:data/label/test` to bind labeled XML if you're using the retrain Docker.
-
-* launch the `data/build_dataset.sh` otherwise.
-
-5. Choose the model to train and configure the training pipeline.
-
-Use the `object_detection_retrain.ipynb` notebook (from Colab).
-
-Otherwise:
-
-1. `CODE_DIR=~/Codice/ai_obj_detection_cd/real_time_object_detection_edge_tpu/object_detection_transfer_learning/x86`
-2. `docker run -it --rm -e NUM_TRAINING_STEPS=500 -e NUM_EVAL_STEPS=100 -v $CODE_DIR/data:/object_detection/data -v $CODE_DIR/training:/object_detection/training rio05docker/obj_detection_cd:x86_retrain_tflite bash`
-3. `python3 config_pipeline.py`
-4. `python /tensorflow/models/research/object_detection/model_main.py --pipeline_config_path="/object_detection/training/ssd_mobilenet_v2_coco.config" --model_dir="/object_detection/training" --num_train_steps="${NUM_TRAINING_STEPS}" --num_eval_steps="${NUM_EVAL_STEPS}"`
-
-or launch with MLFlow Projects (see [docs](https://www.mlflow.org/docs/latest/projects.html)):
-
-```console
-pip3 install mlflow
-docker build -t rio05docker/obj_detection_cd:x86_retrain_tflite ./preprocess/
-docker push rio05docker/obj_detection_cd:x86_retrain_tflite
-./pipeline.sh
-```
+* Lauch convert script which convert checkpoint files into a frozen graph, then convert that graph to a TensorFlow Lite flatbuffer file Tensorflow Lite model (`.tflite`).
 
 The network_type can be either `mobilenet_v1_ssd`, or `mobilenet_v2_ssd`.
+
+If the following problem occurs:
+
+```console
+Tensorflow Allocation Memory: Allocation of 38535168 exceeds 10% of system memory
+```
+
+Launch the `reset_graph.py` script inside the container.
+
+Per visualizzare il grafo Tensorflow usare [Netron](https://github.com/lutzroeder/netron).
 
 ### Notes about saving Tensorflow Models:
 From [Tensorflow Checkpoints](https://www.tensorflow.org/guide/checkpoint)
@@ -112,8 +83,8 @@ When you run an MLflow project that specifies a Docker image, MLflow adds a new 
 ### TODO
 * ~~Define automatic retrieval of boxes data from xml or csv~~
 * Convert SavedModel to Tensorflow Lite
-* Add CI/CD pipeline
-* Test on GoCD pipeline
+* Add parameters to choose base model
+* Add GPU support on training step
 
 ### References
 * [Coral Edge TPU docs](https://coral.ai/docs/edgetpu/retrain-detection/#start-training)

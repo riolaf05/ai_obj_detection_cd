@@ -1,4 +1,8 @@
 item {
     id: 1
-    name: 'ps4 joystick'
+    name: 'rufy'
+}
+item {
+    id: 2
+    name: 'kitten'
 }
