@@ -1,0 +1,9 @@
+Cambiare l'output del .tflite convertito per risolvere l'errore:
+
+Traceback (most recent call last):
+  File "demo_real_time_obj_detection_server.py", line 180, in <module>
+    engine = DetectionEngine(args.model)
+  File "/usr/lib/python3/dist-packages/edgetpu/detection/engine.py", line 78, in __init__
+    'This model has {}.'.format(output_tensors_sizes.size)))
+ValueError: Dectection model should have 4 output tensors!This model has 1.
+

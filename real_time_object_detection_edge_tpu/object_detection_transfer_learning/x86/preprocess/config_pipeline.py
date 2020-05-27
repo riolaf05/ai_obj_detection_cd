@@ -44,6 +44,7 @@ def main():
 
     parser = argparse.ArgumentParser(description='Input arguments')
     parser.add_argument('--base-model', type=str, help='Base Model', default='ssd_mobilenet_v2')
+    parser.add_argument('--num-example', type=int, help='Number of test samples')
     args = parser.parse_args()
 
     # Pick the model you want to use
@@ -123,6 +124,11 @@ def main():
         # Set number of classes num_classes.
         s = re.sub('num_classes: [0-9]+',
                 'num_classes: {}'.format(num_classes), s)
+
+        # Set number of images in test folder.
+        s = re.sub('num_example: [0-9]+',
+                'num_example: {}'.format(args.num_example), s)
+
         f.write(s)
 
     model_dir = BASE_DIR+'training/'

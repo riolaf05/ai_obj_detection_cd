@@ -9,6 +9,7 @@ from keras.utils import np_utils
 import tensorflow as tf
 from google.cloud import storage
 from sklearn.model_selection import train_test_split
+from tensorflow.python.lib.io import file_io
 
 def read_from_gcs(bucket, filename, path):
     storage_client = storage.Client()
