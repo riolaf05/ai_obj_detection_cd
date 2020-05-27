@@ -1,5 +1,5 @@
 ### Transfer Learning with Tensorflow 2.0 and MLFlow for Edge TPU inference
-Object detection inference with Edge TPU
+Image recognition inference with Edge TPU
 
 1. Create `preprocess`, `train`, `convert` code and run CICD pipeline. The actual code uses MobileNetV2 base model.
 
