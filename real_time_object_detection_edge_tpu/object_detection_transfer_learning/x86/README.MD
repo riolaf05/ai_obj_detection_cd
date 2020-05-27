@@ -42,7 +42,9 @@ item {
 }
 ```
 
-4. Launch run.sh which executes (it uses **MLFlow**):
+4. Update `create_TFRecord.py` adding new labels at rows 29-36.
+
+5. Launch `run.sh` which executes (it uses **MLFlow**):
 
 * Launch preprocess component. Object Detection retrain config file is stored in:`ai_obj_detection_cd\real_time_object_detection_edge_tpu\object_detection_transfer_learning\x86\training`
 
@@ -82,7 +84,7 @@ When you run an MLflow project that specifies a Docker image, MLflow adds a new 
 
 ### TODO
 * ~~Define automatic retrieval of boxes data from xml or csv~~
-* Convert SavedModel to Tensorflow Lite
+* Convert frozen graph or SavedModel to Tensorflow Lite (solve problem on input layer type)
 * Add parameters to choose base model
 * Add GPU support on training step
 
