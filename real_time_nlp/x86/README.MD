@@ -32,6 +32,7 @@ TODO
 ## Next steps
 * Add MLFlow for packaging
 * Add entity recognition
+* Add Telegram bot (see [tutorial](https://ludusrusso.cc/2017/04/27/implementiamo-un-bot-telegram-con-python/))
 
 ## References
 [Build your first chatbot with Python](https://dzone.com/articles/python-chatbot-project-build-your-first-python-pro)
