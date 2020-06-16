@@ -9,13 +9,16 @@ import telepot
 BASE_DIR='/src/models'
 TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 
+nltk.download('punkt')
+nltk.download('wordnet')
+
 from tensorflow.keras.models import load_model
 model = load_model(os.path.join(BASE_DIR, 'chatbot_model.h5'))
 import json
 import random
 intents = json.loads(open(os.path.join(BASE_DIR, 'intents.json')).read())
-words = pickle.load(open(os.path.join(BASE_DIR, 'words.pkl','rb')))
-classes = pickle.load(open(os.path.join(BASE_DIR, 'classes.pkl','rb')))
+words = pickle.load(open(os.path.join(BASE_DIR, 'words.pkl'),'rb'))
+classes = pickle.load(open(os.path.join(BASE_DIR, 'classes.pkl'),'rb'))
 
 def clean_up_sentence(sentence):
     # tokenize the pattern - splitting words into array

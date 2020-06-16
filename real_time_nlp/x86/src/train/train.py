@@ -40,8 +40,8 @@ words = sorted(list(set(words)))
 # sort classes
 classes = sorted(list(set(classes)))
 
-pickle.dump(words,open(os.path.join(BASE_DIR, 'words.pkl','wb')))
-pickle.dump(classes,open(os.path.join(BASE_DIR, 'classes.pkl','wb')))
+pickle.dump(words,open(os.path.join(BASE_DIR, 'words.pkl'),'wb'))
+pickle.dump(classes,open(os.path.join(BASE_DIR, 'classes.pkl'),'wb'))
 
 # create our training data
 training = []
