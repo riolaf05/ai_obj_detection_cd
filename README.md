@@ -20,6 +20,7 @@ Provided pipelines:
 * Real time object detection retrain using *Kubeflow* pipelines and inference on *Coral edge TPU*
 * Real time pose estimation demo on Coral edge TPU and activity recognition training using *Kubeflow* pipelines 
 * Real time face recognition demo on Coral edge TPU
+* Custom NLP for chatbot 
 
 ### Agenda
 
