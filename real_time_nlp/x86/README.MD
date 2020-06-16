@@ -1,5 +1,10 @@
 ## Istructions
-TODO
+
+1. Create an intent file modeled as `intent.json`
+
+2. Launch training (TODO: automate with MLFlow)
+
+3. Launch inference (providing Telegram bot token)
 
 ## Algorithm
 
