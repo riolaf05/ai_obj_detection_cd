@@ -1,4 +1,4 @@
-### rpi3_rt_tflite_tpu
+### pose_detection_tpu
 
 Object detection inference with Edge TPU
 
@@ -14,17 +14,17 @@ It must run on RaspberryPi with Edge TPU Coral device
 To build: 
 
 ```console
-docker build -t rio05docker/ai_obj_detection_cd:pose_detection_tpu_demo .
-docker push rio05docker/ai_obj_detection_cd:pose_detection_tpu_demo
+docker build -t rio05docker/pose_detection_tpu:v1 .
+docker push rio05docker/pose_detection_tpu:v1
 ```
 
 To run demo with Raspberry Camera and Edge TPU usb device:
 
 ```console
-docker run -it --privileged -v /dev/bus/usb:/dev/bus/usb --device=/dev/vchiq -v $(pwd)/images:/home/scripts/pose_detection/images rio05docker/ai_obj_detection_cd:pose_detection_tpu_demo python3 /home/scripts/pose_detection/simple_pose.py
+docker run -it -p 8000:8000 --privileged -v /dev/bus/usb:/dev/bus/usb --device=/dev/vchiq -v $(HOME)/Codice/ai_obj_detection_cd/real_time_posenet_edge_tpu/models:/home/scripts/pose_detection/browser/models rio05docker/pose_detection_tpu:v1 python3 /home/scripts/pose_detection/browser/opencv_pose_recognition_v2.py
 ```
 
-Then log in on: `http://<<rpi3_ip>>:8080`
+Then log in on: `http://<<rpi3_ip>>:8000`
 
 ### TODO: 
 * ~~Test real time predictions~~
