@@ -24,6 +24,11 @@ To run demo with Raspberry Camera and Edge TPU usb device:
 docker run -it --privileged -v /dev/bus/usb:/dev/bus/usb --device=/dev/vchiq -v $(pwd)/images:/home/scripts/pose_detection/images -v /Codice/ai_obj_detection_cd/real_time_posenet_edge_tpu/models:/home/scripts/pose_detection/models rio05docker/ai_obj_detection_cd:pose_detection_tpu_demo python3 /home/scripts/pose_detection/simple_pose.py
 ```
 
+To run on custom image:
+```console
+docker run -it --privileged -v /dev/bus/usb:/dev/bus/usb --device=/dev/vchiq -v $(pwd)/images:/home/scripts/pose_detection/images -v /Codice/ai_obj_detection_cd/real_time_posenet_edge_tpu/models:/home/scripts/pose_detection/models rio05docker/ai_obj_detection_cd:pose_detection_tpu_demo python3 /home/scripts/pose_detection/simple_draw_point.py --image /home/scripts/pose_detection/images/demo.jpg
+```
+
 Then log in on: `http://<<rpi3_ip>>:8080`
 
 ### TODO: 
