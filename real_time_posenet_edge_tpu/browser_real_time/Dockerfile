@@ -11,8 +11,9 @@ RUN apt-get install -y python3-dev
 RUN apt-get install -y python3-pip
 RUN apt-get install -y curl zip
 
-COPY requirements.txt /requirements.txt
-RUN pip3 install -r /requirements.txt
+RUN mkdir /home/scripts/pose_detection
+COPY requirements.txt /home/scripts/pose_detection
+RUN pip3 install /home/scripts/pose_detection/requirements.txt
 
 RUN apt-get install -y libqtgui4
 #RUN modprobe bcm2835-v4l2
@@ -35,11 +36,8 @@ RUN apt-get update
 RUN apt-get install -y libedgetpu1-std \
 && apt-get install -y python3-edgetpu
 
-RUN mkdir /home/scripts/pose_detection
-RUN mkdir /home/scripts/pose_detection/models
-COPY simple_pose.py /home/scripts/pose_detection
-COPY pose_engine.py /home/scripts/pose_detection
-COPY draw_lines.py /home/scripts/pose_detection
-
-
+RUN mkdir /home/scripts/pose_detection/browser
+RUN mkdir /home/scripts/pose_detection/browser/models
+COPY opencv_pose_recognition_v2.py /home/scripts/pose_detection/browser/opencv_pose_recognition_v2.py
+COPY pose_engine.py /home/scripts/pose_detection/browser/pose_engine.py
 
