@@ -45,11 +45,13 @@ class CollectBatchStats(tf.keras.callbacks.Callback):
 
 def main():
     parser = argparse.ArgumentParser(description='Input arguments')
-    parser.add_argument('--img-size', type=int, help='Image size', default=200)
-    parser.add_argument('--batch-size', type=int, help='Batch size', default=16)
+    #parser.add_argument('--img-size', type=int, help='Image size', default=200)
+    #parser.add_argument('--batch-size', type=int, help='Batch size', default=16)
     parser.add_argument('--tracking-url', type=str, help='MLFlow server')
-    parser.add_argument('--epochs', type=int, help='Epochs')
-    parser.add_argument('--experiment', type=str, help='Experiment name')
+    parser.add_argument('--epochs', type=int, help='Epochs', default=3)
+    parser.add_argument('--steps-per-epoch', type=int, help='Steps per Epochs', default=21)
+    parser.add_argument('--experiment', type=str, help='Experiment name', default='default')
+    parser.add_argument('--version', type=str, help='Experiment version', default='latest')
     args = parser.parse_args() 
 
     train_generator = ImageDataGenerator(rescale=1/255) 
@@ -97,6 +99,7 @@ def main():
     #Set tags
     tags={}
     tags['name']=args.experiment
+    tags['version']=args.version
     mlflow.set_tags(tags)
 
     if mlflow.active_run():
@@ -110,7 +113,7 @@ def main():
 
     with mlflow.start_run(run_id=None, experiment_id=exp_id, run_name=None, nested=False): ############# MLFLOW
       # fitting the model
-      model.fit((item for item in train_image_data), epochs = 3,
+      model.fit((item for item in train_image_data), epochs = args.epochs,
               steps_per_epoch=21,
               callbacks = [batch_stats, es],validation_data=test_image_data)
 
