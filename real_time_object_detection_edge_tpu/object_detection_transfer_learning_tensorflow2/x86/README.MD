@@ -1,0 +1,1 @@
+Thank to (Transfer Learning in Deep Learning Using Tensorflow 2.0)[https://www.pluralsight.com/guides/transfer-learning-in-deep-learning-using-tensorflow-2.0]
