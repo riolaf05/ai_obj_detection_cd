@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set()
 import numpy as np
+import mlflow ############# MLFLOW
 
 import tensorflow.compat.v1 as tf
 #To make tf 2.0 compatible with tf1.0 code, we disable the tf2.0 functionalities
@@ -41,64 +42,93 @@ class CollectBatchStats(tf.keras.callbacks.Callback):
   def on_batch_end(self, batch, logs=None):
     self.batch_losses.append(logs['loss'])
     self.batch_acc.append(logs['accuracy'])
- 
 
-train_generator = ImageDataGenerator(rescale=1/255) 
-test_generator = ImageDataGenerator(rescale=1/255) 
+def main():
+    parser = argparse.ArgumentParser(description='Input arguments')
+    parser.add_argument('--img-size', type=int, help='Image size', default=200)
+    parser.add_argument('--batch-size', type=int, help='Batch size', default=16)
+    parser.add_argument('--tracking-url', type=str, help='MLFlow server')
+    parser.add_argument('--epochs', type=int, help='Epochs')
+    parser.add_argument('--experiment', type=str, help='Experiment name')
+    args = parser.parse_args() 
 
-train_image_data = train_generator.flow_from_directory(str(train_root),target_size=(224,224))
-test_image_data = test_generator.flow_from_directory(str(test_root), target_size=(224,224))
+    train_generator = ImageDataGenerator(rescale=1/255) 
+    test_generator = ImageDataGenerator(rescale=1/255) 
 
-IMAGE_SIZE = hub.get_expected_image_size(hub.Module(feature_extractor_url))
-print("Image size ", IMAGE_SIZE)
+    train_image_data = train_generator.flow_from_directory(str(train_root),target_size=(224,224))
+    test_image_data = test_generator.flow_from_directory(str(test_root), target_size=(224,224))
 
-for image_batch, label_batch in train_image_data:
-    print("Image-batch-shape:",image_batch.shape)
-    print("Label-batch-shape:",label_batch.shape)
-    break
+    IMAGE_SIZE = hub.get_expected_image_size(hub.Module(feature_extractor_url))
+    print("Image size ", IMAGE_SIZE)
 
-for test_image_batch, test_label_batch in test_image_data:
-    print("Image-batch-shape:",test_image_batch.shape)
-    print("Label-batch-shape:",test_label_batch.shape)
-    break
+    for image_batch, label_batch in train_image_data:
+        print("Image-batch-shape:",image_batch.shape)
+        print("Label-batch-shape:",label_batch.shape)
+        break
 
-feature_extractor_layer = layers.Lambda(feature_extractor,input_shape=IMAGE_SIZE+[3])
-feature_extractor_layer.trainable = False
+    for test_image_batch, test_label_batch in test_image_data:
+        print("Image-batch-shape:",test_image_batch.shape)
+        print("Label-batch-shape:",test_label_batch.shape)
+        break
 
-model = Sequential([
-    feature_extractor_layer,
-    layers.Dense(train_image_data.num_classes, activation = "softmax")
-    ])
-model.summary()
+    feature_extractor_layer = layers.Lambda(feature_extractor,input_shape=IMAGE_SIZE+[3])
+    feature_extractor_layer.trainable = False
 
-# initialize the TFHub module
-sess = K.get_session() 
-init = tf.global_variables_initializer()
-sess.run(init)
+    model = Sequential([
+        feature_extractor_layer,
+        layers.Dense(train_image_data.num_classes, activation = "softmax")
+        ])
+    model.summary()
 
-model.compile(
-    optimizer = tf.train.AdamOptimizer(),
-    loss = "categorical_crossentropy",
-    metrics = ['accuracy']
-    )
+    # initialize the TFHub module
+    sess = K.get_session() 
+    init = tf.global_variables_initializer()
+    sess.run(init)
 
-# Early stopping to stop the training if loss start to increase. It also avoids overvitting.
-es = EarlyStopping(patience=2,monitor="val_loss")
+    model.compile(
+        optimizer = tf.train.AdamOptimizer(),
+        loss = "categorical_crossentropy",
+        metrics = ['accuracy']
+        )
 
-#use CallBacks to record accuracy and loss.
-batch_stats = CollectBatchStats()
-# fitting the model
-model.fit((item for item in train_image_data), epochs = 3,
-         steps_per_epoch=21,
-         callbacks = [batch_stats, es],validation_data=test_image_data)
+    #set MLflow server  ############# MLFLOW
+    mlflow.set_tracking_uri(args.tracking_url)
 
-print(model)
+    #Set tags
+    tags={}
+    tags['name']=args.experiment
+    mlflow.set_tags(tags)
 
-label_names = sorted(train_image_data.class_indices.items(), key=lambda pair:pair[1])
-label_names = np.array([key.title() for key, value in label_names])
-print(label_names)
+    if mlflow.active_run():
+        mlflow.end_run()
 
-result_batch = model.predict(test_image_batch)
+    # Early stopping to stop the training if loss start to increase. It also avoids overvitting.
+    es = EarlyStopping(patience=2,monitor="val_loss")
 
-labels_batch = label_names[np.argmax(result_batch, axis=-1)]
-print(labels_batch)
+    #use CallBacks to record accuracy and loss.
+    batch_stats = CollectBatchStats()
+
+    with mlflow.start_run(run_id=None, experiment_id=exp_id, run_name=None, nested=False): ############# MLFLOW
+      # fitting the model
+      model.fit((item for item in train_image_data), epochs = 3,
+              steps_per_epoch=21,
+              callbacks = [batch_stats, es],validation_data=test_image_data)
+
+      print(model)
+
+      label_names = sorted(train_image_data.class_indices.items(), key=lambda pair:pair[1])
+      label_names = np.array([key.title() for key, value in label_names])
+      print(label_names)
+
+      result_batch = model.predict(test_image_batch)
+
+      labels_batch = label_names[np.argmax(result_batch, axis=-1)]
+      print(labels_batch)
+
+      mlflow.tensorflow.autolog()
+      mlflow.tensorflow.log_model(model, "model", registered_model_name="TestModel") ############# MLFLOW
+
+      mlflow.end_run()
+
+if __name__ == "__main__":
+    main()
