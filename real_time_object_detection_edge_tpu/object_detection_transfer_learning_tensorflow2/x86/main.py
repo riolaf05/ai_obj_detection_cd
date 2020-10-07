@@ -11,10 +11,12 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set()
 import numpy as np
-import mlflow ############# MLFLOW
+import mlflow 
+import argparse
+import time
 
-import tensorflow.compat.v1 as tf
 #To make tf 2.0 compatible with tf1.0 code, we disable the tf2.0 functionalities
+import tensorflow.compat.v1 as tf
 tf.disable_eager_execution()
 
 BASE_DIR=r"C:\Users\lafacero\Documents\GitHub\ai_obj_detection_cd\real_time_object_detection_edge_tpu\object_detection_transfer_learning_tensorflow2\x86"
@@ -54,6 +56,24 @@ def main():
     parser.add_argument('--version', type=str, help='Experiment version', default='latest')
     args = parser.parse_args() 
 
+    #Mlflow settings
+    #set MLflow server 
+    mlflow.set_tracking_uri(args.tracking_url)
+    #Set experiment
+    if mlflow.get_experiment_by_name(args.experiment) != None:
+        exp_id = mlflow.set_experiment(args.experiment)
+    else: 
+        exp_id = mlflow.create_experiment(args.experiment)
+    #Set tags
+    tags={}
+    tags['name']=args.experiment
+    tags['version']=args.version
+    mlflow.set_tags(tags)
+    #Close active runs
+    if mlflow.active_run():
+        mlflow.end_run()
+
+    #Train code
     train_generator = ImageDataGenerator(rescale=1/255) 
     test_generator = ImageDataGenerator(rescale=1/255) 
 
@@ -93,43 +113,35 @@ def main():
         metrics = ['accuracy']
         )
 
-    #set MLflow server  ############# MLFLOW
-    mlflow.set_tracking_uri(args.tracking_url)
-
-    #Set tags
-    tags={}
-    tags['name']=args.experiment
-    tags['version']=args.version
-    mlflow.set_tags(tags)
-
-    if mlflow.active_run():
-        mlflow.end_run()
-
     # Early stopping to stop the training if loss start to increase. It also avoids overvitting.
     es = EarlyStopping(patience=2,monitor="val_loss")
 
     #use CallBacks to record accuracy and loss.
     batch_stats = CollectBatchStats()
 
-    with mlflow.start_run(run_id=None, experiment_id=exp_id, run_name=None, nested=False): ############# MLFLOW
+    with mlflow.start_run(run_id=None, experiment_id=exp_id, run_name=None, nested=False): 
       # fitting the model
       model.fit((item for item in train_image_data), epochs = args.epochs,
               steps_per_epoch=21,
               callbacks = [batch_stats, es],validation_data=test_image_data)
 
-      print(model)
-
+      #print labels
       label_names = sorted(train_image_data.class_indices.items(), key=lambda pair:pair[1])
       label_names = np.array([key.title() for key, value in label_names])
       print(label_names)
 
+      #test results
       result_batch = model.predict(test_image_batch)
-
       labels_batch = label_names[np.argmax(result_batch, axis=-1)]
       print(labels_batch)
 
       mlflow.tensorflow.autolog()
-      mlflow.tensorflow.log_model(model, "model", registered_model_name="TestModel") ############# MLFLOW
+
+      #save model 
+      t = time.time()
+      export_path = os.path.join(BASE_DIR, "models"+"{}".format(int(t)))
+      model.save(export_path)
+      mlflow.tensorflow.log_model(model, "model", registered_model_name=args.expertiment+"_"+args.version) 
 
       mlflow.end_run()
 
