@@ -208,6 +208,7 @@ def main():
       mlflow.log_metric("binary_acc",  get_binary_acc(history))
       mlflow.log_metric("validation_loss", get_binary_loss(history))
       mlflow.log_metric("validation_acc", get_validation_acc(history))
+      #results=evaluate_model() #TODO
       #mlflow.log_metric("average_loss", results[0])
       #mlflow.log_metric("average_acc", results[1])
       
@@ -215,7 +216,7 @@ def main():
       #mlflow.log_artifacts(image_dir)
       #log model
       t = time.time()
-      #model_dir = os.path.join(BASE_DIR, "models"+"{}".format(int(t)))
+      #model_dir = os.path.join(BASE_DIR, "models"+"{}".format(int(t))) #TODO
       #keras_save_model(model, model_dir)
       #mlflow.tensorflow.log_model(keras_model, model_dir)
 
