@@ -17,3 +17,7 @@ python main.py python main.py --tracking-url <mlflow_server_url> --epochs 1 --ex
 1. export model to SavedModel format
 2. convert into Tensorflow Lite
 3. Complete pipeline
+
+### References
+
+1. [Keras model with MlFlow](https://databricks.com/blog/2018/08/23/how-to-use-mlflow-to-experiment-a-keras-network-model-binary-classification-for-movie-reviews.html)
