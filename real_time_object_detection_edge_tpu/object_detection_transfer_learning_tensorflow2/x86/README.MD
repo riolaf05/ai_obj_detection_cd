@@ -20,7 +20,7 @@ python main.py python main.py --tracking-url <mlflow_server_url> --epochs 1 --ex
 
 ### Notes:
 
-1. Keras artifacts and log artifacts must be saved into the same forder read by the [MlFlowUI](https://github.com/riolaf05/continuous-learning-platform/tree/master/mlflowUI), otherwise they wont be showed on the interface.
+1. Keras artifacts and log artifacts must be saved into the same forder read by the [MlFlowUI](https://github.com/riolaf05/continuous-learning-platform/tree/master/mlflowUI) (*/tmp/mlflowruns/1* by default), otherwise they wont be showed on the interface.
 
 ### References
 
