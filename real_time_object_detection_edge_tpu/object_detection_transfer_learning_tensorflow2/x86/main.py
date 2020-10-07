@@ -35,23 +35,6 @@ def feature_extractor(x):
   feature_extractor_module = hub.Module(feature_extractor_url)
   return feature_extractor_module(x)
 
-def keras_save_model(self, model, model_dir='/tmp'):
-        """
-        Convert Keras estimator to TensorFlow
-        :type model_dir: object
-        """
-        print("Model is saved locally to %s" % model_dir)
-        mlflow.tensorflow.save_model(model, model_dir)
-
-def keras_save_model(self, model, model_dir='/tmp'):
-        """
-        Convert Keras estimator to TensorFlow
-        :type model_dir: object
-        """
-        print("Model is saved locally to %s" % model_dir)
-        mlflow.keras.save_model(model, model_dir)
-
-
 def evaluate_model(model, x_test, y_test):
     """
     Evaluate the model with unseen and untrained data
@@ -214,12 +197,13 @@ def main():
       
       # log artifacts (matplotlib images for loss/accuracy)
       #mlflow.log_artifacts(image_dir)
+      
       #log model
       t = time.time()
-      #model_dir = os.path.join(BASE_DIR, "models"+"{}".format(int(t))) #TODO
-      #keras_save_model(model, model_dir)
-      #mlflow.tensorflow.log_model(keras_model, model_dir)
-
+      model.save(os.path.join(BASE_DIR, "models", "{}.h5".format(int(t)))) #HDF5 format
+      #model.save(os.path.join(BASE_DIR, "models", "{}".format(int(t)))) #SavedModel format
+      #mlflow.tensorflow.log_model(model, 'models', registered_model_name="Model")
+      
       #print labels
       label_names = sorted(train_image_data.class_indices.items(), key=lambda pair:pair[1])
       label_names = np.array([key.title() for key, value in label_names])
