@@ -93,11 +93,29 @@ class CollectBatchStats(tf.keras.callbacks.Callback):
     self.batch_losses.append(logs['loss'])
     self.batch_acc.append(logs['accuracy'])
 
+def convert_to_tflite(model_path):
+    converter = tf.lite.TFLiteConverter.from_saved_model()
+
+    #post-training quantization
+    converter.optimizations = [tf.lite.Optimize.DEFAULT]
+
+    #post-training integere quantization
+    converter.representative_dataset = representative_data_gen
+
+    #fully-integer quantization
+    converter.target_spec.supported_ops = [tf.lite.OpsSet.TFLITE_BUILTINS_INT8]
+
+    tflite_model = converter.convert()
+    tflite_model_file = os.path.join(BASE_DIR, 'saved_model', 'converted_model.tflite')
+
+    with open(tflite_model_file, "wb") as f:
+        f.write(tflite_model)
+
 def main():
     parser = argparse.ArgumentParser(description='Input arguments')
     #parser.add_argument('--img-size', type=int, help='Image size', default=200)
     #parser.add_argument('--batch-size', type=int, help='Batch size', default=16)
-    parser.add_argument('--tracking-url', type=str, help='MLFlow server', detault='localhost:5000')
+    parser.add_argument('--tracking-url', type=str, help='MLFlow server', default='localhost:5000')
     parser.add_argument('--epochs', type=int, help='Epochs', default=3)
     parser.add_argument('--steps-per-epoch', type=int, help='Steps per Epochs', default=21)
     parser.add_argument('--experiment', type=str, help='Experiment name', default='default')
@@ -217,8 +235,8 @@ def main():
       labels_batch = label_names[np.argmax(result_batch, axis=-1)]
       print(labels_batch)
 
-      #convert
-      converter = tf.lite.TFLiteConverter.from_saved_model(os.path.join(BASE_DIR, "saved_model", "{}".format(int(t))))
+      #convert to tflite #TODO: fix
+      convert_to_tflite(os.path.join(BASE_DIR, "saved_model", "{}".format(int(t))))
 
       mlflow.end_run()
 
