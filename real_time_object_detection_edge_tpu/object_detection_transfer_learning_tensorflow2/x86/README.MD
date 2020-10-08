@@ -15,7 +15,7 @@ python main.py python main.py --tracking-url <mlflow_server_url> --epochs 1 --ex
 ### Next steps:
 
 1. fix bug of exporting model to SavedModel format
-2. fix log_model() MLFLOW FUNCTION
+2. fix log_model() mlflow function
 3. load model for inference on x86 (see [here](https://databricks.com/blog/2018/09/21/how-to-use-mlflow-to-reproduce-results-and-retrain-saved-keras-ml-models.html))..
 4. ..abd on arm
 5. convert into Tensorflow Lite

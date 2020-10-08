@@ -200,7 +200,8 @@ def main():
       
       #log model
       t = time.time()
-      model.save(os.path.join(BASE_DIR, "models", "{}.h5".format(int(t)))) #HDF5 format
+      #model.save(os.path.join(BASE_DIR, "models", "{}.h5".format(int(t)))) #HDF5 format
+      tf.saved_model.save(model, os.path.join(BASE_DIR, "models", "{}".format(int(t))))
       #model.save(os.path.join(BASE_DIR, "models", "{}".format(int(t)))) #SavedModel format
       #mlflow.tensorflow.log_model(model, 'models', registered_model_name="Model")
       
