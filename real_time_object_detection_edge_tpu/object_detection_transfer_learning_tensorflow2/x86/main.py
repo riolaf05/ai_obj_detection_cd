@@ -97,7 +97,7 @@ def main():
     parser = argparse.ArgumentParser(description='Input arguments')
     #parser.add_argument('--img-size', type=int, help='Image size', default=200)
     #parser.add_argument('--batch-size', type=int, help='Batch size', default=16)
-    parser.add_argument('--tracking-url', type=str, help='MLFlow server')
+    parser.add_argument('--tracking-url', type=str, help='MLFlow server', detault='localhost:5000')
     parser.add_argument('--epochs', type=int, help='Epochs', default=3)
     parser.add_argument('--steps-per-epoch', type=int, help='Steps per Epochs', default=21)
     parser.add_argument('--experiment', type=str, help='Experiment name', default='default')
@@ -138,8 +138,11 @@ def main():
         print("Label-batch-shape:",test_label_batch.shape)
         break
 
-    feature_extractor_layer = layers.Lambda(feature_extractor,input_shape=IMAGE_SIZE+[3])
-    feature_extractor_layer.trainable = False
+    feature_extractor_layer = hub.KerasLayer(feature_extractor_url,
+                                   input_shape=IMAGE_SIZE+[3], 
+                                   trainable=False)
+    #feature_extractor_layer = layers.Lambda(feature_extractor,input_shape=IMAGE_SIZE+[3])
+    #feature_extractor_layer.trainable = False
 
     model = Sequential([
         feature_extractor_layer,
@@ -201,9 +204,8 @@ def main():
       #log model
       t = time.time()
       #model.save(os.path.join(BASE_DIR, "models", "{}.h5".format(int(t)))) #HDF5 format
-      tf.saved_model.save(model, os.path.join(BASE_DIR, "models", "{}".format(int(t))))
-      #model.save(os.path.join(BASE_DIR, "models", "{}".format(int(t)))) #SavedModel format
-      #mlflow.tensorflow.log_model(model, 'models', registered_model_name="Model")
+      tf.saved_model.save(model, os.path.join(BASE_DIR, "saved_model", "{}".format(int(t)))) #SavedModel format
+      #mlflow.tensorflow.log_model(model, 'model') #TODO fix
       
       #print labels
       label_names = sorted(train_image_data.class_indices.items(), key=lambda pair:pair[1])
@@ -215,9 +217,8 @@ def main():
       labels_batch = label_names[np.argmax(result_batch, axis=-1)]
       print(labels_batch)
 
-      #export model
-      #model.save(export_path)
-      #mlflow.tensorflow.log_model(model, "model", registered_model_name=args.expertiment+"_"+args.version) 
+      #convert
+      converter = tf.lite.TFLiteConverter.from_saved_model(os.path.join(BASE_DIR, "saved_model", "{}".format(int(t))))
 
       mlflow.end_run()
 
