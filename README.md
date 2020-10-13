@@ -1,10 +1,17 @@
-# ML - DevOps CI/CD and data pipelines for Machine Learning inferences on RaspberryPi
+# RaspberryPi MLOps - DevOps CI/CD and data pipelines for Machine Learning on RaspberryPi
 
-This repo includes many code and data pipelines which can be used with MLFlow and Kubeflow frameworks to train and deploy several ML models for edge AI applications. 
+Differents pipelines architectures built on **MLFlow** and **Kubeflow** which can be used to train and deploy several ML models for **edge AI applications** (and x86). 
+
+### Advantages of "MLOps"
+
+1. best collaboration between data scientists and developers: the former does not need to worry about code.
+2. model validation: easy and fast model parameters validation through UIs.
+3. model reproducibility: model versioning and easy check with sets of data.
+4. model deployment: automatic model depoyment with deploy pipelines.
 
 ### Instructions
 
-This repo contains continuos integration pipelines (based on GitHub Actions) which are used to build Tensorflow, Keras and MLFlow based docker containers for ARM architectures. 
+The provided pipelines can be used to build Tensorflow, Keras and MLFlow based docker containers for ARM (and x86) architectures. 
 
 This is the general workflow which is followed by most of the covered use cases:
  
@@ -28,9 +35,11 @@ Provided pipelines:
 * ~~add model evaluation using MLFlow into pipeline flow: use another docker for evaluation and find a way to offer MLFlow UI~~
 * ~~add CICD pipelines~~
 * ~~test object detection and image recognition models [here](https://github.com/riolaf05/ai_obj_detection_cd/tree/adding-edge-tpu-/batch_masked_rcnn)~~
-* fix tflite conversion for real time object detection from re-trained model
 * fix Kubeflow pipeline errors for activity recognition 
+* fix tflite conversion for real time object detection from re-trained model
 * face recognition re-train
+* develop new use cases
+* build UI for pipeline selection and deploy
 
 ### References
 
