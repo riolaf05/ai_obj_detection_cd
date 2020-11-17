@@ -1,2 +1,0 @@
-real_time_posenet_opencv contiene un test per eseguire pose detection su raspberry con OpenCV (è lento)
-real_time_posenet_edge_tpu contiene codice per eseguire pose detection su edge TPU con posenet e OpenCV (da testare server flask e da disegnare i punti del corpo)
