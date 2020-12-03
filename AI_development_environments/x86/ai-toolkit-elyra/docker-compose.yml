@@ -15,6 +15,7 @@ services:
     environment: 
       - LC_ALL=C.UTF-8 
       - LANG=C.UTF-8
+      - MLFLOW_S3_ENDPOINT_URL=http://ai-toolkit-elyra_minio_1:9000
 
   elyra:
     image: elyra/elyra:dev
@@ -27,7 +28,6 @@ services:
       - "8888" 
     ports:
       - "8888:8888"
-    #environment:
     #privileged: true
   
   minio:
