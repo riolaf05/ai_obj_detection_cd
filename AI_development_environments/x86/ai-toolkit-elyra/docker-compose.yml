@@ -29,6 +29,24 @@ services:
       - "8888:8888"
     #environment:
     #privileged: true
+  
+  minio:
+    image: minio/minio
+    restart: always
+    command: ["server", "/export"]
+    volumes: ['./storage/minio:/export']
+    expose:
+      - "9000"
+    ports:
+      - "9000:9000"
+    environment:
+      MINIO_ACCESS_KEY: minio
+      MINIO_SECRET_KEY: minio123
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
 
 networks:
   jupyter:
