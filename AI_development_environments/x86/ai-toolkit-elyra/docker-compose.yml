@@ -35,6 +35,8 @@ services:
     restart: always
     command: ["server", "/export"]
     volumes: ['./storage/minio:/export']
+    networks:
+      - jupyter
     expose:
       - "9000"
     ports:
