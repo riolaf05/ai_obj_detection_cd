@@ -4,6 +4,7 @@ services:
 
   mlflowui:
     build: ./mlflowUI/.
+    container_name: mlflowui
     restart: always
     volumes: ['./storage/mlflow:/tmp/mlflowruns'] 
     networks:
@@ -15,15 +16,16 @@ services:
     environment: 
       - LC_ALL=C.UTF-8 
       - LANG=C.UTF-8
-      - MLFLOW_S3_ENDPOINT_URL=http://ai_toolkit_elyra_minio_1:9000
+      - MLFLOW_S3_ENDPOINT_URL=http://minio1:9000
       - AWS_ACCESS_KEY_ID=minio
       - AWS_SECRET_ACCESS_KEY=minio123
 
   elyra:
     image: elyra/elyra:dev
+    container_name: elyra
     restart: always
     command: ["jupyter", "lab", "--debug"]
-    volumes: ['./storage/jupyter:/home/jovyan/work']
+    volumes: ['./storage/jupyter:/home/jovyan/work', './storage/data:/home/jovyan/work/data']
     networks:
       - jupyter
     expose:
@@ -31,11 +33,10 @@ services:
     ports:
       - "8888:8888"
     #privileged: true
-    environment: 
-      - MLFLOW_S3_ENDPOINT_URL=http://ai_toolkit_elyra_minio_1:9000
   
   minio:
     image: minio/minio
+    container_name: minio1
     restart: always
     command: ["server", "/export"]
     volumes: ['./storage/minio:/export']
