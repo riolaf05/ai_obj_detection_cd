@@ -1,0 +1,4 @@
+artifact_location: s3://mlflowruns/5
+experiment_id: '5'
+lifecycle_stage: active
+name: mlflow-demo-4

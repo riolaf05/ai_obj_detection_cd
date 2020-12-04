@@ -15,7 +15,7 @@ services:
     environment: 
       - LC_ALL=C.UTF-8 
       - LANG=C.UTF-8
-      - MLFLOW_S3_ENDPOINT_URL=http://ai-toolkit-elyra_minio_1:9000
+      - MLFLOW_S3_ENDPOINT_URL=http://ai_toolkit_elyra_minio_1:9000
       - AWS_ACCESS_KEY_ID=minio
       - AWS_SECRET_ACCESS_KEY=minio123
 
@@ -32,7 +32,7 @@ services:
       - "8888:8888"
     #privileged: true
     environment: 
-      - MLFLOW_S3_ENDPOINT_URL=http://ai-toolkit-elyra_minio_1:9000
+      - MLFLOW_S3_ENDPOINT_URL=http://ai_toolkit_elyra_minio_1:9000
   
   minio:
     image: minio/minio

@@ -1,0 +1,15 @@
+artifact_uri: s3://mlflowruns/5/b33bef35dee44019914911aa537d046b/artifacts
+end_time: 1607023259848
+entry_point_name: ''
+experiment_id: '5'
+lifecycle_stage: active
+name: ''
+run_id: b33bef35dee44019914911aa537d046b
+run_uuid: b33bef35dee44019914911aa537d046b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1607023259461
+status: 4
+tags: []
+user_id: jovyan
