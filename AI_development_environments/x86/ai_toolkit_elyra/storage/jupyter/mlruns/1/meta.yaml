@@ -1,4 +1,0 @@
-artifact_location: s3://mlflowruns/
-experiment_id: '1'
-lifecycle_stage: active
-name: demo
