@@ -1,8 +1,5 @@
 jupyter 
 grpcio 
-py-cpuinfo 
-psutil 
-portpicker 
 six 
 mock 
 requests 
