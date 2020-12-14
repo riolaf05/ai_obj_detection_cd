@@ -1,2 +1,2 @@
 docker build -t rio05docker/ai-toolkit:vscoderemote . \
-&& docker run -it --rm 
+&& docker run -it --rm -p 22:22 -p 8881:8888 --name vscoderemote -v notebooks:/src rio05docker/ai-toolkit:vscoderemote jupyter notebook --port=8888 --no-browser --ip=0.0.0.0 --allow-root

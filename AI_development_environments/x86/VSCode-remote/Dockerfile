@@ -23,7 +23,9 @@ WORKDIR src/
 #RUN pip3 install -r requirements.txt
 RUN pip3 install jupyter
 
-CMD ["/usr/sbin/sshd", "&&", "jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
+#ENTRYPOINT ["/usr/sbin/sshd"]
+
+#CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
 
 
 
