@@ -1,0 +1,11 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: chatbot-pvc
+spec:
+  storageClassName: manual
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 0.5Gi

@@ -1,0 +1,260 @@
+{
+  "doc_type": "pipeline",
+  "version": "3.0",
+  "json_schema": "http://api.dataplatform.ibm.com/schemas/common-pipeline/pipeline-flow/pipeline-flow-v3-schema.json",
+  "id": "eb87863e-ff5c-4dd8-a439-5ce94a69879a",
+  "primary_pipeline": "d1493f58-a0b9-49e7-ab1c-76f99def6698",
+  "pipelines": [
+    {
+      "id": "d1493f58-a0b9-49e7-ab1c-76f99def6698",
+      "nodes": [
+        {
+          "id": "c3e1fce0-2f9c-43e4-b970-450739ae87b0",
+          "type": "execution_node",
+          "op": "execute-notebook-node",
+          "app_data": {
+            "filename": "preprocess.ipynb",
+            "runtime_image": "continuumio/anaconda3:2020.07",
+            "env_vars": [],
+            "include_subdirectories": false,
+            "outputs": [
+              "fire_detection/"
+            ],
+            "invalidNodeError": null,
+            "ui_data": {
+              "label": "preprocess.ipynb",
+              "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20viewBox%3D%220%200%2022%2022%22%3E%0A%20%20%3Cg%20class%3D%22jp-icon-warn0%20jp-icon-selectable%22%20fill%3D%22%23EF6C00%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M18.7%203.3v15.4H3.3V3.3h15.4m1.5-1.5H1.8v18.3h18.3l.1-18.3z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16.5%2016.5l-5.4-4.3-5.6%204.3v-11h11z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A",
+              "x_pos": 12.429405212402344,
+              "y_pos": -11.041626453399658,
+              "description": "Notebook file"
+            }
+          },
+          "inputs": [
+            {
+              "id": "inPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Input Port"
+                }
+              }
+            }
+          ],
+          "outputs": [
+            {
+              "id": "outPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Output Port"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "66e4eec0-30ca-4d11-a3be-bd93d175b45f",
+          "type": "execution_node",
+          "op": "execute-notebook-node",
+          "app_data": {
+            "filename": "validation.ipynb",
+            "runtime_image": "continuumio/anaconda3:2020.07",
+            "env_vars": [],
+            "include_subdirectories": false,
+            "invalidNodeError": null,
+            "dependencies": [
+              "fire_detection/",
+              "saved_model/"
+            ],
+            "ui_data": {
+              "label": "validation.ipynb",
+              "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20viewBox%3D%220%200%2022%2022%22%3E%0A%20%20%3Cg%20class%3D%22jp-icon-warn0%20jp-icon-selectable%22%20fill%3D%22%23EF6C00%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M18.7%203.3v15.4H3.3V3.3h15.4m1.5-1.5H1.8v18.3h18.3l.1-18.3z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16.5%2016.5l-5.4-4.3-5.6%204.3v-11h11z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A",
+              "x_pos": 330.43145751953125,
+              "y_pos": 207.67410278320312,
+              "description": "Notebook file"
+            }
+          },
+          "inputs": [
+            {
+              "id": "inPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Input Port"
+                }
+              },
+              "links": [
+                {
+                  "id": "affa0a66-a59e-489e-a190-a8ae7536d724",
+                  "node_id_ref": "54800cc6-9aee-48e2-8c84-56b0eb09e53b",
+                  "port_id_ref": "outPort"
+                }
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "id": "outPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Output Port"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "bec809b2-f668-416e-9ec1-98e2c6261559",
+          "type": "execution_node",
+          "op": "execute-notebook-node",
+          "app_data": {
+            "filename": "convert_to_lite.ipynb",
+            "runtime_image": "tensorflow/tensorflow:2.3.0",
+            "env_vars": [],
+            "include_subdirectories": false,
+            "dependencies": [
+              "fire_detection/",
+              "saved_model/"
+            ],
+            "invalidNodeError": null,
+            "outputs": [
+              "lite_fire_detection_model.tflite"
+            ],
+            "ui_data": {
+              "label": "convert_to_lite.ipynb",
+              "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20viewBox%3D%220%200%2022%2022%22%3E%0A%20%20%3Cg%20class%3D%22jp-icon-warn0%20jp-icon-selectable%22%20fill%3D%22%23EF6C00%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M18.7%203.3v15.4H3.3V3.3h15.4m1.5-1.5H1.8v18.3h18.3l.1-18.3z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16.5%2016.5l-5.4-4.3-5.6%204.3v-11h11z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A",
+              "x_pos": 740.5857543945312,
+              "y_pos": 220.23045349121094,
+              "description": "Notebook file"
+            }
+          },
+          "inputs": [
+            {
+              "id": "inPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Input Port"
+                }
+              },
+              "links": [
+                {
+                  "id": "59345f11-fe70-408a-aebe-218b6af9b04c",
+                  "node_id_ref": "54800cc6-9aee-48e2-8c84-56b0eb09e53b",
+                  "port_id_ref": "outPort"
+                }
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "id": "outPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Output Port"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "54800cc6-9aee-48e2-8c84-56b0eb09e53b",
+          "type": "execution_node",
+          "op": "execute-notebook-node",
+          "app_data": {
+            "filename": "train.ipynb",
+            "runtime_image": "tensorflow/tensorflow:2.3.0",
+            "env_vars": [
+              "MLFLOW_S3_ENDPOINT_URL='http://minio1:9000'",
+              "AWS_ACCESS_KEY_ID='minio'",
+              "AWS_SECRET_ACCESS_KEY='minio123'",
+              "NGROK_URL='http://mlflowui:5000'",
+              "EXPERIMENT='transfer_learning/fire-detection'",
+              "EPOCHS=5",
+              "VERSION=1",
+              "SAVE_PATH='saved_model'"
+            ],
+            "include_subdirectories": false,
+            "dependencies": [
+              "fire_detection/"
+            ],
+            "invalidNodeError": null,
+            "outputs": [
+              "saved_model/"
+            ],
+            "ui_data": {
+              "label": "train.ipynb",
+              "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20viewBox%3D%220%200%2022%2022%22%3E%0A%20%20%3Cg%20class%3D%22jp-icon-warn0%20jp-icon-selectable%22%20fill%3D%22%23EF6C00%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M18.7%203.3v15.4H3.3V3.3h15.4m1.5-1.5H1.8v18.3h18.3l.1-18.3z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16.5%2016.5l-5.4-4.3-5.6%204.3v-11h11z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A",
+              "x_pos": 377.147216796875,
+              "y_pos": -4.580724716186523,
+              "description": "Notebook file"
+            }
+          },
+          "inputs": [
+            {
+              "id": "inPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Input Port"
+                }
+              },
+              "links": [
+                {
+                  "id": "87eeafdb-1a13-47e8-9a2c-402270401ee5",
+                  "node_id_ref": "c3e1fce0-2f9c-43e4-b970-450739ae87b0",
+                  "port_id_ref": "outPort"
+                }
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "id": "outPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Output Port"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "app_data": {
+        "ui_data": {
+          "comments": []
+        },
+        "version": 3
+      },
+      "runtime_ref": ""
+    }
+  ],
+  "schemas": []
+}

@@ -1,0 +1,59 @@
+version: '3'
+
+services:
+
+  mlflowui:
+    build: ./mlflowUI/.
+    container_name: mlflowui
+    restart: always
+    volumes: ['./storage/mlflow:/tmp/mlflowruns'] 
+    networks:
+        - jupyter
+    expose:
+        - "5000"
+    ports:
+        - "5000:5000"
+    environment: 
+      - LC_ALL=C.UTF-8 
+      - LANG=C.UTF-8
+      - MLFLOW_S3_ENDPOINT_URL=http://minio1:9000
+      - AWS_ACCESS_KEY_ID=minio
+      - AWS_SECRET_ACCESS_KEY=minio123
+
+  elyra:
+    image: elyra/elyra:dev
+    container_name: elyra
+    restart: always
+    command: ["jupyter", "lab", "--debug"]
+    volumes: ['./storage/jupyter:/home/jovyan/work', './storage/data:/home/jovyan/work/data']
+    networks:
+      - jupyter
+    expose:
+      - "8888" 
+    ports:
+      - "8888:8888"
+    #privileged: true
+  
+  minio:
+    image: minio/minio
+    container_name: minio1
+    restart: always
+    command: ["server", "/export"]
+    volumes: ['./storage/minio:/export']
+    networks:
+      - jupyter
+    expose:
+      - "9000"
+    ports:
+      - "9000:9000"
+    environment:
+      MINIO_ACCESS_KEY: minio
+      MINIO_SECRET_KEY: minio123
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+
+networks:
+  jupyter:
