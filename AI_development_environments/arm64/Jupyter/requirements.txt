@@ -1,0 +1,14 @@
+jupyter 
+grpcio 
+py-cpuinfo 
+psutil 
+portpicker 
+six 
+mock 
+requests 
+gast 
+h5py 
+protobuf 
+keras 
+keras-applications 
+keras-preprocessing  
