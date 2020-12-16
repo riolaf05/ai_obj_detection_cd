@@ -1,0 +1,11 @@
+jupyter 
+grpcio 
+six 
+mock 
+requests 
+gast 
+h5py 
+protobuf 
+keras 
+keras-applications 
+keras-preprocessing  
