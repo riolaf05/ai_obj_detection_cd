@@ -1,1 +1,0 @@
-docker buildx build --platform linux/arm64 -t rio05docker/ai-toolkit-jetson:jupyter .
