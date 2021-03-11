@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.22.0 (955b78124)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: mlflowui
+  name: mlflowui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: mlflowui
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.22.0 (955b78124)
+      creationTimestamp: null
+      labels:
+        io.kompose.network/jupyter: "true"
+        io.kompose.service: mlflowui
+    spec:
+      containers:
+        - env:
+            - name: AWS_ACCESS_KEY_ID
+              value: minio
+            - name: AWS_SECRET_ACCESS_KEY
+              value: minio123
+            - name: LANG
+              value: C.UTF-8
+            - name: LC_ALL
+              value: C.UTF-8
+            - name: MLFLOW_S3_ENDPOINT_URL
+              value: http://minio1:9000
+          image: mlflowui
+          name: mlflowui
+          ports:
+            - containerPort: 5000
+          resources: {}
+          volumeMounts:
+            - mountPath: /tmp/mlflowruns
+              name: mlflowui-claim0
+      restartPolicy: Always
+      volumes:
+        - name: mlflowui-claim0
+          persistentVolumeClaim:
+            claimName: mlflowui-claim0
+status: {}
