@@ -1,6 +1,6 @@
 matplotlib
 Pillow
-tensorflow==2.2.1
+tensorflow==2.5.0
 keras
 numpy
 
