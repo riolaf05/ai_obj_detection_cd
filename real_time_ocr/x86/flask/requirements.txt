@@ -9,7 +9,7 @@ flask-restful
 flask_cors
 flask_api
 git+https://github.com/mitsuhiko/flask-oauth
-httplib2==0.18.1
+httplib2==0.19.0
 idna==2.10
 itsdangerous==1.1.0
 Jinja2==2.11.2
